@@ -52,14 +52,15 @@
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
   <div class="color-swatch-options">
-
-    {% assign color_swatches = product.metafields.product_info.color | split: ',' %}
-    
+    {% assign color_swatches = product.metafields.product_info.color | replace: '[', '' | replace: ']', '' | replace: '"', '' %}
+    {% assign color_array = color_swatches | split: ',' %}
 
 <div class="color-swatches">
-  {% for color in color_swatches %}
-    {% assign cleaned_color_string = color_string | remove: '[' | remove: ']' | remove: '"' %}
-    <div class="color-swatch" style="background-color: {{ cleaned_color_string }};"></div>
+  {% for color in color_array %}
+    {% assign cleaned_color = color | strip %}
+    <div class="color-swatch" style="background-color: {{ cleaned_color }};" title="{{ cleaned_color }}">
+      <!-- Optional: Display color name or code -->
+    </div>
   {% endfor %}
 </div>
 
@@ -75,7 +76,6 @@
     border-radius: 50%;
   }
 </style>
-
 
     
     
