@@ -54,8 +54,9 @@
   <div class="color-swatch-options">
     {% assign color = product.metafields.product_info.color %}
     {% if color %}
-            <div class="swatch-colr" style="background-color: {{ color.value }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
-
+      {% for colors in color %}
+            <div class="swatch-colr" style="background-color: {{ color.value }}"></div>
+    {% endfor %}
 {% endif %}
     {% for color in product_block.metafields.product_info.color.value %}
       <div class="swatch-colr" style="background-color: {{ color }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
