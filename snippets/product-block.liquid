@@ -52,7 +52,7 @@
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
   <div class="color-swatch-options">
-    {% for field in product.metafields.color %}
+    {% for field in product_block.metafields.custom.color %}
 {{ field | first }}: {{ field | last }}
 {% endfor %}
       <div class="swatch-colr" style="background-color: {{ product_block.metafields.custom.color.value }}">abcd</div>
