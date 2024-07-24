@@ -14149,8 +14149,8 @@ model-viewer button:hover {
     padding: 0 20px;
     right: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    transform: translate(0%, -50%);
 }
 
 .collection-header__container-cstm.collection-header__image-container .rimage-outer-wrapper {
@@ -14169,4 +14169,17 @@ model-viewer button:hover {
 
 .collection-header__content-container .large-title {
     font-size: 56px;
+}
+@media (max-width: 740px) {
+  .collection-header__content-container .large-title {
+    font-size: 36px;
+  }
+
+  .collection-header__container-cstm.collection-header__image-container {
+    height: 370px;
+  }
+
+  .page-widthb.collection-header.global-border-radius.standout-collection-bg.collection-header--split {
+    height: 370px;
+  }
 }
