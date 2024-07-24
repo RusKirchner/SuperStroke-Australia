@@ -52,9 +52,9 @@
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
   <div class="color-swatch-options">
-    <a href="{{ product_info.metafields.custom.color_link }}">
-      <div class="swatch" style="background-color: {{ product_info.metafields.custom.color }}"></div>
-    </a>
+    
+      <div class="swatch-colr" style="background-color: {{ card_product.metafields.custom.color }}">abcd</div>
+    
   </div>
   {%- if show_vendor -%}
     <div class="product-block__vendor">
