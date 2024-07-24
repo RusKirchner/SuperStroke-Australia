@@ -120,10 +120,30 @@
         "slideshow_autoplay": true,
         "slideshow_autoplay_speed": 6
       }
+    },
+    "custom_product_list_DneK8R": {
+      "type": "custom-product-list",
+      "settings": {
+        "title": "DEADPOOL & WOLVERINE COLLECTION",
+        "sub-title": "AVAILABLE 7\/16 AT 10AM",
+        "enlarge_title": false,
+        "link_text": "",
+        "link_url": "",
+        "product_list": [
+          "pga-championship-oak-hill-putter-grips",
+          "cross-comfort-club-grip",
+          "football-putter-grip"
+        ],
+        "show_vendor": false,
+        "enable_carousel": false,
+        "grid": 3,
+        "grid_mobile": "2"
+      }
     }
   },
   "order": [
     "main",
-    "fullwidth_slideshow_b3cFXR"
+    "fullwidth_slideshow_b3cFXR",
+    "custom_product_list_DneK8R"
   ]
 }
