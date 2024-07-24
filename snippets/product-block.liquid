@@ -53,7 +53,7 @@
   </div>
   <div class="color-swatch-options">
     {% for color in product_block.metafields.custom.color_list %}
-      <div class="swatch-colr" style="background-color: {{ product_block.metafields.custom.color }}">{{ product_block.metafields.custom.color | metafield_tag }}</div>
+      <div class="swatch-colr" style="background-color: {{ product_block.metafields.custom.color }}">{{ product_block.metafields.custom.color.value | metafield_tag }}</div>
   {% endfor %}
       </div>
   {%- if show_vendor -%}
