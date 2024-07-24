@@ -37,7 +37,7 @@
       {%- if show_feature_header -%}
 
         {%- if featured_product != blank -%}
-          <div class="collection-header__container {% if header_image != blank %} collection-header__image-container{% else %} collection-header__container--align-center{% endif %} relative">
+          <div class="collection-header__container-custom {% if header_image != blank %} collection-header__image-container{% else %} collection-header__container--align-center{% endif %} relative">
             {%- if header_image != blank -%}
               <div class="rimage-background fade-in lazyload desktop-only"
                 data-bgset="{% render 'bgset', image: header_image %}"
