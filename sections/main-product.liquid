@@ -558,6 +558,7 @@
                   <div class="row 123" {{ block.shopify_attributes }}>
                     <a class="{% if block.settings.style == 'button_1' %}btn btn--small btn--primary{% elsif block.settings.style == 'button_2' %}btn btn--small btn--secondary{% else %}standard-link{% endif %}" href="{{ block.settings.url }}">{{ block.settings.text | escape }}</a>
                   </div>
+                  {%- else -%}
 {%- endif -%}
                 {%- when 'image' -%}
                   {%- if block.settings.image != blank -%}
