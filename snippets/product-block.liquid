@@ -55,7 +55,7 @@
     {% for field in product.metafields.color %}
 {{ field | first }}: {{ field | last }}
 {% endfor %}
-      <div class="swatch-colr" style="background-color: {{ card_product.metafields.custom.color }}">abcd</div>
+      <div class="swatch-colr" style="background-color: {{ product_block.metafields.custom.color }}">abcd</div>
     
   </div>
   {%- if show_vendor -%}
