@@ -54,10 +54,11 @@
   <div class="color-swatch-options">
 
     {% assign color_swatches = product.metafields.product_info.color | split: ',' %}
+    {% assign cleaned_color_string = color_string | remove: '[' | remove: ']' | remove: '"' %}
 
 <div class="color-swatches">
   {% for color in color_swatches %}
-    <div class="color-swatch" style="background-color: {{ color }};"></div>
+    <div class="color-swatch" style="background-color: {{ cleaned_color_string }};"></div>
   {% endfor %}
 </div>
 
