@@ -55,8 +55,8 @@
 {% assign color_swatches = product.metafields.product_info.color | split: ',' %}
 
 <div class="color-swatches">
-  {% for color in color_swatches %}
-    <div class="color-swtch" style="background-color: {{ color.value }}; width: 10px; height: 10px;"></div>
+  {% for color_code in color_swatches %}
+    <div class="color-swtch" style="background-color: {{ color_code.value }}; width: 10px; height: 10px;"></div>
   {% endfor %}
 </div>
 
