@@ -51,35 +51,32 @@
   <div class="product-block__title">
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
+  
+            <!-- custom color swatches for collections start -->
   <div class="color-swatch-options">
     {% assign color_swatches = product.metafields.product_info.color | replace: '[', '' | replace: ']', '' | replace: '"', '' %}
     {% assign color_array = color_swatches | split: ',' %}
-
-<div class="color-swatches">
-  {% for color in color_array %}
-    {% assign cleaned_color = color | strip %}
-    <div class="color-swatch" style="background-color: {{ cleaned_color }};" title="{{ cleaned_color }}">
-      <!-- Optional: Display color name or code -->
+    <div class="color-swatches">
+      {% for color in color_array %}
+        {% assign cleaned_color = color | strip %}
+        <div class="color-swatch" style="background-color: {{ cleaned_color }};" title="{{ cleaned_color }}">
+        </div>
+          {% endfor %}
     </div>
-  {% endfor %}
-</div>
-
-<style>
-  .color-swatches {
-    display: flex;
-    gap: 10px;
-  }
-  .color-swatch {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-    border-radius: 50%;
-  }
-</style>
-
-    
-    
-      </div>
+    <style>
+      .color-swatches {
+        display: flex;
+        gap: 10px;
+      }
+      .color-swatch {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+    </style>
+  </div>
+  <!-- custom color swatches for collections end -->
   {%- if show_vendor -%}
     <div class="product-block__vendor">
       {{- product.vendor -}}
