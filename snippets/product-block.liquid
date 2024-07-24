@@ -52,15 +52,17 @@
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
   <div class="color-swatch-options">
-    {% assign color = product.metafields.product_info.color %}
-    {% if color %}
-      {% for colors in color %}
-            <div class="swatch-colr" style="background-color: {{ color.value }}"></div>
-    {% endfor %}
-{% endif %}
-    {% for color in product_block.metafields.product_info.color.value %}
-      <div class="swatch-colr" style="background-color: {{ color }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
+{% assign color_swatches = product.metafields.product_info.color | split: ',' %}
+
+<div class="color-swatches">
+  {% for color in color_swatches %}
+    <div class="color-swatch" style="background-color: {{ color }};" title="{{ color }}"></div>
   {% endfor %}
+</div>
+
+
+    
+    
       </div>
   {%- if show_vendor -%}
     <div class="product-block__vendor">
