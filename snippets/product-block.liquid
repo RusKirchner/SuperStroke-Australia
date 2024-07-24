@@ -51,9 +51,9 @@
   <div class="product-block__title">
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
-  <div class="color-swatch">
-    <a href="{{ product.metafields.custom.color_link }}">
-      <div class="swatch" style="background-color: {{ product.metafields.custom.color }}"></div>
+  <div class="color-swatch-options">
+    <a href="{{ product_info.metafields.custom.color_link }}">
+      <div class="swatch" style="background-color: {{ product_info.metafields.custom.color }}"></div>
     </a>
   </div>
   {%- if show_vendor -%}
