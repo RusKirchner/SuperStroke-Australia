@@ -25,10 +25,10 @@
         "show_featured": true
       }
     },
-    "slideshow_yxjiVe": {
-      "type": "slideshow",
+    "fullwidth_slideshow_b3cFXR": {
+      "type": "fullwidth-slideshow",
       "blocks": {
-        "image_WGQ9DY": {
+        "image_jAJ9fr": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/MARVEL_Cover_Photo.webp",
@@ -67,17 +67,18 @@
             "label_position_y_2": 50
           }
         },
-        "image_qcHJH3": {
+        "image_rbgXLw": {
           "type": "image",
           "settings": {
-            "image_link": "",
+            "image": "shopify:\/\/shop_images\/SS_DeadpoolWolverine_hero.webp",
+            "image_link": "shopify:\/\/products\/marvel-super-heroes-putter-grips",
             "color_overlay_bg": "#ffffff",
             "overlay_opacity": 80,
             "color_overlay_text": "#333333",
             "text_alignment": "center",
             "overlay_position_x": 50,
             "overlay_position_y": 80,
-            "overlay_title": "Slideshow",
+            "overlay_title": "",
             "enlarge_title": false,
             "overlay_title_width": 100,
             "styled_words": "",
@@ -85,7 +86,7 @@
             "highlight_words_top": 10,
             "highlight_color": "#ffffff",
             "styled_word_color": "#b5e0fa",
-            "overlay_text": "Use this section to welcome customers to your store, show off your images or display a promotion",
+            "overlay_text": "",
             "enlarge_text": false,
             "overlay_url_text_1": "",
             "overlay_url_1": "",
@@ -107,15 +108,15 @@
         }
       },
       "block_order": [
-        "image_WGQ9DY",
-        "image_qcHJH3"
+        "image_jAJ9fr",
+        "image_rbgXLw"
       ],
       "settings": {
         "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 500,
         "mobile_text_below": true,
-        "slide_transition": "fade",
+        "slide_transition": "slide",
         "slideshow_autoplay": true,
         "slideshow_autoplay_speed": 6
       }
@@ -123,6 +124,6 @@
   },
   "order": [
     "main",
-    "slideshow_yxjiVe"
+    "fullwidth_slideshow_b3cFXR"
   ]
 }
