@@ -55,7 +55,8 @@
     {% for field in product_block.metafields.custom.color %}
 {{ field | first }}: {{ field | last }}
 {% endfor %}
-      <div class="swatch-colr" style="background-color: {{ product_block.metafields.custom.color.value }}">abcd</div>
+    
+      <div class="swatch-colr" style="background-color: {{ product_info.metafields.custom.color.value }}">abcd</div>
     
   </div>
   {%- if show_vendor -%}
