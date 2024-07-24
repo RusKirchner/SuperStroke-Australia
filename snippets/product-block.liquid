@@ -52,7 +52,7 @@
     <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
   </div>
   <div class="color-swatch-options">
-    {% assign color = product_block.metafields.product_info.color %}
+    {% assign color = product.metafields.product_info.color %}
     {% if color %}
   <p>Color: {{ color }}</p>
 {% endif %}
