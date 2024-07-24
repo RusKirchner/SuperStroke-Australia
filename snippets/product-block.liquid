@@ -54,10 +54,11 @@
   <div class="color-swatch-options">
     {% assign color = product.metafields.product_info.color %}
     {% if color %}
-  <p>Color: {{ color }}</p>
+            <div class="swatch-colr" style="background-color: {{ color }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
+
 {% endif %}
     {% for color in product_block.metafields.product_info.color.value %}
-      <div class="swatch-colr" style="background-color: {{ product_block.metafields.product_info.color.value }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
+      <div class="swatch-colr" style="background-color: {{ color }}">{{ product.metafields.product_info.color.value | metafield_tag }}</div>
   {% endfor %}
       </div>
   {%- if show_vendor -%}
