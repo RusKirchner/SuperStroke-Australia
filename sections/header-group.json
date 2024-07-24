@@ -1,1 +1,150 @@
-{"type":"header","name":"Header Group","sections":{"announcement-bar":{"type":"announcement-bar","disabled":true,"settings":{"home_only_announcement_bar":false,"announcement_bar_text":"Add notices for your shoppers here","announcement_bar_col":"#202020","announcement_bar_grad":"","announcement_text_col":"#ffffff"}},"header":{"type":"header","settings":{"logo":"{{ shop.brand.logo }}","logo_width":270,"desktop_layout":"center","show_search_bar_desktop":true,"show_search_bar_mobile":false,"logo_position_mobile":"inline","dock_nav":true,"cart_icon":"shopping-cart","main_linklist":"main-menu","show_country_selector":false,"show_language_selector":true,"show_messages":false,"home_only_messages":false,"slideshow_messages":false,"message_1_text":"","message_1_url":"","message_2_text":"Enjoy free shipping on orders of $150 or more!","message_2_url":"shopify:\/\/collections","message_3_text":"","message_3_url":""}}},"order":["announcement-bar","header"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "home_only_announcement_bar": false,
+        "announcement_bar_text": "Add notices for your shoppers here",
+        "announcement_bar_col": "#202020",
+        "announcement_bar_grad": "",
+        "announcement_text_col": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo": "{{ shop.brand.logo }}",
+        "logo_width": 270,
+        "desktop_layout": "center",
+        "show_search_bar_desktop": true,
+        "show_search_bar_mobile": false,
+        "logo_position_mobile": "inline",
+        "dock_nav": true,
+        "cart_icon": "shopping-cart",
+        "main_linklist": "main-menu",
+        "show_country_selector": false,
+        "show_language_selector": true,
+        "show_messages": false,
+        "home_only_messages": false,
+        "slideshow_messages": false,
+        "message_1_text": "",
+        "message_1_url": "",
+        "message_2_text": "Enjoy free shipping on orders of $150 or more!",
+        "message_2_url": "shopify:\/\/collections",
+        "message_3_text": "",
+        "message_3_url": ""
+      }
+    },
+    "slideshow_nVRgwW": {
+      "type": "slideshow",
+      "blocks": {
+        "image_3Anigb": {
+          "type": "image",
+          "settings": {
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "Slideshow",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Use this section to welcome customers to your store, show off your images or display a promotion",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "image_JgGjDn": {
+          "type": "image",
+          "settings": {
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "Slideshow",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Use this section to welcome customers to your store, show off your images or display a promotion",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "image_3Anigb",
+        "image_JgGjDn"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slide_transition": "fade",
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "slideshow_nVRgwW"
+  ]
+}
