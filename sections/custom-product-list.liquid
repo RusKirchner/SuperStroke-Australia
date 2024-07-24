@@ -16,6 +16,9 @@
     {%- if section.settings.title != blank or section.settings.link_text != blank or section.settings.enable_carousel == true -%}
     <div class="large-row" data-cc-animate>
       <div class="text-center">
+        {% if section.settings.sub-title != blank %}
+          <h3 class="featured-collection--subtitle">{{ section.settings.sub-title | escape }}</h3>
+        {% endif %}
         {% if section.settings.title != blank %}
           <h2 class="featured-collection--title {% if section.settings.enlarge_title %}giant-title{% else %}large-title{% endif%}">{{ section.settings.title | escape }}</h2>
         {% endif %}
@@ -108,6 +111,12 @@
         "id": "title",
         "label": "Heading",
         "default": "Product list"
+      },
+      {
+        "type": "text",
+        "id": "sub-title",
+        "label": "Sub title",
+        "default": "Sub title"
       },
       {
         "type": "checkbox",
