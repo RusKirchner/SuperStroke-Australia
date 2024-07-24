@@ -18,7 +18,7 @@
     endif
   -%}
 
-  <div class="container container--no-mobile-padding" data-section-id="{{ section.id }}" data-section-type="collection-template" data-components="facet-filters,price-range">
+  <div class="containera container--no-mobile-padding" data-section-id="{{ section.id }}" data-section-type="collection-template" data-components="facet-filters,price-range">
     {%- if show_feature_header -%}
       {% style %}
         {% for block in section.blocks %}
@@ -33,7 +33,7 @@
     {%- endif -%}
 
     {%- assign header_image = collection.featured_image -%}
-    <div class="page-width collection-header global-border-radius {% if show_feature_header %}standout-collection-bg {% if header_image != blank or featured_product != blank %} collection-header--split{% endif %}{% endif %} {% if featured_product != blank %}collection-header--with-product{% endif %}">
+    <div class="page-widthb collection-header global-border-radius {% if show_feature_header %}standout-collection-bg {% if header_image != blank or featured_product != blank %} collection-header--split{% endif %}{% endif %} {% if featured_product != blank %}collection-header--with-product{% endif %}">
       {%- if show_feature_header -%}
 
         {%- if featured_product != blank -%}
