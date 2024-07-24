@@ -14170,6 +14170,30 @@ model-viewer button:hover {
 .collection-header__content-container .large-title {
     font-size: 56px;
 }
+.cusstom-slideshow .full-width-slideshow-controls {
+    display: none !important;
+}
+
+.cusstom-slideshow.full-width-slideshow .slick-dots {
+    position: absolute;
+    bottom: 23px;
+    z-index: 99999999;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    height: 36px;
+}
+
+.cusstom-slideshow.full-width-slideshow .slick-dots li button {
+    width: 64px;
+    height: 2px;
+    background: rgb(255 255 255 / 50%);
+    border: 0;
+}
+
+.cusstom-slideshow.full-width-slideshow .slick-dots li.slick-active button {
+    background: #ffff;
+}
 @media (max-width: 740px) {
   .collection-header__content-container .large-title {
     font-size: 36px;
