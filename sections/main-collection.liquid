@@ -112,7 +112,7 @@
       {%- endif -%}
     </div>
 
-    <div class="page-width">
+    <div class="page-width container">
       {%- if section.settings.show_filters or section.settings.show_sort_by -%}
         {% render 'facet-filters', results: collection, paginate: paginate, include_swatch_style_tag: false %}
       {%- endif -%}
