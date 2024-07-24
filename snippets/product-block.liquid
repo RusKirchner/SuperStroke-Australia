@@ -49,7 +49,12 @@
   </div>
 
   <div class="product-block__title">
-    <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
+    {% if product.tags contains 'Retail Only' %}
+    <a href="{{ product.url | within: collection }}" class="product-block__title-link"
+      style="padding-bottom: 30px">{{ product.title }}</a>
+      {%- else -%}
+      <a href="{{ product.url | within: collection }}" class="product-block__title-link">{{ product.title }}</a>
+      {%- endif -%}
   </div>
   
             <!-- custom color swatches for collections start -->
