@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_body_background": "#ffffff",
@@ -73,20 +73,20 @@
     "swatch_method": "standard",
     "swatch_value_list": "",
     "swatch_enabled": true,
-    "social_facebook_url": "https:\/\/www.facebook.com\/superstrokegolfaustralia\/",
-    "social_instagram_url": "https:\/\/www.instagram.com\/superstrokegolf_australia\/",
-    "social_tiktok_url": "https:\/\/www.tiktok.com\/@superstrokegolf",
-    "social_twitter_url": "https:\/\/twitter.com\/SuperStrokeGolf",
+    "social_facebook_url": "https://www.facebook.com/superstrokegolfaustralia/",
+    "social_instagram_url": "https://www.instagram.com/superstrokegolf_australia/",
+    "social_tiktok_url": "https://www.tiktok.com/@superstrokegolf",
+    "social_twitter_url": "https://twitter.com/SuperStrokeGolf",
     "on_add_to_cart": "ajax",
     "search_type": "product",
     "enable_live_search": true,
     "live_search_show_price": true,
     "live_search_show_vendor": false,
     "live_search_search_meta": false,
-    "favicon": "shopify:\/\/shop_images\/SSlogo_Icon_BlueBlk_4C-299C-19TAG.png",
+    "favicon": "shopify://shop_images/SSlogo_Icon_BlueBlk_4C-299C-19TAG.png",
     "product_currency_code_enabled": true,
     "cart_currency_code_enabled": true,
-    "checkout_header_image": "shopify:\/\/shop_images\/SSlogo_Horz_BlueBlk_299C-19TAG.png",
+    "checkout_header_image": "shopify://shop_images/SSlogo_Horz_BlueBlk_299C-19TAG.png",
     "checkout_body_background_color": "#f4f4f4",
     "checkout_sidebar_background_color": "#ffffff",
     "primary_btn_border": "#50248f",
@@ -159,8 +159,8 @@
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/wpmo_bkg_108d5268-a2f7-4229-ae17-19232225605f.jpg",
-              "image_link": "shopify:\/\/products\/party-in-the-desert-waste-management",
+              "image": "shopify://shop_images/wpmo_bkg_108d5268-a2f7-4229-ae17-19232225605f.jpg",
+              "image_link": "shopify://products/party-in-the-desert-waste-management",
               "color_overlay_bg": "#000000",
               "overlay_opacity": 54,
               "color_overlay_text": "#ffffff",
@@ -178,7 +178,7 @@
               "overlay_text": "It's time to \"Party In The Desert\"",
               "enlarge_text": true,
               "overlay_url_text_1": "SHOP NOW",
-              "overlay_url_1": "shopify:\/\/products\/party-in-the-desert-waste-management",
+              "overlay_url_1": "shopify://products/party-in-the-desert-waste-management",
               "overlay_url_text_2": "",
               "overlay_url_2": "",
               "overlay_url_style": "button_1",
@@ -198,8 +198,8 @@
           "banner-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/MARVEL_Cover_Photo_1.png",
-              "image_link": "shopify:\/\/products\/marvel-super-heroes-putter-grips",
+              "image": "shopify://shop_images/WEB_Halloween_Grip_08OOCT2024_1.jpg",
+              "image_link": "shopify://products/masked-slasher-halloween-putter-grip",
               "color_overlay_bg": "rgba(0,0,0,0)",
               "overlay_opacity": 80,
               "color_overlay_text": "rgba(0,0,0,0)",
@@ -256,7 +256,7 @@
     ],
     "blocks": {
       "15909290956780699707": {
-        "type": "shopify:\/\/apps\/mw-product-bundles\/blocks\/app-embed-block\/5bcb1a6d-53b5-4d9c-b4f9-19f6620da62b",
+        "type": "shopify://apps/mw-product-bundles/blocks/app-embed-block/5bcb1a6d-53b5-4d9c-b4f9-19f6620da62b",
         "disabled": false,
         "settings": {
           "custom_liquid": "",
@@ -264,7 +264,7 @@
         }
       },
       "4571859552318407796": {
-        "type": "shopify:\/\/apps\/glo-color-swatch\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
+        "type": "shopify://apps/glo-color-swatch/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,
         "settings": {
           "customCssGCW": ""
