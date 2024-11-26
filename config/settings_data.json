@@ -198,15 +198,15 @@
           "banner-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/WEB_Halloween_Grip_08OOCT2024_1.jpg",
-              "image_link": "shopify://products/masked-slasher-halloween-putter-grip",
+              "image": "shopify://shop_images/Venom-hero_2160x1080_2121ece2-fd11-4a44-b4ce-7fd441a4680f_1.png",
+              "image_link": "shopify://products/marvel-venom-putter-grip",
               "color_overlay_bg": "rgba(0,0,0,0)",
               "overlay_opacity": 80,
               "color_overlay_text": "#ffffff",
               "text_alignment": "center",
               "overlay_position_x": 50,
               "overlay_position_y": 80,
-              "overlay_title": "Limited Edition Masked Slasher",
+              "overlay_title": "Limited Edition Marvel Venom",
               "enlarge_title": false,
               "overlay_title_width": 100,
               "styled_words": "",
@@ -217,7 +217,7 @@
               "overlay_text": "",
               "enlarge_text": false,
               "overlay_url_text_1": "BUY NOW",
-              "overlay_url_1": "shopify://products/masked-slasher-halloween-putter-grip",
+              "overlay_url_1": "shopify://products/marvel-venom-putter-grip",
               "overlay_url_text_2": "",
               "overlay_url_2": "",
               "overlay_url_style": "button_1",
@@ -251,9 +251,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "15909290956780699707": {
         "type": "shopify://apps/mw-product-bundles/blocks/app-embed-block/5bcb1a6d-53b5-4d9c-b4f9-19f6620da62b",
@@ -350,18 +348,15 @@
           "blocks": {
             "menu": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "social": {
               "type": "social",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -457,18 +452,15 @@
           "blocks": {
             "menu": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "social": {
               "type": "social",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -561,18 +553,15 @@
           "blocks": {
             "menu": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "social": {
               "type": "social",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -666,18 +655,15 @@
           "blocks": {
             "menu": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "social": {
               "type": "social",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -695,8 +681,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
