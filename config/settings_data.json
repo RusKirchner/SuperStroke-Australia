@@ -198,15 +198,15 @@
           "banner-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Venom-hero_2160x1080_2121ece2-fd11-4a44-b4ce-7fd441a4680f_1.png",
-              "image_link": "shopify://products/marvel-venom-putter-grip",
+              "image": "shopify://shop_images/Hawaii_Header_1.png",
+              "image_link": "shopify://products/pineapple-paradise-putter-grip",
               "color_overlay_bg": "rgba(0,0,0,0)",
               "overlay_opacity": 80,
               "color_overlay_text": "#ffffff",
               "text_alignment": "center",
               "overlay_position_x": 50,
               "overlay_position_y": 80,
-              "overlay_title": "Limited Edition Marvel Venom",
+              "overlay_title": "Limited Edition Pineapple Paradise",
               "enlarge_title": false,
               "overlay_title_width": 100,
               "styled_words": "",
@@ -217,7 +217,7 @@
               "overlay_text": "",
               "enlarge_text": false,
               "overlay_url_text_1": "BUY NOW",
-              "overlay_url_1": "shopify://products/marvel-venom-putter-grip",
+              "overlay_url_1": "shopify://products/pineapple-paradise-putter-grip",
               "overlay_url_text_2": "",
               "overlay_url_2": "",
               "overlay_url_style": "button_1",
@@ -257,8 +257,8 @@
         "type": "shopify://apps/mw-product-bundles/blocks/app-embed-block/5bcb1a6d-53b5-4d9c-b4f9-19f6620da62b",
         "disabled": false,
         "settings": {
-          "custom_liquid": "",
-          "disable_upsell_crossell_popup": false
+          "disable_upsell_crossell_popup": false,
+          "custom_liquid": ""
         }
       },
       "4571859552318407796": {
