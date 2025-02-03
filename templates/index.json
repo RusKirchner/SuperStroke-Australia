@@ -1,18 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-0": {
+        "image_PMf9Vf": {
           "type": "image",
           "settings": {
             "image_link": "",
@@ -52,7 +52,7 @@
         }
       },
       "block_order": [
-        "slide-0"
+        "image_PMf9Vf"
       ],
       "disabled": true,
       "settings": {
@@ -125,7 +125,7 @@
             "icon_size": 48,
             "icon_color": "",
             "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
             "button_label": "",
             "button_link": "",
             "enlarge_title": false,
@@ -142,7 +142,7 @@
             "icon_size": 48,
             "icon_color": "",
             "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
             "button_label": "",
             "button_link": "",
             "enlarge_title": false,
@@ -159,7 +159,7 @@
             "icon_size": 48,
             "icon_color": "",
             "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
             "button_label": "",
             "button_link": "",
             "enlarge_title": false,
@@ -176,7 +176,7 @@
             "icon_size": 48,
             "icon_color": "",
             "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
             "button_label": "",
             "button_link": "",
             "enlarge_title": false,
@@ -244,7 +244,7 @@
             "color_bg": "#dae4e6",
             "gradient_bg": "",
             "overlay_opacity": 80,
-            "title": "<p>Combine images with text and a stand-out offer<\/p>",
+            "title": "<p>Combine images with text and a stand-out offer</p>",
             "offer": "Offer",
             "url_text": "",
             "url": "",
@@ -262,7 +262,7 @@
             "color_bg": "#dae4e6",
             "gradient_bg": "",
             "overlay_opacity": 80,
-            "title": "<p>Combine images with text and a stand-out offer<\/p>",
+            "title": "<p>Combine images with text and a stand-out offer</p>",
             "offer": "Offer",
             "url_text": "",
             "url": "",
@@ -277,15 +277,14 @@
         "image-1"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "rich-text": {
       "type": "rich-text",
       "disabled": true,
       "settings": {
         "title": "TRUSTED BY THE PROS",
-        "text": "<p>Use this section to share information about your brand with your customers.<\/p><p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "text": "<p>Use this section to share information about your brand with your customers.</p><p>Describe a product, share announcements, or welcome customers to your store.</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
@@ -330,7 +329,7 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 0,
-            "testimonial": "<h3>\"THERE'S NO DOUBT IN MY MIND THAT SUPERSTROKE MAKE THE BEST GRIPS IN THE INDUSTRY\"<\/h3>",
+            "testimonial": "<h3>\"THERE'S NO DOUBT IN MY MIND THAT SUPERSTROKE MAKE THE BEST GRIPS IN THE INDUSTRY\"</h3>",
             "author": "Jordan Speith, 3-Time Major Winner"
           }
         }
@@ -360,7 +359,7 @@
         "image_size": "30",
         "image_position": "left",
         "title": "Image with text",
-        "text": "<p>Advertise a sale! Or tell your shoppers something about yourself.<\/p>",
+        "text": "<p>Advertise a sale! Or tell your shoppers something about yourself.</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
@@ -389,7 +388,7 @@
     "featured-blog": {
       "type": "featured-blog",
       "settings": {
-        "heading_image": "shopify:\/\/shop_images\/RORY_-_Scottish_Open_1.jpg",
+        "heading_image": "shopify://shop_images/RORY_-_Scottish_Open_1.jpg",
         "title": "Blog posts",
         "description": "",
         "color_overlay_bg": "#ffffff",
