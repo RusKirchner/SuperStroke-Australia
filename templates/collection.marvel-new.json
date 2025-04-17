@@ -121,20 +121,22 @@
         "slideshow_autoplay_speed": 6
       }
     },
-    "custom_product_list_DneK8R": {
+    "custom_product_list_M6b77Q": {
       "type": "custom-product-list",
       "settings": {
-        "title": "DEADPOOL & WOLVERINE COLLECTION",
+        "title": "MARVEL COLLECTION",
         "sub-title": "",
         "enlarge_title": false,
         "link_text": "",
         "link_url": "",
         "product_list": [
-          "marvel-deadpool-wolverine-putter-grips"
+          "marvel-deadpool-wolverine-putter-grips",
+          "marvel-super-heroes-putter-grips",
+          "marvel-venom-putter-grip"
         ],
         "show_vendor": false,
         "enable_carousel": false,
-        "grid": 2,
+        "grid": 3,
         "grid_mobile": "1"
       }
     }
@@ -142,6 +144,6 @@
   "order": [
     "main",
     "fullwidth_slideshow_b3cFXR",
-    "custom_product_list_DneK8R"
+    "custom_product_list_M6b77Q"
   ]
 }
