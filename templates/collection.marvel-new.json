@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -31,8 +31,8 @@
         "image_jAJ9fr": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MARVEL_Cover_Photo.webp",
-            "image_link": "shopify:\/\/products\/marvel-super-heroes-putter-grips",
+            "image": "shopify://shop_images/MARVEL_Cover_Photo.webp",
+            "image_link": "shopify://products/marvel-super-heroes-putter-grips",
             "color_overlay_bg": "#ffffff",
             "overlay_opacity": 80,
             "color_overlay_text": "#333333",
@@ -70,8 +70,8 @@
         "image_rbgXLw": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SS_DeadpoolWolverine_hero.webp",
-            "image_link": "shopify:\/\/products\/marvel-super-heroes-putter-grips",
+            "image": "shopify://shop_images/SS_DeadpoolWolverine_hero.webp",
+            "image_link": "shopify://products/marvel-super-heroes-putter-grips",
             "color_overlay_bg": "#ffffff",
             "overlay_opacity": 80,
             "color_overlay_text": "#333333",
@@ -125,19 +125,17 @@
       "type": "custom-product-list",
       "settings": {
         "title": "DEADPOOL & WOLVERINE COLLECTION",
-        "sub-title": "AVAILABLE 7\/16 AT 10AM",
+        "sub-title": "",
         "enlarge_title": false,
         "link_text": "",
         "link_url": "",
         "product_list": [
-          "pga-championship-oak-hill-putter-grips",
-          "cross-comfort-club-grip",
-          "football-putter-grip"
+          "marvel-deadpool-wolverine-putter-grips"
         ],
         "show_vendor": false,
         "enable_carousel": false,
-        "grid": 3,
-        "grid_mobile": "2"
+        "grid": 2,
+        "grid_mobile": "1"
       }
     }
   },
