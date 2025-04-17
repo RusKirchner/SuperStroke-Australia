@@ -70,21 +70,6 @@
         "gradient_bg": ""
       }
     },
-    "featured_collection_wwaat7": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "title": "SUPER HEROES COLLECTION",
-        "enlarge_title": false,
-        "link_text": "",
-        "collection": "marvel",
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 3,
-        "row_count": 3,
-        "grid_mobile": "2"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -166,7 +151,6 @@
         "description",
         "sharing"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_media": true,
         "media_size": "medium",
@@ -194,7 +178,6 @@
   "order": [
     "image_with_text_overlay_RQ9hjt",
     "rich_text_et9Lcj",
-    "featured_collection_wwaat7",
     "main",
     "recommendations",
     "recent"
