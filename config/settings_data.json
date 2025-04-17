@@ -61,6 +61,7 @@
     "hover_image_enabled": true,
     "sale_label_enabled": true,
     "sold_label_enabled": true,
+    "product_grid_image_shape": "square",
     "prod_thumb_crop_align": "center",
     "variant_style": "listed",
     "quickbuy_buttons_toggle": true,
