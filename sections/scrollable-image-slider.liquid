@@ -7,21 +7,12 @@
       "id": "background_color",
       "label": "Background color",
       "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "image_width",
-      "label": "Image width (px)",
-      "min": 100,
-      "max": 600,
-      "step": 20,
-      "default": 300
     }
   ],
   "blocks": [
     {
-      "type": "image_block",
-      "name": "Image",
+      "type": "slide",
+      "name": "Slide",
       "settings": [
         {
           "type": "image_picker",
@@ -32,7 +23,7 @@
           "type": "text",
           "id": "alt_text",
           "label": "Alt text",
-          "default": "Slider image"
+          "default": "Slide image"
         }
       ]
     }
@@ -47,46 +38,55 @@
 }
 {% endschema %}
 
-<div class="scrollable-slider" style="background-color: {{ section.settings.background_color }};">
-  <div class="slider-container">
-    {% for block in section.blocks %}
-      {% if block.settings.image %}
-        <div class="slider-item" style="min-width: {{ section.settings.image_width }}px;">
-          <img
-            src="{{ block.settings.image | img_url: width: 1000 }}"
-            alt="{{ block.settings.alt_text | escape }}"
-            loading="lazy"
-          >
-        </div>
-      {% endif %}
-    {% endfor %}
+<div class="swiper-scroll-wrapper" style="background-color: {{ section.settings.background_color }};">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.image | image_url: width: 1200 }}"
+              alt="{{ block.settings.alt_text }}"
+              loading="lazy"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 <style>
-.scrollable-slider {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.swiper-scroll-wrapper {
   padding: 20px 0;
 }
 
-.slider-container {
-  display: flex;
-  gap: 16px;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.slider-item {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-}
-
-.slider-item img {
-  display: block;
+.swiper {
   width: 100%;
+}
+
+.swiper-slide {
+  width: auto;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.swiper-slide img {
+  display: block;
   height: auto;
-  border-radius: 8px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      freeMode: true,
+      mousewheel: true,
+      grabCursor: true
+    });
+  });
+</script>
