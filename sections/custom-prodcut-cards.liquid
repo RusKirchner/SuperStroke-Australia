@@ -99,6 +99,7 @@
 {% endstyle %}
 
 <div class="custom-product-cards">
+  <div class="page-width">
   <div class="grid">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
@@ -112,5 +113,6 @@
         </div>
       {% endif %}
     {% endfor %}
+  </div>
   </div>
 </div>
