@@ -270,6 +270,56 @@
         "background_color": "#000000",
         "font_color": "#000000"
       }
+    },
+    "custom_block_product_m3kajK": {
+      "type": "custom-block-product",
+      "blocks": {
+        "product_block_XbPaJF": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/SS_DP_Grip.webp",
+            "title": "Deadpool",
+            "block_text": "Tour 2.0",
+            "product": "marvel-deadpool-wolverine-putter-grips",
+            "variant_id": "50144143671614",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        },
+        "product_block_pMYb8m": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/SS_W_Grip.webp",
+            "title": "Wolverine",
+            "block_text": "Tour 2.0",
+            "product": "marvel-deadpool-wolverine-putter-grips",
+            "variant_id": "50144143638846",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_XbPaJF",
+        "product_block_pMYb8m"
+      ],
+      "name": "Product or Variant Blocks",
+      "settings": {
+        "subheading": "",
+        "subheading_color": "#ffffff",
+        "heading": "Deadpool & Wolverine Collection",
+        "heading_color": "#ffffff",
+        "rich_text": "<p>Be a part of the greatest frenemy story of all time! Introducing vibrant new putter grips inspired by Deadpool & Wolverine, the newest additions to the<strong>Marvel | SuperStroke</strong>collection.</p>",
+        "richtext_color": "#ffffff",
+        "padding_top": 52,
+        "padding_bottom": 20,
+        "background_color": "#000000",
+        "font_color": "#000000"
+      }
     }
   },
   "order": [
@@ -277,6 +327,7 @@
     "fullwidth_slideshow_b3cFXR",
     "custom_product_list_M6b77Q",
     "custom_block_product_4XzRbB",
-    "custom_block_product_3FHHWG"
+    "custom_block_product_3FHHWG",
+    "custom_block_product_m3kajK"
   ]
 }
