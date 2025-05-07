@@ -146,35 +146,20 @@
         "product_block_CxkgE4": {
           "type": "product_block",
           "settings": {
-            "image": "shopify://shop_images/Darth_Vader_Photography_0007__LFL_copy_3.webp",
-            "title": "marvel",
-            "product": "marvel-super-heroes-putter-grips",
-            "variant_id": "50072845975870",
+            "image": "shopify://shop_images/WEB_Miles_Morales_Landing_040425.webp",
+            "title": "Miles Morales",
+            "product": "marvel-miles-morales-putter-grip",
+            "variant_id": "",
             "title_color": "#ffffff",
             "price_color": "#ffffff",
             "button_text_color": "#ffffff",
             "button_background_color": "#c64242"
           }
-        },
-        "product_block_yeb9HE": {
-          "type": "product_block",
-          "settings": {
-            "image": "shopify://shop_images/Darth_Vader_Photography_0004__LFL_copy_2.webp",
-            "title": "marvel 2",
-            "product": "marvel-super-heroes-putter-grips",
-            "variant_id": "50072845943102",
-            "title_color": "#000000",
-            "price_color": "#000000",
-            "button_text_color": "#ffffff",
-            "button_background_color": "#000000"
-          }
         }
       },
       "block_order": [
-        "product_block_CxkgE4",
-        "product_block_yeb9HE"
+        "product_block_CxkgE4"
       ],
-      "disabled": true,
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
