@@ -70,11 +70,32 @@
       ],
       "name": "Custom Product Cards",
       "settings": {
-        "background_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "title_color": "#000000",
-        "price_color": "#333333"
+        "background_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "title_color": "#ffffff",
+        "price_color": "#ffffff"
+      }
+    },
+    "rich_text_full_width_68WqM3": {
+      "type": "rich-text-full-width",
+      "name": "Rich text Full Width",
+      "settings": {
+        "title": "More Coming Soon",
+        "sub_heading": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#ffffff",
+        "color_text": "#ffffff",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "section_color_bg": "#000000",
+        "section_gradient_bg": ""
       }
     }
   },
@@ -82,6 +103,7 @@
     "main",
     "image_with_link_MwJywL",
     "rich_text_full_width_W6Jyt4",
-    "custom_prodcut_cards_xGGQhn"
+    "custom_prodcut_cards_xGGQhn",
+    "rich_text_full_width_68WqM3"
   ]
 }
