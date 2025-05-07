@@ -59,7 +59,7 @@
           "type": "description",
           "settings": {
             "full_width": false,
-            "show_tabs": true,
+            "show_tabs": false,
             "tab_direction": "horizontal",
             "icon_1": "",
             "tab_1_title": "Description",
