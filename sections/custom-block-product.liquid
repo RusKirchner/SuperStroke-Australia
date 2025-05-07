@@ -86,6 +86,11 @@
           "label": "Block Title"
         },
         {
+          "type": "text",
+          "id": "block_text",
+          "label": "Block Text"
+        },
+        {
           "type": "product",
           "id": "product",
           "label": "Select Product"
@@ -184,6 +189,10 @@
     
             {% if block.settings.title %}
               <h3 style="color: {{ block.settings.title_color }}">{{ block.settings.title }}</h3>
+            {% endif %}
+
+            {% if block.settings.block_text %}
+              <h3 style="color: {{ block.settings.title_color }}">{{ block.settings.block_text }}</h3>
             {% endif %}
     
             {% if selected_variant %}
