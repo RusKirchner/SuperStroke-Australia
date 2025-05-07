@@ -1,6 +1,80 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Variants as Blocks",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "variant_block",
+      "name": "Variant Block",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        },
+        {
+          "type": "text",
+          "id": "variant_id",
+          "label": "Variant ID (required)",
+          "info": "Find this in the product admin under variant details"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Variant Selector"
+    }
+  ]
+}
 {% endschema %}
+
+<div class="variant-selector">
+  {% for block in section.blocks %}
+    {% assign product = block.settings.product %}
+    {% assign variant_id = block.settings.variant_id %}
+    {% assign variant = product.variants | where: "id", variant_id | first %}
+    {% assign custom_image = block.settings.custom_image | img_url: '600x' %}
+    {% assign variant_image = variant.image | img_url: '600x' %}
+    {% assign fallback_image = product.featured_image | img_url: '600x' %}
+
+    {% if variant and product %}
+      <button class="variant-button"
+              data-image="{{ custom_image | default: variant_image | default: fallback_image }}"
+              data-title="{{ product.title }} - {{ variant.title }}">
+        {{ product.title }} - {{ variant.title }}
+      </button>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="variant-display">
+  <img id="variant-display-image" src="" alt="Variant Image" />
+  <h3 id="variant-display-title"></h3>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.variant-button');
+    const imageEl = document.getElementById('variant-display-image');
+    const titleEl = document.getElementById('variant-display-title');
+
+    if (buttons.length) {
+      const firstBtn = buttons[0];
+      imageEl.src = firstBtn.getAttribute('data-image');
+      titleEl.textContent = firstBtn.getAttribute('data-title');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          imageEl.src = this.getAttribute('data-image');
+          titleEl.textContent = this.getAttribute('data-title');
+        });
+      });
+    }
+  });
+</script>
