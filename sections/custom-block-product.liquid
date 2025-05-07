@@ -16,6 +16,38 @@
       "type": "richtext",
       "id": "rich_text",
       "label": "Rich Text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "font_color",
+      "label": "Section Font Color",
+      "default": "#000000"
     }
   ],
   "blocks": [
@@ -43,6 +75,12 @@
           "id": "variant_id",
           "label": "Variant ID (optional)",
           "info": "Paste the exact Variant ID from Shopify admin to show that variant’s price and link"
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Block Font Color",
+          "default": "#000000"
         }
       ]
     }
@@ -56,7 +94,13 @@
 }
 {% endschema %}
 
-<div class="product-variant-blocks">
+<div class="product-variant-blocks"
+     style="
+        background-color: {{ section.settings.background_color }};
+        color: {{ section.settings.font_color }};
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+     ">
   {% if section.settings.subheading != blank %}
     <h4>{{ section.settings.subheading }}</h4>
   {% endif %}
@@ -87,7 +131,7 @@
         {% endif %}
       {% endif %}
 
-      <div class="block" {{ block.shopify_attributes }}>
+      <div class="block" {{ block.shopify_attributes }} style="color: {{ block.settings.font_color }}">
         {% if block.settings.image %}
           <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}">
         {% endif %}
@@ -108,10 +152,6 @@
 </div>
 
 <style>
-  .product-variant-blocks {
-    padding: 40px 20px;
-    text-align: center;
-  }
   .blocks-grid {
     display: grid;
     gap: 30px;
@@ -141,7 +181,7 @@
     margin-bottom: 10px;
   }
   .product-link {
-    color: #007acc;
+    color: inherit;
     text-decoration: underline;
   }
 </style>
