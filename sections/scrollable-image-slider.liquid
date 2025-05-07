@@ -86,8 +86,11 @@
       slidesPerView: "auto",
       spaceBetween: 16,
       freeMode: true,
-      mousewheel: true,
       grabCursor: true,
+      mousewheel: {
+        forceToAxis: true, // ⬅️ Important: allow scroll only on horizontal axis
+        releaseOnEdges: true // allows normal vertical page scroll when at edges
+      },
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar"
