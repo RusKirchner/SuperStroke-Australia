@@ -141,17 +141,19 @@
 <div class="container">
   <div class="page-width">
     <div class="product-variant-blocks-inner">
-      {% if section.settings.subheading != blank %}
-        <h4 style="color: {{ section.settings.subheading_color }}">{{ section.settings.subheading }}</h4>
-      {% endif %}
-    
-      {% if section.settings.heading != blank %}
-        <h2 style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
-      {% endif %}
-    
-      {% if section.settings.rich_text != blank %}
-        <div class="rich-text" style="color: {{ section.settings.richtext_color }}">
-          {{ section.settings.rich_text }}
+      <div class="product-variant">
+        {% if section.settings.subheading != blank %}
+          <h4 style="color: {{ section.settings.subheading_color }}">{{ section.settings.subheading }}</h4>
+        {% endif %}
+      
+        {% if section.settings.heading != blank %}
+          <h2 style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
+        {% endif %}
+      
+        {% if section.settings.rich_text != blank %}
+          <div class="rich-text" style="color: {{ section.settings.richtext_color }}">
+            {{ section.settings.rich_text }}
+          </div>
         </div>
       {% endif %}
     
