@@ -123,6 +123,7 @@
     },
     "custom_product_list_M6b77Q": {
       "type": "custom-product-list",
+      "disabled": true,
       "settings": {
         "title": "MARVEL COLLECTION",
         "sub-title": "",
@@ -168,8 +169,8 @@
         "heading_color": "#ffffff",
         "rich_text": "<p>Introducing the all-new Miles Morales Putter Grip, inspired by Marvel's legendary Spider-Man, featuring sleek design and unmatched performance.</p>",
         "richtext_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 52,
+        "padding_bottom": 20,
         "background_color": "#000000",
         "font_color": "#000000"
       }
