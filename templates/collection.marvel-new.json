@@ -351,9 +351,30 @@
         "rich_text": "<p>Introducing the all-new Venom Putter Grip, inspired by Marvel's iconic anti-hero, featuring bold design and unmatched performance.</p>",
         "richtext_color": "#ffffff",
         "padding_top": 52,
-        "padding_bottom": 40,
+        "padding_bottom": 0,
         "background_color": "#000000",
         "font_color": "#000000"
+      }
+    },
+    "rich_text_full_width_FfLiwc": {
+      "type": "rich-text-full-width",
+      "name": "Rich text Full Width",
+      "settings": {
+        "title": "More Coming Soon",
+        "sub_heading": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#ffffff",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "section_color_bg": "#000000",
+        "section_gradient_bg": ""
       }
     }
   },
@@ -364,6 +385,7 @@
     "custom_block_product_4XzRbB",
     "custom_block_product_3FHHWG",
     "custom_block_product_m3kajK",
-    "custom_block_product_K68zd7"
+    "custom_block_product_K68zd7",
+    "rich_text_full_width_FfLiwc"
   ]
 }
