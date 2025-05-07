@@ -95,6 +95,27 @@
         "enable_video_looping": false
       }
     },
+    "image_with_text_9EpfA8": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Darth_Vader_Photography_0006__LFL_copy_7.webp",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "left",
+        "title": "Engineered for Maximum Performance",
+        "text": "<p><strong>Enhanced SPYNE</strong>®<strong> Technology</strong> – The new <a href=\"https://superstrokeusa.com/pages/spyne%E2%84%A2-technolgy-grips\">SPYNE</a>®<a href=\"https://superstrokeusa.com/pages/spyne%E2%84%A2-technolgy-grips\"> Technology</a> has an improved, embossed ridge along the underside of the grip, engineered to make it easier to square the face at impact.  </p><p><strong>New Multi-Zone Texturing</strong> – Strategically placed textured in high-sensory areas designed to optimize feedback and comfort from the incredibly soft polyurethane outer layer.  </p><p><strong>No Taper Technology</strong> – Our patented No Taper minimizes grip pressure with an advanced parallel design that enables golfers to quiet their hands and add consistency to their stroke.  </p><p><strong>Tech-Port</strong> – Located at the top of SuperStroke grips, Tech-Port allows golfers to easily add game-improvement options including the patented CounterCore weight system and performance tracking sensors. </p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": ""
+      }
+    },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -114,6 +135,7 @@
   },
   "order": [
     "main",
+    "image_with_text_9EpfA8",
     "recommendations",
     "recent"
   ]
