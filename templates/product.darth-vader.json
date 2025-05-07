@@ -193,6 +193,8 @@
       ],
       "name": "Scrollable Image Slider",
       "settings": {
+        "title": "Gallery",
+        "enlarge_title": false,
         "background_color": "#ffffff"
       }
     }
