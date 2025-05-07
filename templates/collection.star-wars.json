@@ -54,11 +54,34 @@
         "section_color_bg": "#000000",
         "section_gradient_bg": ""
       }
+    },
+    "custom_prodcut_cards_xGGQhn": {
+      "type": "custom-prodcut-cards",
+      "blocks": {
+        "product_t7xjW4": {
+          "type": "product",
+          "settings": {
+            "product": "marvel-super-heroes-putter-grips"
+          }
+        }
+      },
+      "block_order": [
+        "product_t7xjW4"
+      ],
+      "name": "Custom Product Cards",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title_color": "#000000",
+        "price_color": "#333333"
+      }
     }
   },
   "order": [
     "main",
     "image_with_link_MwJywL",
-    "rich_text_full_width_W6Jyt4"
+    "rich_text_full_width_W6Jyt4",
+    "custom_prodcut_cards_xGGQhn"
   ]
 }
