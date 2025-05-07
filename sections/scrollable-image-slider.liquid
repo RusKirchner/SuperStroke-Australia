@@ -53,6 +53,7 @@
         {% endif %}
       {% endfor %}
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 </div>
 
@@ -86,7 +87,11 @@
       spaceBetween: 16,
       freeMode: true,
       mousewheel: true,
-      grabCursor: true
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar"
+      }
     });
   });
 </script>
