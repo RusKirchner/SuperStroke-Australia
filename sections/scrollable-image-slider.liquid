@@ -53,7 +53,7 @@
       {% if block.settings.image %}
         <div class="slider-item" style="min-width: {{ section.settings.image_width }}px;">
           <img
-            src="{{ block.settings.image | image_url: width: 1000 }}"
+            src="{{ block.settings.image | img_url: width: 1000 }}"
             alt="{{ block.settings.alt_text | escape }}"
             loading="lazy"
           >
