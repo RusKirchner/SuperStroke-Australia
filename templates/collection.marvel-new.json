@@ -149,6 +149,7 @@
           "settings": {
             "image": "shopify://shop_images/WEB_Miles_Morales_Landing_040425.webp",
             "title": "Miles Morales",
+            "block_text": "Tour 2.0",
             "product": "marvel-miles-morales-putter-grip",
             "variant_id": "",
             "title_color": "#ffffff",
