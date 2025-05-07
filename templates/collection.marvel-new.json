@@ -320,6 +320,41 @@
         "background_color": "#000000",
         "font_color": "#000000"
       }
+    },
+    "custom_block_product_K68zd7": {
+      "type": "custom-block-product",
+      "blocks": {
+        "product_block_kkwmqQ": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/SS_Venom_Grip.webp",
+            "title": "Venom",
+            "block_text": "Tour 2.0",
+            "product": "marvel-venom-putter-grip",
+            "variant_id": "",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_kkwmqQ"
+      ],
+      "name": "Product or Variant Blocks",
+      "settings": {
+        "subheading": "",
+        "subheading_color": "#ffffff",
+        "heading": "Venom Putter Grip",
+        "heading_color": "#ffffff",
+        "rich_text": "<p>Introducing the all-new Venom Putter Grip, inspired by Marvel's iconic anti-hero, featuring bold design and unmatched performance.</p>",
+        "richtext_color": "#ffffff",
+        "padding_top": 52,
+        "padding_bottom": 40,
+        "background_color": "#000000",
+        "font_color": "#000000"
+      }
     }
   },
   "order": [
@@ -328,6 +363,7 @@
     "custom_product_list_M6b77Q",
     "custom_block_product_4XzRbB",
     "custom_block_product_3FHHWG",
-    "custom_block_product_m3kajK"
+    "custom_block_product_m3kajK",
+    "custom_block_product_K68zd7"
   ]
 }
