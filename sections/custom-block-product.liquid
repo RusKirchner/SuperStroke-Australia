@@ -1,6 +1,123 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Product Blocks Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Rich Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_block",
+      "name": "Product Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Block Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Block Title"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Product Blocks Section",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
+<div class="product-blocks-section">
+  {% if section.settings.subheading != blank %}
+    <h4>{{ section.settings.subheading }}</h4>
+  {% endif %}
+  {% if section.settings.heading != blank %}
+    <h2>{{ section.settings.heading }}</h2>
+  {% endif %}
+  {% if section.settings.rich_text != blank %}
+    <div class="rich-text">{{ section.settings.rich_text }}</div>
+  {% endif %}
+
+  <div class="blocks-grid">
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product] %}
+      <div class="block" {{ block.shopify_attributes }}>
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}">
+        {% endif %}
+
+        {% if block.settings.title %}
+          <h3>{{ block.settings.title }}</h3>
+        {% endif %}
+
+        {% if product %}
+          <p class="price">{{ product.price | money }}</p>
+          <a href="{{ product.url }}" class="product-link">View Product</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .product-blocks-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .blocks-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-top: 30px;
+  }
+  .block {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    text-align: left;
+    transition: box-shadow 0.3s;
+  }
+  .block:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .block img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .product-link {
+    color: #007acc;
+    text-decoration: underline;
+  }
+</style>
