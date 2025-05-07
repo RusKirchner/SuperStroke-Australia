@@ -15,8 +15,8 @@
         {
           "type": "text",
           "id": "variant_id",
-          "label": "Variant ID (required)",
-          "info": "Find this in the product admin under variant details"
+          "label": "Variant ID",
+          "info": "Get this from the product admin URL"
         },
         {
           "type": "image_picker",
@@ -37,17 +37,24 @@
 <div class="variant-selector">
   {% for block in section.blocks %}
     {% assign product = block.settings.product %}
-    {% assign variant_id = block.settings.variant_id %}
-    {% assign variant = product.variants | where: "id", variant_id | first %}
-    {% assign custom_image = block.settings.custom_image | img_url: '600x' %}
-    {% assign variant_image = variant.image | img_url: '600x' %}
-    {% assign fallback_image = product.featured_image | img_url: '600x' %}
+    {% assign variant_id = block.settings.variant_id | plus: 0 %}
+    {% assign custom_image = block.settings.custom_image %}
 
-    {% if variant and product %}
+    {% if product and variant_id %}
+      {% assign variant = product.variants | where: "id", variant_id | first %}
+      {% assign variant_image = variant.image | img_url: '600x' %}
+      {% assign product_image = product.featured_image | img_url: '600x' %}
+      {% assign custom_image_url = custom_image | img_url: '600x' %}
+
+      {% assign display_image = custom_image_url | default: variant_image | default: product_image %}
+
       <button class="variant-button"
-              data-image="{{ custom_image | default: variant_image | default: fallback_image }}"
-              data-title="{{ product.title }} - {{ variant.title }}">
-        {{ product.title }} - {{ variant.title }}
+              data-image="{{ display_image }}"
+              data-title="{{ product.title }}"
+              data-variant="{{ variant.title }}"
+              data-price="{{ variant.price | money }}">
+        <strong>{{ product.title }}</strong><br>
+        {{ variant.title }} - {{ variant.price | money }}
       </button>
     {% endif %}
   {% endfor %}
@@ -56,6 +63,8 @@
 <div class="variant-display">
   <img id="variant-display-image" src="" alt="Variant Image" />
   <h3 id="variant-display-title"></h3>
+  <p id="variant-display-variant"></p>
+  <p id="variant-display-price"></p>
 </div>
 
 <script>
@@ -63,16 +72,22 @@
     const buttons = document.querySelectorAll('.variant-button');
     const imageEl = document.getElementById('variant-display-image');
     const titleEl = document.getElementById('variant-display-title');
+    const variantEl = document.getElementById('variant-display-variant');
+    const priceEl = document.getElementById('variant-display-price');
 
     if (buttons.length) {
       const firstBtn = buttons[0];
       imageEl.src = firstBtn.getAttribute('data-image');
       titleEl.textContent = firstBtn.getAttribute('data-title');
+      variantEl.textContent = firstBtn.getAttribute('data-variant');
+      priceEl.textContent = firstBtn.getAttribute('data-price');
 
       buttons.forEach(button => {
         button.addEventListener('click', function () {
           imageEl.src = this.getAttribute('data-image');
           titleEl.textContent = this.getAttribute('data-title');
+          variantEl.textContent = this.getAttribute('data-variant');
+          priceEl.textContent = this.getAttribute('data-price');
         });
       });
     }
