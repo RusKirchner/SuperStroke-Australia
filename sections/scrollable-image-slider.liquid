@@ -54,6 +54,9 @@
       {% endfor %}
     </div>
     <div class="swiper-pagination"></div>
+    <div class="custom-progress-bar">
+  <div class="progress-fill"></div>
+</div>
   </div>
 </div>
 
@@ -90,6 +93,21 @@
 .swiper-pagination-progressbar-fill {
   background: #000; /* You can change this to match your brand */
 }
+
+  .custom-progress-bar {
+  height: 4px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  background: #000;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
 </style>
 
 <script>
@@ -102,11 +120,14 @@
       mousewheel: {
         forceToAxis: true, // ⬅️ Important: allow scroll only on horizontal axis
         releaseOnEdges: true // allows normal vertical page scroll when at edges
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar"
       }
     });
+    swiper.on('progress', function (progress) {
+    // progress is a value between 0 and 1
+    const fill = document.querySelector('.progress-fill');
+    if (fill) {
+      fill.style.width = `${progress * 100}%`;
+    }
+  });
   });
 </script>
