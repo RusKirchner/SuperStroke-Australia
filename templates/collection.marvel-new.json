@@ -139,29 +139,11 @@
         "grid": 3,
         "grid_mobile": "1"
       }
-    },
-    "variants_as_block_FKRGzk": {
-      "type": "variants-as-block",
-      "blocks": {
-        "variant_block_tNRNHP": {
-          "type": "variant_block",
-          "settings": {
-            "product": "marvel-super-heroes-putter-grips",
-            "variant_id": "50072845943102"
-          }
-        }
-      },
-      "block_order": [
-        "variant_block_tNRNHP"
-      ],
-      "name": "Variant Selector",
-      "settings": {}
     }
   },
   "order": [
     "main",
     "fullwidth_slideshow_b3cFXR",
-    "custom_product_list_M6b77Q",
-    "variants_as_block_FKRGzk"
+    "custom_product_list_M6b77Q"
   ]
 }

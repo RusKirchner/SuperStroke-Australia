@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "Product Blocks Section",
+  "name": "Product or Variant Blocks",
   "settings": [
     {
       "type": "text",
@@ -21,7 +21,7 @@
   "blocks": [
     {
       "type": "product_block",
-      "name": "Product Block",
+      "name": "Product or Variant Block",
       "settings": [
         {
           "type": "image_picker",
@@ -37,21 +37,26 @@
           "type": "product",
           "id": "product",
           "label": "Select Product"
+        },
+        {
+          "type": "text",
+          "id": "variant_id",
+          "label": "Variant ID (optional)",
+          "info": "Paste a specific variant ID if you want to override the default"
         }
       ]
     }
   ],
-  "max_blocks": 12,
   "presets": [
     {
-      "name": "Product Blocks Section",
+      "name": "Product or Variant Blocks",
       "category": "Custom"
     }
   ]
 }
 {% endschema %}
 
-<div class="product-blocks-section">
+<div class="product-variant-blocks">
   {% if section.settings.subheading != blank %}
     <h4>{{ section.settings.subheading }}</h4>
   {% endif %}
@@ -65,6 +70,16 @@
   <div class="blocks-grid">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
+      {% assign variant = nil %}
+
+      {% if product %}
+        {% if block.settings.variant_id != blank %}
+          {% assign variant = product.variants | where: "id", block.settings.variant_id | first %}
+        {% else %}
+          {% assign variant = product.variants.first %}
+        {% endif %}
+      {% endif %}
+
       <div class="block" {{ block.shopify_attributes }}>
         {% if block.settings.image %}
           <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}">
@@ -74,9 +89,11 @@
           <h3>{{ block.settings.title }}</h3>
         {% endif %}
 
-        {% if product %}
-          <p class="price">{{ product.price | money }}</p>
-          <a href="{{ product.url }}" class="product-link">View Product</a>
+        {% if variant %}
+          <p class="price">{{ variant.price | money }}</p>
+          <a href="{{ product.url }}{% if block.settings.variant_id != blank %}?variant={{ block.settings.variant_id }}{% endif %}" class="product-link">
+            View Product
+          </a>
         {% endif %}
       </div>
     {% endfor %}
@@ -84,7 +101,7 @@
 </div>
 
 <style>
-  .product-blocks-section {
+  .product-variant-blocks {
     padding: 40px 20px;
     text-align: center;
   }
