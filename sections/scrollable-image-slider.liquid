@@ -1,6 +1,92 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Scrollable Image Slider",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Image width (px)",
+      "min": 100,
+      "max": 600,
+      "step": 20,
+      "default": 300
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text",
+          "default": "Slider image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "Scrollable Image Slider",
+      "category": "Media"
+    }
+  ]
+}
 {% endschema %}
+
+<div class="scrollable-slider" style="background-color: {{ section.settings.background_color }};">
+  <div class="slider-container">
+    {% for block in section.blocks %}
+      {% if block.settings.image %}
+        <div class="slider-item" style="min-width: {{ section.settings.image_width }}px;">
+          <img
+            src="{{ block.settings.image | image_url: width: 1000 }}"
+            alt="{{ block.settings.alt_text | escape }}"
+            loading="lazy"
+          >
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.scrollable-slider {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 0;
+}
+
+.slider-container {
+  display: flex;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.slider-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+</style>
