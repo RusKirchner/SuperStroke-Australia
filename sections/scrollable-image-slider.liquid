@@ -45,7 +45,7 @@
         {% if block.settings.image %}
           <div class="swiper-slide">
             <img
-              src="{{ block.settings.image | image_url: width: 1200 }}"
+              src="{{ block.settings.image | img_url: 'master' }}"
               alt="{{ block.settings.alt_text }}"
               loading="lazy"
             >
