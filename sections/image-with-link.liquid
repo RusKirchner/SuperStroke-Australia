@@ -1,6 +1,42 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Image with Link",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Upload Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Alt Text",
+      "default": "Linked image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Link"
+    }
+  ]
+}
 {% endschema %}
+
+{% if section.settings.image %}
+  <a href="{{ section.settings.link_url | escape }}" {% if section.settings.link_url != blank %}target="_blank"{% endif %}>
+    <img 
+      src="{{ section.settings.image | image_url: 'master' }}" 
+      alt="{{ section.settings.alt_text | escape }}" 
+      loading="lazy" 
+      width="100%"
+    >
+  </a>
+{% else %}
+  <p style="text-align:center;">Please upload an image and add a link.</p>
+{% endif %}
