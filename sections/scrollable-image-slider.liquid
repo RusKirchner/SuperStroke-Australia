@@ -38,8 +38,8 @@
 }
 {% endschema %}
 
-<div class="swiper-scroll-wrapper container" style="background-color: {{ section.settings.background_color }};">
-  <div class="swiper mySwiper">
+<div class="swiper-scroll-wrapper" style="background-color: {{ section.settings.background_color }};">
+  <div class="swiper mySwiper container">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         {% if block.settings.image %}
@@ -58,10 +58,13 @@
 </div>
 
 <style>
-/* .swiper-scroll-wrapper {
+.swiper-scroll-wrapper {
   padding: 20px 0;
-} */
-
+}
+.mySwiper.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .swiper {
   width: 100%;
 }
@@ -89,6 +92,12 @@
 
 .swiper-pagination-progressbar-fill {
   background: #000; /* You can change this to match your brand */
+}
+@media (min-width: 1400px){
+  .mySwiper.container {
+  padding-left: 60px;
+  padding-right: 60px;
+  }
 }
 </style>
 
