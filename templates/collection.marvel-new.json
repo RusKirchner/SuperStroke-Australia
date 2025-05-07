@@ -149,7 +149,11 @@
             "image": "shopify://shop_images/Darth_Vader_Photography_0007__LFL_copy_3.webp",
             "title": "marvel",
             "product": "marvel-super-heroes-putter-grips",
-            "variant_id": "50072845975870"
+            "variant_id": "50072845975870",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
           }
         },
         "product_block_yeb9HE": {
@@ -158,7 +162,11 @@
             "image": "shopify://shop_images/Darth_Vader_Photography_0004__LFL_copy_2.webp",
             "title": "marvel 2",
             "product": "marvel-super-heroes-putter-grips",
-            "variant_id": "50072845943102"
+            "variant_id": "50072845943102",
+            "title_color": "#000000",
+            "price_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#000000"
           }
         }
       },
@@ -169,8 +177,15 @@
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
+        "subheading_color": "#000000",
         "heading": "",
-        "rich_text": ""
+        "heading_color": "#000000",
+        "rich_text": "",
+        "richtext_color": "#333333",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "background_color": "#000000",
+        "font_color": "#000000"
       }
     }
   },
