@@ -33,10 +33,29 @@
         "image": "shopify://shop_images/DarthVaderHero-3up.webp",
         "alt_text": "Linked image"
       }
+    },
+    "rich_text_EyVX6g": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "title": "Rich text",
+        "text": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store. Describe products, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ecf1f2",
+        "gradient_bg": "linear-gradient(136deg, rgba(10, 234, 237, 1) 11%, rgba(250, 13, 253, 1) 84%)"
+      }
     }
   },
   "order": [
     "main",
-    "image_with_link_MwJywL"
+    "image_with_link_MwJywL",
+    "rich_text_EyVX6g"
   ]
 }
