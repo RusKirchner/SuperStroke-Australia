@@ -139,11 +139,35 @@
         "grid": 3,
         "grid_mobile": "1"
       }
+    },
+    "custom_block_product_4XzRbB": {
+      "type": "custom-block-product",
+      "blocks": {
+        "product_block_CxkgE4": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/Darth_Vader_Photography_0007__LFL_copy_3.webp",
+            "title": "marvel",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "50072845975870"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_CxkgE4"
+      ],
+      "name": "Product or Variant Blocks",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "rich_text": ""
+      }
     }
   },
   "order": [
     "main",
     "fullwidth_slideshow_b3cFXR",
-    "custom_product_list_M6b77Q"
+    "custom_product_list_M6b77Q",
+    "custom_block_product_4XzRbB"
   ]
 }
