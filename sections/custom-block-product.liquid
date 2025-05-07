@@ -176,6 +176,7 @@
           {% endif %}
     
           <div class="block" {{ block.shopify_attributes }}>
+            <a href="{{ product.url }}?variant={{ selected_variant.id }}"
             {% if block.settings.image %}
               <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}">
             {% endif %}
@@ -186,18 +187,6 @@
     
             {% if selected_variant %}
               <p class="price" style="color: {{ block.settings.price_color }}">{{ selected_variant.price | money }}</p>
-              <a href="{{ product.url }}?variant={{ selected_variant.id }}"
-                 class="product-link"
-                 style="
-                   color: {{ block.settings.button_text_color }};
-                   background-color: {{ block.settings.button_background_color }};
-                   padding: 10px 15px;
-                   display: inline-block;
-                   text-decoration: none;
-                   border-radius: 4px;
-                   margin-top: 10px;
-                 ">
-                View Product
               </a>
             {% endif %}
           </div>
