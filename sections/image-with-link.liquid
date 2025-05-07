@@ -31,12 +31,10 @@
 {% if section.settings.image %}
   <a href="{{ section.settings.link_url | escape }}" {% if section.settings.link_url != blank %}target="_blank"{% endif %}>
     <img 
-      src="{{ section.settings.image | image_url: 'master' }}" 
+      src="{{ section.settings.image | img_url: 'master' }}" 
       alt="{{ section.settings.alt_text | escape }}" 
       loading="lazy" 
       width="100%"
     >
   </a>
-{% else %}
-  <p style="text-align:center;">Please upload an image and add a link.</p>
 {% endif %}
