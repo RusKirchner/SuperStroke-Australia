@@ -175,12 +175,108 @@
         "background_color": "#000000",
         "font_color": "#000000"
       }
+    },
+    "custom_block_product_3FHHWG": {
+      "type": "custom-block-product",
+      "blocks": {
+        "product_block_Db8H7C": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/WEB_Miles_Morales_Landing_040425.webp",
+            "title": "Spider-Man",
+            "block_text": "Tour 2.0",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "50072845943102",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        },
+        "product_block_7FM6WB": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/IronmanGrip.webp",
+            "title": "Iron Man",
+            "block_text": "Tour 2.0",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "50072845975870",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        },
+        "product_block_DPhMKa": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/HulkGrip.webp",
+            "title": "Hulk",
+            "block_text": "Tour 2.0",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "50072846008638",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        },
+        "product_block_dwtY4R": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/WEB_Thor_Landing_040425.webp",
+            "title": "Thor",
+            "block_text": "Tour 2.0",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "51689223651646",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        },
+        "product_block_LBQxaG": {
+          "type": "product_block",
+          "settings": {
+            "image": "shopify://shop_images/WEB_Black_Panther_Landing_WIP.webp",
+            "title": "Black Panther",
+            "block_text": "Tour 2.0",
+            "product": "marvel-super-heroes-putter-grips",
+            "variant_id": "51689223684414",
+            "title_color": "#ffffff",
+            "price_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#c64242"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_Db8H7C",
+        "product_block_7FM6WB",
+        "product_block_DPhMKa",
+        "product_block_dwtY4R",
+        "product_block_LBQxaG"
+      ],
+      "name": "Product or Variant Blocks",
+      "settings": {
+        "subheading": "",
+        "subheading_color": "#ffffff",
+        "heading": "SUPER HEROES COLLECTION",
+        "heading_color": "#ffffff",
+        "rich_text": "<p>Discover the Marvel Super Heroes Collection by SuperStroke, where your favorite Super Heroes—Spider-Man, Iron Man, and Hulk—come to life on the greens.</p>",
+        "richtext_color": "#ffffff",
+        "padding_top": 52,
+        "padding_bottom": 20,
+        "background_color": "#000000",
+        "font_color": "#000000"
+      }
     }
   },
   "order": [
     "main",
     "fullwidth_slideshow_b3cFXR",
     "custom_product_list_M6b77Q",
-    "custom_block_product_4XzRbB"
+    "custom_block_product_4XzRbB",
+    "custom_block_product_3FHHWG"
   ]
 }
