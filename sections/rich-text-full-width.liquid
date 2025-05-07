@@ -3,10 +3,6 @@
     .section_bg-full {
       background: {{ section.settings.section_color_bg | default: section.settings.section_color_bg }};
     }
-    .section-{{ section.id }} .rich-text-section .large-title,
-    .section-{{ section.id }} .rich-text-section .giant-title {
-      color: {{ section.settings.color_title }};
-    }
   {% endstyle %}
 <div class="relative container container--no-mobile-padding large-row section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="rich-text-section">
   {% style %}
