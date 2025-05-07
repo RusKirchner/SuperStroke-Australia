@@ -42,7 +42,7 @@
           "type": "text",
           "id": "variant_id",
           "label": "Variant ID (optional)",
-          "info": "Paste a specific variant ID if you want to override the default"
+          "info": "Paste the exact Variant ID from Shopify admin to show that variant’s price and link"
         }
       ]
     }
@@ -70,13 +70,20 @@
   <div class="blocks-grid">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
-      {% assign variant = nil %}
+      {% assign variant_id = block.settings.variant_id | plus: 0 %}
+      {% assign selected_variant = nil %}
 
       {% if product %}
-        {% if block.settings.variant_id != blank %}
-          {% assign variant = product.variants | where: "id", block.settings.variant_id | first %}
-        {% else %}
-          {% assign variant = product.variants.first %}
+        {% if variant_id > 0 %}
+          {% for v in product.variants %}
+            {% if v.id == variant_id %}
+              {% assign selected_variant = v %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if selected_variant == nil %}
+          {% assign selected_variant = product.variants.first %}
         {% endif %}
       {% endif %}
 
@@ -89,9 +96,9 @@
           <h3>{{ block.settings.title }}</h3>
         {% endif %}
 
-        {% if variant %}
-          <p class="price">{{ variant.price | money }}</p>
-          <a href="{{ product.url }}{% if block.settings.variant_id != blank %}?variant={{ block.settings.variant_id }}{% endif %}" class="product-link">
+        {% if selected_variant %}
+          <p class="price">{{ selected_variant.price | money }}</p>
+          <a href="{{ product.url }}?variant={{ selected_variant.id }}" class="product-link">
             View Product
           </a>
         {% endif %}
