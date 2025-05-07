@@ -58,15 +58,15 @@
     "custom_prodcut_cards_xGGQhn": {
       "type": "custom-prodcut-cards",
       "blocks": {
-        "product_t7xjW4": {
+        "product_7qADrU": {
           "type": "product",
           "settings": {
-            "product": "marvel-super-heroes-putter-grips"
+            "product": "darth-vader-putter-grip"
           }
         }
       },
       "block_order": [
-        "product_t7xjW4"
+        "product_7qADrU"
       ],
       "name": "Custom Product Cards",
       "settings": {
