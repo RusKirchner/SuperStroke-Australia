@@ -156,45 +156,44 @@
     "scrollable_image_slider_HqjjXz": {
       "type": "scrollable-image-slider",
       "blocks": {
-        "image_block_gyf8MB": {
-          "type": "image_block",
+        "slide_hU4znT": {
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Darth_Vader_Photography_0005__LFL_copy_6.webp",
-            "alt_text": "Slider image"
+            "alt_text": "Slide image"
           }
         },
-        "image_block_8zCYJD": {
-          "type": "image_block",
+        "slide_7dEhbt": {
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Darth_Vader_Photography_0004__LFL_copy_2.webp",
-            "alt_text": "Slider image"
+            "alt_text": "Slide image"
           }
         },
-        "image_block_WFRkCP": {
-          "type": "image_block",
+        "slide_G8YQqM": {
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Darth_Vader_Photography_0007__LFL_copy_3.webp",
-            "alt_text": "Slider image"
+            "alt_text": "Slide image"
           }
         },
-        "image_block_PJPmEa": {
-          "type": "image_block",
+        "slide_9WHfjN": {
+          "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Darth_Vader_Photography_0003__LFL_copy_4.webp",
-            "alt_text": "Slider image"
+            "alt_text": "Slide image"
           }
         }
       },
       "block_order": [
-        "image_block_gyf8MB",
-        "image_block_8zCYJD",
-        "image_block_WFRkCP",
-        "image_block_PJPmEa"
+        "slide_hU4znT",
+        "slide_7dEhbt",
+        "slide_G8YQqM",
+        "slide_9WHfjN"
       ],
       "name": "Scrollable Image Slider",
       "settings": {
-        "background_color": "#ffffff",
-        "image_width": 300
+        "background_color": "#ffffff"
       }
     }
   },
