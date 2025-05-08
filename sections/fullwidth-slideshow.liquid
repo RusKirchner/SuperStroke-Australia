@@ -30,7 +30,7 @@
     {% endfor %}
   {% endstyle %}
 
-  <div class="page-widt relative">
+  <div class="page-width relative">
     <div class="full-width relative js-slideshow-section" data-transition="{{ section.settings.slide_transition }}" data-autoplay="{{ section.settings.slideshow_autoplay }}" data-autoplayspeed="{{ section.settings.slideshow_autoplay_speed }}000">
       {% for block in section.blocks %}
         {%- if section.settings.height == 'adapt' -%}
@@ -539,3 +539,8 @@
     }
   }
 {% endschema %}
+<style>
+  #shopify-section-template--22990528676158__fullwidth_slideshow_b3cFXR .page-width.relative {
+  max-width: 100%;
+}
+</style>
