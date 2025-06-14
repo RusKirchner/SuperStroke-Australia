@@ -19,7 +19,7 @@
         <a href="{{ collection.url }}" style="text-decoration: none; color: inherit;">
           {% if collection.image %}
             <img src="{{ collection.image | image_url: width: 800 }}" alt="{{ collection.title }}" 
-              style="width: 100%; height: auto; border-radius: 8px;">
+              style="width: 100%;">
           {% endif %}
           <h4 style="margin: 15px 0 10px;">{{ collection.title }}</h4>
         </a>
@@ -97,8 +97,10 @@
 {% endschema %}
 <style>
   .collection-item img {
-  height: 360px !important;
+  height: 360px;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px 8px 0 0;
+}
   }
 </style>
