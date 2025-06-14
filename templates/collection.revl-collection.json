@@ -47,6 +47,7 @@
       "settings": {
         "video_shopify": "shopify://files/videos/cbf7e7f5187641ab85b44938d0dfaa14.HD-1080p-4.8Mbps-48884558.mp4",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "image": "shopify://shop_images/cbf7e7f5187641ab85b44938d0dfaa14.thumbnail.0000000000.webp",
         "video_autoplay": true,
         "video_loop": true,
         "video_hide_controls": true,
