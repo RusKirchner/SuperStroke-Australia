@@ -11,16 +11,21 @@
         {% endif %}
       {% endfor %}
 
-      <div class="collection-item" style="width: calc(50% - 15px); text-align: center;">
+      <div class="collection-item" style="width: calc(50% - 15px); text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
         <a href="{{ collection.url }}" style="text-decoration: none; color: inherit;">
           {% if collection.image %}
             <img src="{{ collection.image | image_url: width: 800 }}" alt="{{ collection.title }}" style="width: 100%; height: auto; border-radius: 8px;">
           {% endif %}
           <h2 style="margin: 15px 0 10px;">{{ collection.title }}</h2>
         </a>
+
         {% if matched_description != blank %}
-          <p style="color: #555;">{{ matched_description }}</p>
+          <p style="color: #555; margin-bottom: 15px;">{{ matched_description }}</p>
         {% endif %}
+
+        <a href="{{ collection.url }}" style="display: inline-block; padding: 10px 20px; background-color: #000; color: #fff; border-radius: 5px; text-decoration: none; transition: 0.3s;">
+          Explore Collection
+        </a>
       </div>
     {% endfor %}
   </div>
@@ -47,7 +52,6 @@
 </div>
 
 {% endpaginate %}
-
 {% schema %}
 {
   "name": "Paginated Collections",
@@ -70,7 +74,7 @@
       ]
     }
   ],
-  "max_blocks": 66,
+  "max_blocks": 50,
   "presets": [
     {
       "name": "Paginated Collection Grid",
