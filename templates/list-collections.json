@@ -81,11 +81,83 @@
             "collection": "club-grips",
             "description": "Superior club grips offering exceptional comfort and durability for every club in your bag."
           }
+        },
+        "collection_description_GCPPRp": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "limited-editions",
+            "description": "Exclusive designs and special releases that combine style with SuperStroke's renowned performance."
+          }
+        },
+        "collection_description_QC7aJU": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "marvel",
+            "description": "Marvel-themed putter grips featuring your favorite superheroes for a bold and unique look on the course."
+          }
+        },
+        "collection_description_wpVxTX": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "off-the-truck",
+            "description": "Value-priced grips offering SuperStroke performance at competitive prices. Great quality at affordable rates."
+          }
+        },
+        "collection_description_dc8whx": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "putter-grips",
+            "description": "Premium putter grips designed for better control and enhanced performance on the greens."
+          }
+        },
+        "collection_description_yPUJbP": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "putter-weights",
+            "description": "Fine-tune your putter's performance with our precision-engineered counterbalance weights."
+          }
+        },
+        "collection_description_Y6P3Np": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "putting-aids",
+            "description": "Training aids and tools designed to help you perfect your putting stroke and lower your scores."
+          }
+        },
+        "collection_description_bKx4V7": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "revl-club-grips",
+            "description": "Advanced club grips featuring REVL technology for enhanced feel, control, and performance in all conditions."
+          }
+        },
+        "collection_description_ec4G83": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "ryder-cup-limited-edition",
+            "description": "Commemorative Ryder Cup grips celebrating the prestigious tournament. Available in USA and European team designs."
+          }
+        },
+        "collection_description_nC77HU": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "star-wars",
+            "description": "Feel the force with our Star Wars themed putter grips featuring iconic characters from the galaxy far, far away."
+          }
         }
       },
       "block_order": [
         "collection_description_zpYU48",
-        "collection_description_mWWd6f"
+        "collection_description_mWWd6f",
+        "collection_description_GCPPRp",
+        "collection_description_QC7aJU",
+        "collection_description_wpVxTX",
+        "collection_description_dc8whx",
+        "collection_description_yPUJbP",
+        "collection_description_Y6P3Np",
+        "collection_description_bKx4V7",
+        "collection_description_ec4G83",
+        "collection_description_nC77HU"
       ],
       "name": "Paginated Collection Grid",
       "settings": {}
