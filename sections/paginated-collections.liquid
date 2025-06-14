@@ -3,7 +3,14 @@
 <div class="paginated-collections" style="padding: 60px 20px;">
   <div class="collections-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
     {% for collection in collections %}
-      {% assign description_block = section.blocks | where: "settings.collection_handle", collection.handle | first %}
+      {% assign matched_description = '' %}
+
+      {% for block in section.blocks %}
+        {% if block.settings.collection and block.settings.collection.handle == collection.handle %}
+          {% assign matched_description = block.settings.description %}
+        {% endif %}
+      {% endfor %}
+
       <div class="collection-item" style="width: calc(50% - 15px); text-align: center;">
         <a href="{{ collection.url }}" style="text-decoration: none; color: inherit;">
           {% if collection.image %}
@@ -11,8 +18,8 @@
           {% endif %}
           <h2 style="margin: 15px 0 10px;">{{ collection.title }}</h2>
         </a>
-        {% if description_block %}
-          <p style="color: #555;">{{ description_block.settings.description }}</p>
+        {% if matched_description != blank %}
+          <p style="color: #555;">{{ matched_description }}</p>
         {% endif %}
       </div>
     {% endfor %}
@@ -40,6 +47,7 @@
 </div>
 
 {% endpaginate %}
+
 {% schema %}
 {
   "name": "Paginated Collections",
@@ -51,7 +59,7 @@
       "settings": [
         {
           "type": "collection",
-          "id": "collection_handle",
+          "id": "collection",
           "label": "Select Collection"
         },
         {
@@ -62,7 +70,7 @@
       ]
     }
   ],
-  "max_blocks": 50,
+  "max_blocks": 66,
   "presets": [
     {
       "name": "Paginated Collection Grid",
