@@ -15,16 +15,17 @@
     {% if section.settings.video_shopify != blank or section.settings.video_external != blank %}
       <div class="video-container global-border-radius global-border-radius--not-extra-small video-container--image video-container--modal-mobile avoid-overlaps"
         {% if section.settings.video_shopify != blank %}
-          data-video-sources="{%- for source in section.settings.video_shopify.sources -%}
-            {{ source.format }} {{ source.mime_type }} {{ source.url }}
-            {%- unless forloop.last -%}|{%- endunless -%}
-          {%- endfor -%}"
-          data-video-type="mp4"
-        {% elsif section.settings.video_external != blank %}
-          data-video-url="{{ section.settings.video_external | escape }}"
-        {% endif %}
-        data-video-autoplay="false"
-        data-video-loop="false">
+    data-video-sources="{%- for source in section.settings.video_shopify.sources -%}
+      {{ source.format }} {{ source.mime_type }} {{ source.url }}
+      {%- unless forloop.last -%}|{%- endunless -%}
+    {%- endfor -%}"
+    data-video-type="mp4"
+  {% elsif section.settings.video_external != blank %}
+    data-video-url="{{ section.settings.video_external | escape }}"
+  {% endif %}
+  data-video-autoplay="{{ section.settings.video_autoplay | json }}"
+  data-video-loop="{{ section.settings.video_loop | json }}"
+  data-video-hide-controls="{{ section.settings.video_hide_controls | json }}">
         <div class="avoid-overlaps__mobile-container video-container__player">
           <a class="video-container__stop" href="#" aria-label="{{ 'general.accessibility_labels.video_stop' | t | escape }}">{% render 'icon-close' %}</a>
           <div class="video-container__video"></div>
@@ -101,6 +102,24 @@
         "label": "Custom cover image",
         "info": "Required for External videos. Shows over the video before it's played."
       },
+      {
+  "type": "checkbox",
+  "id": "video_autoplay",
+  "label": "Autoplay video",
+  "default": false
+},
+{
+  "type": "checkbox",
+  "id": "video_loop",
+  "label": "Loop video",
+  "default": false
+},
+{
+  "type": "checkbox",
+  "id": "video_hide_controls",
+  "label": "Hide video controls (only for self-hosted)",
+  "default": false
+},
       {
         "type": "header",
         "content": "Overlay"
