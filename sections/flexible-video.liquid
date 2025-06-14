@@ -28,7 +28,20 @@
   data-video-hide-controls="{{ section.settings.video_hide_controls | json }}">
         <div class="avoid-overlaps__mobile-container video-container__player">
           <a class="video-container__stop" href="#" aria-label="{{ 'general.accessibility_labels.video_stop' | t | escape }}">{% render 'icon-close' %}</a>
-          <div class="video-container__video"></div>
+          <video
+  playsinline
+  {% if section.settings.video_autoplay %}autoplay{% endif %}
+  {% if section.settings.video_loop %}loop{% endif %}
+  {% unless section.settings.video_hide_controls %}controls{% endunless %}
+  muted
+  class="video-container__video"
+  style="width: 100%; height: auto;"
+>
+  {%- for source in section.settings.video_shopify.sources -%}
+    <source src="{{ source.url }}" type="{{ source.mime_type }}">
+  {%- endfor -%}
+  Your browser does not support the video tag.
+</video>
 
           {%- liquid
             if section.settings.image
