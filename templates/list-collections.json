@@ -59,7 +59,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/PGAChampionshipGrip2.webp",
         "overlay_color": "#000000",
-        "overlay_opacity": 1,
+        "overlay_opacity": 0.4,
         "content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60
