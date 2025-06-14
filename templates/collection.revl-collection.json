@@ -23,9 +23,27 @@
         "show_sort_by": true,
         "show_featured": true
       }
+    },
+    "video_YNTLcn": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "Video",
+        "overlay_text": "Add a video to tell your story",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "video_YNTLcn"
   ]
 }
