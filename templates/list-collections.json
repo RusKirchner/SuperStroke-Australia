@@ -74,10 +74,18 @@
             "collection": "accessories",
             "description": "Essential golf accessories to complement your equipment and enhance your experience on the course."
           }
+        },
+        "collection_description_mWWd6f": {
+          "type": "collection_description",
+          "settings": {
+            "collection": "club-grips",
+            "description": "Superior club grips offering exceptional comfort and durability for every club in your bag."
+          }
         }
       },
       "block_order": [
-        "collection_description_zpYU48"
+        "collection_description_zpYU48",
+        "collection_description_mWWd6f"
       ],
       "name": "Paginated Collection Grid",
       "settings": {}
