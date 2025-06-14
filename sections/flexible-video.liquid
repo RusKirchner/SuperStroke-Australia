@@ -1,6 +1,119 @@
+{% assign video_type = section.settings.video_type %}
+{% assign video_url = section.settings.video_url %}
+{% assign video_file = section.settings.video_file %}
+
+<div class="video-section {% if section.settings.full_width %}full-width{% else %}page-width{% endif %}" style="padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px; text-align: center;">
+
+  {% if video_type == 'self_hosted' and video_file != blank %}
+    <video
+      playsinline
+      {% if section.settings.autoplay %}autoplay{% endif %}
+      {% if section.settings.loop %}loop{% endif %}
+      {% if section.settings.hide_controls != true %}controls{% endif %}
+      muted
+      style="width: 100%; max-width: 100%; height: auto; border-radius: 8px;"
+    >
+      <source src="{{ video_file | file_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  {% elsif video_type == 'youtube' and video_url contains 'youtube.com' %}
+    <iframe
+      src="https://www.youtube.com/embed/{{ video_url | split: 'v=' | last | split: '&' | first }}?rel=0&showinfo=0{% if section.settings.autoplay %}&autoplay=1{% endif %}{% if section.settings.loop %}&loop=1&playlist={{ video_url | split: 'v=' | last | split: '&' | first }}{% endif %}{% if section.settings.hide_controls %}&controls=0{% endif %}&mute=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16 / 9; border-radius: 8px;">
+    </iframe>
+
+  {% elsif video_type == 'vimeo' and video_url contains 'vimeo.com' %}
+    <iframe
+      src="https://player.vimeo.com/video/{{ video_url | split: '/' | last }}?autoplay={{ section.settings.autoplay | json }}&loop={{ section.settings.loop | json }}&title=0&byline=0&portrait=0{% if section.settings.hide_controls %}&controls=0{% endif %}&muted=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16 / 9; border-radius: 8px;">
+    </iframe>
+  {% else %}
+    <p style="color: red;">Please enter a valid video URL or upload a video.</p>
+  {% endif %}
+
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Flexible Video",
+  "settings": [
+    {
+      "type": "select",
+      "id": "video_type",
+      "label": "Video Type",
+      "options": [
+        { "value": "youtube", "label": "YouTube" },
+        { "value": "vimeo", "label": "Vimeo" },
+        { "value": "self_hosted", "label": "Self-hosted (MP4 upload)" }
+      ],
+      "default": "youtube"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL (YouTube/Vimeo)"
+    },
+    {
+      "type": "video",
+      "id": "video_file",
+      "label": "Self-hosted Video File (MP4)"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop Video",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_controls",
+      "label": "Hide Controls",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width Layout",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "default": 60,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "default": 60,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flexible Video Section",
+      "category": "Media"
+    }
+  ]
+}
 {% endschema %}
