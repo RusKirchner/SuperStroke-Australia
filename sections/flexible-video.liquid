@@ -23,9 +23,9 @@
   {% elsif section.settings.video_external != blank %}
     data-video-url="{{ section.settings.video_external | escape }}"
   {% endif %}
-  data-video-autoplay="{{ section.settings.video_autoplay | json }}"
-  data-video-loop="{{ section.settings.video_loop | json }}"
-  data-video-hide-controls="{{ section.settings.video_hide_controls | json }}">
+  data-video-autoplay="true"
+  data-video-loop="true"
+  data-video-hide-controls="true">
         <div class="avoid-overlaps__mobile-container video-container__player">
           <a class="video-container__stop" href="#" aria-label="{{ 'general.accessibility_labels.video_stop' | t | escape }}">{% render 'icon-close' %}</a>
           <div class="video-container__video"></div>
