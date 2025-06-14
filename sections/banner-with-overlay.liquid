@@ -173,11 +173,15 @@
 
 <style>
   .banner-overlay {
-    position: relative;
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   }
-  
   .banner-overlay::before {
     content: "";
     position: absolute;
