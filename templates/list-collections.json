@@ -1,1 +1,73 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collection list",
+        "display_type": "all",
+        "layout": "magazine",
+        "grid": 4,
+        "grid_mobile": "2",
+        "row_count": 3,
+        "alternate_rows": false,
+        "overlay_url_text": "Shop now",
+        "overlay_url_style": "link_style",
+        "enlarge_title": false,
+        "show_vendor": false,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 10,
+        "color_overlay_text": "#333333",
+        "collection_bg_color": "#fbdfdb",
+        "collection_bg_gradient": "",
+        "collection_text_color": "#333333"
+      }
+    },
+    "banner_with_overlay_QrhC8h": {
+      "type": "banner-with-overlay",
+      "blocks": {
+        "heading_fUt6yY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Collections",
+            "heading_color": "#ffffff",
+            "heading_font_size": 40
+          }
+        },
+        "richtext_KRLHFC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Discover premium golf equipment designed to elevate your game</p>",
+            "text_color": "#ffffff",
+            "text_font_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "heading_fUt6yY",
+        "richtext_KRLHFC"
+      ],
+      "name": "Banner With Overlay",
+      "settings": {
+        "bg_image": "shopify://shop_images/PGAChampionshipGrip2.webp",
+        "overlay_color": "#000000",
+        "overlay_opacity": 1,
+        "content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner_with_overlay_QrhC8h"
+  ]
+}
