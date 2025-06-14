@@ -45,15 +45,18 @@
       "type": "flexible-video",
       "name": "Flexible Video Section",
       "settings": {
-        "video_type": "self_hosted",
-        "video_url": "",
-        "video_file": "shopify://files/videos/cbf7e7f5187641ab85b44938d0dfaa14.HD-1080p-4.8Mbps-48884558.mp4",
-        "autoplay": true,
-        "loop": true,
-        "hide_controls": true,
-        "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "video_shopify": "shopify://files/videos/cbf7e7f5187641ab85b44938d0dfaa14.HD-1080p-4.8Mbps-48884558.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "Video",
+        "overlay_text": "Add a video to tell your story",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
       }
     }
   },
