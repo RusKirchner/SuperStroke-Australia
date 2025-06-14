@@ -71,8 +71,8 @@
         "collection_description_zpYU48": {
           "type": "collection_description",
           "settings": {
-            "collection_handle": "accessories",
-            "description": "adasdasdadasd"
+            "collection": "accessories",
+            "description": "Essential golf accessories to complement your equipment and enhance your experience on the course."
           }
         }
       },
