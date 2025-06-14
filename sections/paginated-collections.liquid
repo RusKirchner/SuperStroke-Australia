@@ -21,9 +21,13 @@
             <img src="{{ collection.image | image_url: width: 800 }}" alt="{{ collection.title }}" 
               style="width: 100%;">
           {% endif %}
-          <h4 style="margin: 15px 0 10px;">{{ collection.title }}</h4>
+      
+          
         </a>
-
+<div class="collection-content">
+  <a href="{{ collection.url }}" style="text-decoration: none; color: inherit;">
+  <h4 style="margin: 15px 0 10px;">{{ collection.title }}</h4>
+  </a>
         {% if matched_description != blank %}
           <p style="color: #555; margin-bottom: 15px;">{{ matched_description }}</p>
         {% endif %}
@@ -38,6 +42,7 @@
           transition: 0.3s;">
           Explore Collection
         </a>
+      </div>
       </div>
     {% endfor %}
   </div>
