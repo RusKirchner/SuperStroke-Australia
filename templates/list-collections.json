@@ -64,10 +64,28 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "paginated_collections_TMU6h8": {
+      "type": "paginated-collections",
+      "blocks": {
+        "collection_description_zpYU48": {
+          "type": "collection_description",
+          "settings": {
+            "collection_handle": "accessories",
+            "description": "adasdasdadasd"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description_zpYU48"
+      ],
+      "name": "Paginated Collection Grid",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "banner_with_overlay_QrhC8h"
+    "banner_with_overlay_QrhC8h",
+    "paginated_collections_TMU6h8"
   ]
 }
