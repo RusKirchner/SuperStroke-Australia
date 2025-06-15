@@ -277,14 +277,6 @@
             "text": "<h3><strong>REVL Player</strong></h3>"
           }
         },
-        "slide_qNNJfX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/DSC00089-2.webp",
-            "title": "Ben Kruper",
-            "text": "<h3><strong>REVL Player</strong></h3>"
-          }
-        },
         "slide_EXRmxQ": {
           "type": "slide",
           "settings": {
@@ -299,7 +291,6 @@
         "slide_BkqNCa",
         "slide_pwyzRj",
         "slide_6qVFeG",
-        "slide_qNNJfX",
         "slide_EXRmxQ"
       ],
       "name": "Multi-slide Section",
