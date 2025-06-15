@@ -176,6 +176,61 @@
         "author_size": 16,
         "author_color": "#ffffff"
       }
+    },
+    "scrollable_image_slider_7femdC": {
+      "type": "scrollable-image-slider",
+      "blocks": {
+        "slide_cFp9qt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "alt_text": "Slide image"
+          }
+        },
+        "slide_CrXfP7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "alt_text": "Slide image"
+          }
+        },
+        "slide_eaiGET": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "alt_text": "Slide image"
+          }
+        },
+        "slide_UnMf7J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "alt_text": "Slide image"
+          }
+        },
+        "slide_iczFNf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "alt_text": "Slide image"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cFp9qt",
+        "slide_CrXfP7",
+        "slide_eaiGET",
+        "slide_UnMf7J",
+        "slide_iczFNf"
+      ],
+      "name": "Scrollable Image Slider",
+      "settings": {
+        "title": "Image with text",
+        "enlarge_title": false,
+        "background_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -185,6 +240,7 @@
     "video_with_text_LfbLJf",
     "video_with_text_fWaT4X",
     "video_with_text_mcepCR",
-    "testimonials_slider_H7QjQG"
+    "testimonials_slider_H7QjQG",
+    "scrollable_image_slider_7femdC"
   ]
 }
