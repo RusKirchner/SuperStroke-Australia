@@ -59,11 +59,39 @@
         "section_color_bg": "#000000",
         "section_gradient_bg": ""
       }
+    },
+    "video_with_text_LfbLJf": {
+      "type": "video-with-text",
+      "name": "Video with Text",
+      "settings": {
+        "background_style": "gradient",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 97, 135, 1) 81%)",
+        "background_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/69689b77986340f093a20298c35bcda4.mp4",
+        "autoplay": true,
+        "loop": true,
+        "show_controls": true,
+        "heading": "ELEMENT",
+        "richtext": "BEST FOR: CONFIDENCE IN ALL WEATHER\n\nMulti-Compound\nHalf Cord\nGenesis+ and ACE Material\nUltra-Tac Pattern",
+        "button_link": "",
+        "button_label": "Learn More",
+        "heading_color": "#000000",
+        "heading_size": 28,
+        "text_color": "#333333",
+        "text_size": 16,
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_hover_bg": "#444444",
+        "button_hover_text": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
     "flexible_video_NxKTRN",
-    "rich_text_custom_width_Mmzyj3"
+    "rich_text_custom_width_Mmzyj3",
+    "video_with_text_LfbLJf"
   ]
 }
