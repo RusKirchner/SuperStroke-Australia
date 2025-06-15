@@ -311,9 +311,9 @@
         "padding_top": 80,
         "padding_bottom": 40,
         "slide_title_font_size": 16,
-        "slide_title_color": "#111111",
+        "slide_title_color": "#ffffff",
         "slide_text_font_size": 14,
-        "slide_text_color": "#333333"
+        "slide_text_color": "#ffffff"
       }
     }
   },
