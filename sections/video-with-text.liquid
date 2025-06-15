@@ -228,7 +228,7 @@
 
 <div id="section-{{ section.id }}">
   <div class="page-width container">
-    <div class="video-with-text-iner {% if section.settings.row_direction == 'reverse' %}md:flex-row-reverse{% endif %}">
+    <div class="video-with-text-iner {% if section.settings.row_direction == 'reverse' %}flex-row-reverse{% endif %}">
     <div class="video-col">
       {% if section.settings.video_url contains 'youtube.com' or section.settings.video_url contains 'youtu.be' %}
         <iframe
