@@ -42,6 +42,16 @@
       "default": 40
     },
     {
+      "type": "select",
+      "id": "row_direction",
+      "label": "Row Direction",
+      "options": [
+        { "value": "normal", "label": "Normal (Video Left)" },
+        { "value": "reverse", "label": "Reverse (Video Right)" }
+      ],
+      "default": "normal"
+    },
+    {
       "type": "text",
       "id": "video_url",
       "label": "Video URL (YouTube, Vimeo, or MP4)"
@@ -218,7 +228,7 @@
 
 <div id="section-{{ section.id }}">
   <div class="page-width container">
-    <div class="video-with-text-iner">
+    <div class="video-with-text-iner {% if section.settings.row_direction == 'reverse' %}md:flex-row-reverse{% endif %}">
     <div class="video-col">
       {% if section.settings.video_url contains 'youtube.com' or section.settings.video_url contains 'youtu.be' %}
         <iframe
