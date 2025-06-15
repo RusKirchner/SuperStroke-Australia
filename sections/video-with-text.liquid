@@ -180,6 +180,25 @@
   background-color: {{ section.settings.button_hover_bg }};
   color: {{ section.settings.button_hover_text }};
 }
+.video-with-text-iner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-direction: row;
+}
+.video-with-text-iner .video-col {
+  width: 50%;
+}
+.video-with-text-iner .text-col {
+  width: 50%;
+  padding: 36px 5rem;
+}
+.video-with-text-iner .video-col video {
+  border-radius: 20px;
+}
 {% endstyle %}
 
 <div id="section-{{ section.id }}">
