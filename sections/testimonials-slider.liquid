@@ -175,14 +175,14 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".testimonial-swiper", {
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      pagination: false
-    });
+    new Swiper("#section-{{ section.id }} .testimonial-swiper", {
+  loop: true,
+  navigation: {
+    nextEl: "#section-{{ section.id }} .swiper-button-next",
+    prevEl: "#section-{{ section.id }} .swiper-button-prev"
+  },
+  pagination: false
+});
   });
 </script>
 {% endjavascript %}
