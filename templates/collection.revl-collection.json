@@ -268,12 +268,39 @@
             "title": "Georgia Ball",
             "text": "<h3><strong>REVL Comfort</strong></h3>"
           }
+        },
+        "slide_6qVFeG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC00089-2.webp",
+            "title": "Ben Kruper",
+            "text": "<h3><strong>REVL Player</strong></h3>"
+          }
+        },
+        "slide_qNNJfX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC00089-2.webp",
+            "title": "Ben Kruper",
+            "text": "<h3><strong>REVL Player</strong></h3>"
+          }
+        },
+        "slide_EXRmxQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/UTF-8Josh_Kelly-3_a9fe7da3-b3b2-42b5-970d-c6913b8b1eb6.webp",
+            "title": "Josh Kelley",
+            "text": "<h3><strong>REVL Element</strong></h3>"
+          }
         }
       },
       "block_order": [
         "slide_hnry6k",
         "slide_BkqNCa",
-        "slide_pwyzRj"
+        "slide_pwyzRj",
+        "slide_6qVFeG",
+        "slide_qNNJfX",
+        "slide_EXRmxQ"
       ],
       "name": "Multi-slide Section",
       "settings": {
