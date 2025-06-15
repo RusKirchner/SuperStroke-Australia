@@ -204,14 +204,21 @@
         "slide_UnMf7J": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "image": "shopify://shop_images/DSC07779_430418f4-11b9-48f3-adc8-30ae79cad691.webp",
             "alt_text": "Slide image"
           }
         },
         "slide_iczFNf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/RevlPlayerBlackGrey_B.webp",
+            "image": "shopify://shop_images/4.webp",
+            "alt_text": "Slide image"
+          }
+        },
+        "slide_pQqUyr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
             "alt_text": "Slide image"
           }
         }
@@ -221,7 +228,8 @@
         "slide_CrXfP7",
         "slide_eaiGET",
         "slide_UnMf7J",
-        "slide_iczFNf"
+        "slide_iczFNf",
+        "slide_pQqUyr"
       ],
       "name": "Scrollable Image Slider",
       "settings": {
