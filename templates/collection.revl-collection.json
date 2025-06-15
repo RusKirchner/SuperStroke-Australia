@@ -74,17 +74,17 @@
         "loop": true,
         "show_controls": true,
         "heading": "ELEMENT",
-        "richtext": "BEST FOR: CONFIDENCE IN ALL WEATHER\n\nMulti-Compound\nHalf Cord\nGenesis+ and ACE Material\nUltra-Tac Pattern",
-        "button_link": "",
+        "richtext": "<p><strong>BEST FOR: CONFIDENCE IN ALL WEATHER</strong></p><ul><li>Multi-Compound</li><li>Half Cord</li><li>Genesis+ and ACE Material</li><li>Ultra-Tac Pattern</li></ul>",
+        "button_link": "shopify://products/revl-element-club-grip",
         "button_label": "Learn More",
-        "heading_color": "#000000",
+        "heading_color": "#ffffff",
         "heading_size": 28,
-        "text_color": "#333333",
+        "text_color": "#ffffff",
         "text_size": 16,
-        "button_bg": "#000000",
-        "button_text_color": "#ffffff",
-        "button_hover_bg": "#444444",
-        "button_hover_text": "#ffffff"
+        "button_bg": "#ffffff",
+        "button_text_color": "#000000",
+        "button_hover_bg": "#ffffff",
+        "button_hover_text": "#000000"
       }
     }
   },
