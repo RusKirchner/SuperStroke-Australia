@@ -87,12 +87,41 @@
         "button_hover_bg": "#ffffff",
         "button_hover_text": "#000000"
       }
+    },
+    "video_with_text_fWaT4X": {
+      "type": "video-with-text",
+      "name": "Video with Text",
+      "settings": {
+        "background_style": "gradient",
+        "background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 97, 135, 1) 81%)",
+        "background_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "row_direction": "reverse",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/69689b77986340f093a20298c35bcda4.mp4",
+        "autoplay": true,
+        "loop": true,
+        "show_controls": true,
+        "heading": "ELEMENT",
+        "richtext": "<p><strong>BEST FOR: CONFIDENCE IN ALL WEATHER</strong></p><ul><li>Multi-Compound</li><li>Half Cord</li><li>Genesis+ and ACE Material</li><li>Ultra-Tac Pattern</li></ul>",
+        "button_link": "shopify://products/revl-element-club-grip",
+        "button_label": "Learn More",
+        "heading_color": "#ffffff",
+        "heading_size": 28,
+        "text_color": "#ffffff",
+        "text_size": 18,
+        "button_bg": "#ffffff",
+        "button_text_color": "#000000",
+        "button_hover_bg": "#ffffff",
+        "button_hover_text": "#000000"
+      }
     }
   },
   "order": [
     "main",
     "flexible_video_NxKTRN",
     "rich_text_custom_width_Mmzyj3",
-    "video_with_text_LfbLJf"
+    "video_with_text_LfbLJf",
+    "video_with_text_fWaT4X"
   ]
 }
