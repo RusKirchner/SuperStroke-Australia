@@ -69,7 +69,7 @@
         "background_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 40,
-        "row_direction": "reverse",
+        "row_direction": "normal",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/69689b77986340f093a20298c35bcda4.mp4",
         "autoplay": true,
         "loop": true,
