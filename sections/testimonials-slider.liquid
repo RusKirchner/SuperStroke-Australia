@@ -170,19 +170,19 @@
   </div>
 </div>
 
-{% javascript %}
-<!-- Swiper JS CDN -->
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     new Swiper("#section-{{ section.id }} .testimonial-swiper", {
-  loop: true,
-  navigation: {
-    nextEl: "#section-{{ section.id }} .swiper-button-next",
-    prevEl: "#section-{{ section.id }} .swiper-button-prev"
-  },
-  pagination: false
-});
+      loop: true,
+      navigation: {
+        nextEl: "#section-{{ section.id }} .swiper-button-next",
+        prevEl: "#section-{{ section.id }} .swiper-button-prev"
+      },
+      pagination: false
+    });
   });
 </script>
-{% endjavascript %}
+
+
