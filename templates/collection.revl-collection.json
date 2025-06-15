@@ -250,7 +250,7 @@
           "settings": {
             "image": "shopify://shop_images/Screenshot_2025-06-11_at_12.34.32_PM.webp",
             "title": "Good Good",
-            "text": "<h3><strong>REVL Collection</strong></h3>"
+            "text": "<p><strong>REVL Collection</strong></p>"
           }
         },
         "slide_BkqNCa": {
@@ -258,7 +258,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC08860-2.webp",
             "title": "Mei Brennan",
-            "text": "<h3><strong>REVL Player</strong></h3>"
+            "text": "<p><strong>REVL Player</strong></p>"
           }
         },
         "slide_pwyzRj": {
@@ -266,7 +266,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC09583-2.webp",
             "title": "Georgia Ball",
-            "text": "<h3><strong>REVL Comfort</strong></h3>"
+            "text": "<p><strong>REVL Comfort</strong></p>"
           }
         },
         "slide_6qVFeG": {
@@ -274,7 +274,7 @@
           "settings": {
             "image": "shopify://shop_images/DSC00089-2.webp",
             "title": "Ben Kruper",
-            "text": "<h3><strong>REVL Player</strong></h3>"
+            "text": "<p><strong>REVL Player</strong></p>"
           }
         },
         "slide_EXRmxQ": {
@@ -282,7 +282,7 @@
           "settings": {
             "image": "shopify://shop_images/UTF-8Josh_Kelly-3_a9fe7da3-b3b2-42b5-970d-c6913b8b1eb6.webp",
             "title": "Josh Kelley",
-            "text": "<h3><strong>REVL Element</strong></h3>"
+            "text": "<p><strong>REVL Element</strong></p>"
           }
         }
       },
@@ -301,7 +301,7 @@
         "background_color": "#000000",
         "padding_top": 80,
         "padding_bottom": 40,
-        "slide_title_font_size": 16,
+        "slide_title_font_size": 18,
         "slide_title_color": "#ffffff",
         "slide_text_font_size": 14,
         "slide_text_color": "#ffffff"
