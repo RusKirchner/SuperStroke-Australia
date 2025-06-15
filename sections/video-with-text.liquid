@@ -1,0 +1,232 @@
+{% schema %}
+{
+  "name": "Video with Text",
+  "settings": [
+    {
+      "type": "select",
+      "id": "background_style",
+      "label": "Background style",
+      "options": [
+        { "value": "gradient", "label": "Gradient" },
+        { "value": "color", "label": "Solid Color" }
+      ],
+      "default": "gradient"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background Gradient"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding (px)",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding (px)",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video URL (YouTube, Vimeo, or MP4)"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop Video",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_controls",
+      "label": "Show Controls",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "richtext",
+      "label": "Rich Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Learn More"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Font Size (px)",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "default": 28
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text Font Size (px)",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg",
+      "label": "Button Hover Background Color",
+      "default": "#444444"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text",
+      "label": "Button Hover Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video with Text",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+#section-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  {% if section.settings.background_style == 'gradient' %}
+    background: {{ section.settings.background_gradient }};
+  {% else %}
+    background-color: {{ section.settings.background_color }};
+  {% endif %}
+}
+#section-{{ section.id }} .heading {
+  color: {{ section.settings.heading_color }};
+  font-size: {{ section.settings.heading_size }}px;
+}
+#section-{{ section.id }} .richtext {
+  color: {{ section.settings.text_color }};
+  font-size: {{ section.settings.text_size }}px;
+}
+#section-{{ section.id }} .button {
+  background-color: {{ section.settings.button_bg }};
+  color: {{ section.settings.button_text_color }};
+  padding: 12px 24px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#section-{{ section.id }} .button:hover {
+  background-color: {{ section.settings.button_hover_bg }};
+  color: {{ section.settings.button_hover_text }};
+}
+{% endstyle %}
+
+<div id="section-{{ section.id }}">
+  <div class="page-width grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div class="video-col">
+      {% if section.settings.video_url contains 'youtube.com' or section.settings.video_url contains 'youtu.be' %}
+        <iframe
+          src="https://www.youtube.com/embed/{{ section.settings.video_url | split: '/' | last | split: '?' | first }}?autoplay={{ section.settings.autoplay | json }}&loop={{ section.settings.loop | json }}&controls={% if section.settings.show_controls %}1{% else %}0{% endif %}&playlist={{ section.settings.video_url | split: '/' | last | split: '?' | first }}"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          width="100%"
+          height="315"
+        ></iframe>
+      {% elsif section.settings.video_url contains 'vimeo.com' %}
+        <iframe
+          src="https://player.vimeo.com/video/{{ section.settings.video_url | split: '/' | last }}?autoplay={{ section.settings.autoplay | json }}&loop={{ section.settings.loop | json }}&controls={% if section.settings.show_controls %}1{% else %}0{% endif %}"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          width="100%"
+          height="315"
+        ></iframe>
+      {% else %}
+        <video
+          {% if section.settings.autoplay %} autoplay muted {% endif %}
+          {% if section.settings.loop %} loop {% endif %}
+          {% if section.settings.show_controls %} controls {% endif %}
+          playsinline
+          width="100%"
+        >
+          <source src="{{ section.settings.video_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      {% endif %}
+    </div>
+
+    <div class="text-col">
+      {% if section.settings.heading != blank %}
+        <h2 class="heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.richtext != blank %}
+        <div class="richtext">{{ section.settings.richtext }}</div>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
