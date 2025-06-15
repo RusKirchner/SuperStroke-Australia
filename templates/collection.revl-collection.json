@@ -227,9 +227,11 @@
       "settings": {
         "title": "",
         "enlarge_title": false,
-        "background_color": "#ffffff",
+        "background_color": "#000000",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "progresssbar_background_color": "#262626",
+        "minibar_background_color": "#ffffff"
       }
     }
   },
