@@ -161,10 +161,28 @@
   .cst-multi-slide .chevron {
     display: none !important;
   }
+  
+
   @media (max-width: 767px) {
     #section-{{ section.id }} .swiper-button-next,
     #section-{{ section.id }} .swiper-button-prev {
       display: none;
+    }
+    .cst-multi-slide .swiper-pagination .swiper-pagination-bullet {
+      background: #fff;
+    }
+    .cst-multi-slide .swiper-pagination {
+      display: block !important;
+      bottom: -3px;
+    }
+    .cst-multi-slide .slide-card h3 {
+      font-size: 18px !important;
+    }
+    .cst-multi-slide .slide-card p {
+      font-size: 14px !important;
+      padding-bottom: 20px;
+    }
+    .cst-multi-slide .slide-card p {
     }
   }
 </style>
