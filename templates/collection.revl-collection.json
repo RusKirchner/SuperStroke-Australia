@@ -143,6 +143,39 @@
         "button_hover_bg": "#ffffff",
         "button_hover_text": "#000000"
       }
+    },
+    "testimonials_slider_H7QjQG": {
+      "type": "testimonials-slider",
+      "blocks": {
+        "testimonial_QLGLCD": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "<h2>This is about a new way of thinking, and a new way of implementing some of the best grip materials as well as innovations into one complete lineup.</h2>",
+            "author": "The Hackers Paradise"
+          }
+        },
+        "testimonial_LfXwkW": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "<p>Combine the modern and revolutionary engineering from superstroke and the legendary design of Lamkin and you have golf grips that have never existed like this before.</p>",
+            "author": "Matt Adams - Fairways of Life"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_QLGLCD",
+        "testimonial_LfXwkW"
+      ],
+      "name": "Testimonials Slider",
+      "settings": {
+        "bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "text_size": 18,
+        "text_color": "#333333",
+        "author_size": 16,
+        "author_color": "#000000"
+      }
     }
   },
   "order": [
@@ -151,6 +184,7 @@
     "rich_text_custom_width_Mmzyj3",
     "video_with_text_LfbLJf",
     "video_with_text_fWaT4X",
-    "video_with_text_mcepCR"
+    "video_with_text_mcepCR",
+    "testimonials_slider_H7QjQG"
   ]
 }
