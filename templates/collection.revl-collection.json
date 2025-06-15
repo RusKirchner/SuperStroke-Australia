@@ -24,23 +24,6 @@
         "show_featured": true
       }
     },
-    "video_YNTLcn": {
-      "type": "video",
-      "name": "Video",
-      "settings": {
-        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "color_overlay_bg": "#ffffff",
-        "overlay_opacity": 80,
-        "color_overlay_text": "#333333",
-        "overlay_title": "Video",
-        "overlay_text": "Add a video to tell your story",
-        "enlarge_title": false,
-        "enlarge_text": false,
-        "overlay_position_x": 50,
-        "overlay_position_y": 70,
-        "mobile_text_below": false
-      }
-    },
     "flexible_video_NxKTRN": {
       "type": "flexible-video",
       "name": "Flexible Video Section",
@@ -55,11 +38,32 @@
         "desktop_height": 500,
         "mobile_height": 300
       }
+    },
+    "rich_text_custom_width_Mmzyj3": {
+      "type": "rich-text-custom-width",
+      "name": "Rich text Custom Width",
+      "settings": {
+        "title": "EXPERIENCE INNOVATION",
+        "sub_heading": "",
+        "text": "<p>Engineered to deliver a blend of durability, comfort, and performance. The REVL is in the details.</p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#ffffff",
+        "color_text": "#ffffff",
+        "color_bg": "#000000",
+        "gradient_bg": "",
+        "section_color_bg": "#000000",
+        "section_gradient_bg": ""
+      }
     }
   },
   "order": [
     "main",
-    "video_YNTLcn",
-    "flexible_video_NxKTRN"
+    "flexible_video_NxKTRN",
+    "rich_text_custom_width_Mmzyj3"
   ]
 }
