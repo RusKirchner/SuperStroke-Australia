@@ -241,6 +241,53 @@
         "progresssbar_background_color": "#262626",
         "minibar_background_color": "#ffffff"
       }
+    },
+    "multi_slide_section_hGWwQA": {
+      "type": "multi-slide-section",
+      "blocks": {
+        "slide_hnry6k": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-06-11_at_12.34.32_PM.webp",
+            "title": "Good Good",
+            "text": "<h3><strong>REVL Collection</strong></h3>"
+          }
+        },
+        "slide_BkqNCa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC08860-2.webp",
+            "title": "Mei Brennan",
+            "text": "<h3><strong>REVL Player</strong></h3>"
+          }
+        },
+        "slide_pwyzRj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC09583-2.webp",
+            "title": "Georgia Ball",
+            "text": "<h3><strong>REVL Comfort</strong></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_hnry6k",
+        "slide_BkqNCa",
+        "slide_pwyzRj"
+      ],
+      "name": "Multi-slide Section",
+      "settings": {
+        "section_title": "Meet our revl roster",
+        "section_title_font_size": 35,
+        "section_title_color": "#ffffff",
+        "background_color": "#000000",
+        "padding_top": 80,
+        "padding_bottom": 40,
+        "slide_title_font_size": 16,
+        "slide_title_color": "#111111",
+        "slide_text_font_size": 14,
+        "slide_text_color": "#333333"
+      }
     }
   },
   "order": [
@@ -251,6 +298,7 @@
     "video_with_text_fWaT4X",
     "video_with_text_mcepCR",
     "testimonials_slider_H7QjQG",
-    "scrollable_image_slider_7femdC"
+    "scrollable_image_slider_7femdC",
+    "multi_slide_section_hGWwQA"
   ]
 }
