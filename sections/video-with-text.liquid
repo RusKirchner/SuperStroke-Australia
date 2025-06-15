@@ -183,7 +183,8 @@
 {% endstyle %}
 
 <div id="section-{{ section.id }}">
-  <div class="page-width grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+  <div class="page-width container">
+    <div class="video-with-text-iner">
     <div class="video-col">
       {% if section.settings.video_url contains 'youtube.com' or section.settings.video_url contains 'youtu.be' %}
         <iframe
@@ -231,5 +232,6 @@
         </a>
       {% endif %}
     </div>
+  </div>
   </div>
 </div>
