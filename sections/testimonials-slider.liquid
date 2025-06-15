@@ -176,6 +176,10 @@
   document.addEventListener("DOMContentLoaded", function () {
     new Swiper("#section-{{ section.id }} .testimonial-swiper", {
       loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
       navigation: {
         nextEl: "#section-{{ section.id }} .swiper-button-next",
         prevEl: "#section-{{ section.id }} .swiper-button-prev"
