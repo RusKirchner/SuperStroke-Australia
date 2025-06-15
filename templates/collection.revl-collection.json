@@ -47,10 +47,10 @@
       "settings": {
         "video_type": "self_hosted",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/07e5db0fe2d0413e86eecfbb23424bb6.mp4",
-        "autoplay": false,
+        "autoplay": true,
         "loop": true,
         "muted": true,
-        "hide_controls": false,
+        "hide_controls": true,
         "use_fixed_height": false,
         "desktop_height": 500,
         "mobile_height": 300
