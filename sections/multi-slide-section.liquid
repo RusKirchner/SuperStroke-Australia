@@ -116,7 +116,8 @@
 }
 {% endschema %}
 
-{% stylesheet %}
+
+<style>
   #section-{{ section.id }} {
     background-color: {{ section.settings.background_color }};
     padding-top: {{ section.settings.padding_top }}px;
@@ -163,7 +164,7 @@
       display: none;
     }
   }
-{% endstylesheet %}
+</style>
 
 <div id="section-{{ section.id }}">
   {% if section.settings.section_title != blank %}
