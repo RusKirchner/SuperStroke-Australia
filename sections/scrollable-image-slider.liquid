@@ -148,9 +148,7 @@
   background: {{ section.settings.progresssbar_background_color }};
 }
 
-.swiper.mySwiper.container .swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: {{ section.settings.minibar_background_color }}; /* You can change this to match your brand */
-}
+
 .swiper.mySwiper.container .swiper-pagination.swiper-pagination-progressbar {
   top: unset !important;
   bottom: 0 !important;
@@ -167,6 +165,9 @@
 }
 .swiper.mySwiper.container .swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #282828;
+}
+.swiper.mySwiper.container .swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: {{ section.settings.minibar_background_color }}; /* You can change this to match your brand */
 }
 @media (min-width: 1400px){
   .mySwiper.container {
