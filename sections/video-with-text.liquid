@@ -227,6 +227,15 @@
 .video-with-text-iner.flex-row-reverse {
   flex-direction: row-reverse;
 }
+  @media (maax-width: 749px){
+    .video-with-text-iner {
+      flex-direction: column !important;
+    }
+    .video-with-text-iner >  div {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  } 
 {% endstyle %}
 
 <div id="section-{{ section.id }}">
