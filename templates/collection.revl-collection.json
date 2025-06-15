@@ -168,13 +168,13 @@
       ],
       "name": "Testimonials Slider",
       "settings": {
-        "bg_color": "#ffffff",
+        "bg_color": "#080808",
         "padding_top": 40,
         "padding_bottom": 40,
         "text_size": 18,
-        "text_color": "#333333",
+        "text_color": "#ffffff",
         "author_size": 16,
-        "author_color": "#000000"
+        "author_color": "#ffffff"
       }
     }
   },
