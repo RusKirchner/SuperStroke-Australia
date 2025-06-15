@@ -45,22 +45,15 @@
       "type": "flexible-video",
       "name": "Flexible Video Section",
       "settings": {
-        "video_shopify": "shopify://files/videos/cbf7e7f5187641ab85b44938d0dfaa14.HD-1080p-4.8Mbps-48884558.mp4",
-        "video_external": "",
-        "image": "shopify://shop_images/cbf7e7f5187641ab85b44938d0dfaa14.thumbnail.0000000000.webp",
-        "video_autoplay": true,
-        "video_loop": true,
-        "video_hide_controls": true,
-        "color_overlay_bg": "#ffffff",
-        "overlay_opacity": 80,
-        "color_overlay_text": "#333333",
-        "overlay_title": "",
-        "overlay_text": "",
-        "enlarge_title": false,
-        "enlarge_text": false,
-        "overlay_position_x": 50,
-        "overlay_position_y": 70,
-        "mobile_text_below": false
+        "video_type": "self_hosted",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/07e5db0fe2d0413e86eecfbb23424bb6.mp4",
+        "autoplay": false,
+        "loop": true,
+        "muted": true,
+        "hide_controls": false,
+        "use_fixed_height": false,
+        "desktop_height": 500,
+        "mobile_height": 300
       }
     }
   },
