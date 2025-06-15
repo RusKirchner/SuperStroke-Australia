@@ -115,6 +115,36 @@
 #section-{{ section.id }} .swiper-pagination {
   display: none;
 }
+.testimonials-main .page-width {
+  max-width: 875px;
+}
+.testimonials-main .swiper-wrapper {
+  position: relative;
+}
+.testimonials-main .swiper-wrapper::before {
+  content: '';
+  width: 101px;
+  height: 80px;
+  mask-image: url(https://cdn.shopify.com/s/files/1/0705/8348/4734/t/7/assets/quote.svg?v=1749963517);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: ;
+  background: rgba(255,255,255,0.15);
+}
+.testimonials-main .swiper-wrapper .testimonial-slide {
+  text-align: left;
+  padding: ;
+  padding: 24px 0 0 69px;
+}
+.testimonials-main .swiper-wrapper .testimonial-slide h2 {
+  letter-spacing: -.7px;
+}
+.testimonials-main .author {
+  letter-spacing: 0;
+}
 {% endstyle %}
 
 <div id="section-{{ section.id }}">
