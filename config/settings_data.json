@@ -246,7 +246,7 @@
               "color_overlay_text": "#333333",
               "text_alignment": "center",
               "overlay_position_x": 50,
-              "overlay_position_y": 21,
+              "overlay_position_y": 100,
               "overlay_title": "",
               "enlarge_title": false,
               "overlay_title_width": 100,
