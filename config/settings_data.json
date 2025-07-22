@@ -242,7 +242,7 @@
               "image": "shopify://shop_images/WEB_Revl_Header_WIP-04.jpg",
               "image_link": "shopify://collections/revl-club-grips",
               "color_overlay_bg": "#ffffff",
-              "overlay_opacity": 24,
+              "overlay_opacity": 0,
               "color_overlay_text": "#333333",
               "text_alignment": "center",
               "overlay_position_x": 50,
