@@ -21,14 +21,28 @@
   <div class="custom-product-display" style="text-align:center; padding: 30px;">
     
     <!-- Product Image -->
-    <div class="product-image">
-      <img 
-        id="MainImage-{{ section.id }}" 
-        src="{{ product.featured_image | img_url: 'large' }}" 
-        alt="{{ product.title }}" 
-        style="max-width: 250px; margin-bottom: 20px;"
-      />
-    </div>
+    {% assign second_image = product.images[1] %}
+
+<div class="product-image-wrapper" style="position: relative; width: fit-content; margin: 0 auto;">
+  <!-- Main Image -->
+  <img 
+    id="MainImage-{{ section.id }}" 
+    src="{{ product.featured_image | img_url: 'large' }}" 
+    alt="{{ product.title }}" 
+    class="main-product-image"
+    style="max-width: 250px; transition: opacity 0.3s ease;"
+  />
+
+  <!-- Second Image (hover) -->
+  {% if second_image %}
+    <img 
+      src="{{ second_image | img_url: 'large' }}" 
+      alt="{{ product.title }} - hover" 
+      class="hover-product-image"
+      style="position: absolute; top: 0; left: 0; max-width: 250px; opacity: 0; transition: opacity 0.3s ease;"
+    />
+  {% endif %}
+</div>
 
     <!-- Product Name -->
     <h3>{{ product.title }}</h3>
@@ -85,3 +99,13 @@
 {% else %}
   <p style="text-align:center;">No product selected.</p>
 {% endif %}
+<!-- Hover behavior -->
+<style>
+  .product-image-wrapper:hover .main-product-image {
+    opacity: 0;
+  }
+
+  .product-image-wrapper:hover .hover-product-image {
+    opacity: 1;
+  }
+</style>
