@@ -18,6 +18,12 @@
 
 {% if section.settings.selected_product %}
   {% assign product = all_products[section.settings.selected_product] %}
+  
+  <!-- Product JSON for swatches -->
+  <script type="application/json" id="ProductJson-{{ section.id }}">
+    {{ product | json }}
+  </script>
+
   <div class="custom-product-display">
     <div class="product-image" id="ProductImage-{{ section.id }}">
       <img 
@@ -31,28 +37,10 @@
       <h2>{{ product.title }}</h2>
       <p>{{ product.price | money }}</p>
 
-      <!-- Globo Color Swatch -->
-      <div class="globo-color-swatch" data-product-handle="{{ product.handle }}">
-        {% render 'globo.color.swatch', product: product %}
-      </div>
+      <!-- Globo Color Swatch (dynamic div version) -->
+      <div class="gcs-product" data-product-handle="{{ product.handle }}"></div>
     </div>
   </div>
 {% else %}
   <p>No product selected.</p>
 {% endif %}
-
-
-
-<style>
-.custom-product-display {
-  text-align: center;
-  margin: 2rem 0;
-}
-.custom-product-display img {
-  max-width: 300px;
-  margin-bottom: 1rem;
-}
-.globo-color-swatch {
-  margin-top: 1rem;
-}
-</style>
