@@ -11,10 +11,63 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left"
+      }
+    },
+    "banner_with_overlay_RX6nwD": {
+      "type": "banner-with-overlay",
+      "blocks": {
+        "heading_FL7ALL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Team SuperStroke",
+            "heading_color": "#ffffff",
+            "heading_font_size": 36
+          }
+        },
+        "richtext_P9LMmw": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>These athletes embody the pinnacle of dedication, extraordinary discipline, and unyielding passion that drive them to achieve greatness and set new standards in golf. Throughout their relentless pursuit of excellence, they choose SuperStroke.</p>",
+            "text_color": "#ffffff",
+            "text_font_size": 18
+          }
+        },
+        "buttons_Xrdhjf": {
+          "type": "buttons",
+          "settings": {
+            "btn1_label": "Shop Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": "",
+            "btn_bg": "#ffffff",
+            "btn_color": "#000000",
+            "btn_hover_bg": "#000000",
+            "btn_hover_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FL7ALL",
+        "richtext_P9LMmw",
+        "buttons_Xrdhjf"
+      ],
+      "name": "Banner With Overlay",
+      "settings": {
+        "bg_image": "shopify://shop_images/SuperStroke_Tour_Pros_Header_8797428a-13f0-42bd-a8aa-396c805a5265.webp",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.3,
+        "content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_with_overlay_RX6nwD"
   ]
 }
