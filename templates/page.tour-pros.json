@@ -78,11 +78,19 @@
         "title_font_size": 18,
         "title_color": "#000000"
       }
+    },
+    "custom_product_display_EiGrBJ": {
+      "type": "custom-product-display",
+      "name": "Custom Product Display",
+      "settings": {
+        "selected_product": "2025-limited-edition-donut-grip-glazed-and-confused"
+      }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_RX6nwD",
-    "custom_product_card_MqMUKQ"
+    "custom_product_card_MqMUKQ",
+    "custom_product_display_EiGrBJ"
   ]
 }
