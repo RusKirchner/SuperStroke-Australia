@@ -44,3 +44,10 @@
 {% else %}
   <p>No product selected.</p>
 {% endif %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof GCS !== 'undefined' && typeof GCS.init === 'function') {
+      GCS.init(); // Re-initialize Globo Color Swatch
+    }
+  });
+</script>
