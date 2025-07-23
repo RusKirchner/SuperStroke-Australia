@@ -50,7 +50,7 @@
     {% for variant in product.variants %}
       {% assign color = variant.options[color_option_index] %}
       {% unless shown_colors contains color %}
-        {% assign color_first_word = color | split: ' ' | first %}
+        {% assign color_first_word = color | split: ' ' | last %}
         <span 
           class="color-swatch" 
           data-img="{{ variant.featured_image | img_url: 'large' }}"
