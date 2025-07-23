@@ -1,6 +1,42 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Product Display",
+  "settings": [
+    {
+      "type": "product",
+      "id": "selected_product",
+      "label": "Select Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product Display"
+    }
+  ]
+}
 {% endschema %}
+
+{% if section.settings.selected_product %}
+  {% assign product = all_products[section.settings.selected_product] %}
+  <div class="custom-product-display">
+    <div class="product-image" id="ProductImage-{{ section.id }}">
+      <img 
+        src="{{ product.featured_image | img_url: 'large' }}" 
+        alt="{{ product.title }}" 
+        id="MainImage-{{ section.id }}"
+      />
+    </div>
+    
+    <div class="product-details">
+      <h2>{{ product.title }}</h2>
+      <p>{{ product.price | money }}</p>
+
+      <!-- Globo Color Swatch -->
+      <div class="globo-color-swatch" data-product-handle="{{ product.handle }}">
+        {% render 'globo.color.swatch', product: product %}
+      </div>
+    </div>
+  </div>
+{% else %}
+  <p>No product selected.</p>
+{% endif %}
