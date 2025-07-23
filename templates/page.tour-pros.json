@@ -64,10 +64,25 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "custom_product_card_MqMUKQ": {
+      "type": "custom-product-card",
+      "name": "Custom Product Card",
+      "settings": {
+        "product": "zenergy-tour-putter-grips",
+        "first_image": "shopify://shop_images/WEB_1.0P17_BlackWhite_LS_3000x_8baac8aa-7d0f-4617-8c60-970058f371ff.jpg",
+        "second_image": "shopify://shop_images/UTF-8Josh_Kelly-3_a9fe7da3-b3b2-42b5-970d-c6913b8b1eb6.webp",
+        "section_bg": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title_font_size": 18,
+        "title_color": "#000000"
+      }
     }
   },
   "order": [
     "main",
-    "banner_with_overlay_RX6nwD"
+    "banner_with_overlay_RX6nwD",
+    "custom_product_card_MqMUKQ"
   ]
 }
