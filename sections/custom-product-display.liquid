@@ -44,25 +44,23 @@
       {% endif %}
     {% endfor %}
 
-   {% if color_option_index >= 0 %}
-  <div class="color-swatches" style="margin-top: 20px;">
-    {% assign shown_colors = '' %}
-    {% for variant in product.variants %}
-      {% assign color = variant.options[color_option_index] %}
-      {% unless shown_colors contains color %}
-        {% assign color_first_word = color | split: ' ' | last %}
-        <span 
-          class="color-swatch" 
-          data-img="{{ variant.featured_image | img_url: 'large' }}"
-          style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color_first_word | downcase }}; cursor:pointer;"
-          title="{{ color }}"
-        ></span>
-        {% assign shown_colors = shown_colors | append: color | append: ',' %}
-      {% endunless %}
-    {% endfor %}
-  </div>
-{% endif %}
-
+    {% if color_option_index >= 0 %}
+      <div class="color-swatches" style="margin-top: 20px;">
+        {% assign shown_colors = '' %}
+        {% for variant in product.variants %}
+          {% assign color = variant.options[color_option_index] %}
+          {% unless shown_colors contains color %}
+            <span 
+              class="color-swatch" 
+              data-img="{{ variant.featured_image | img_url: 'large' }}"
+              style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color | downcase }}; cursor:pointer;"
+              title="{{ color }}"
+            ></span>
+            {% assign shown_colors = shown_colors | append: color | append: ',' %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
   <!-- JS for swatch click image switching -->
