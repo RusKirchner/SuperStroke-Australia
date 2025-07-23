@@ -70,6 +70,7 @@
 {% endschema %}
 
 {% assign product = all_products[section.settings.product] %}
+{%- render 'product-block', product: product, grid_class: 'one-third small-down--one-half' -%}
 {% if product %}
   <div 
     class="custom-product-card" 
