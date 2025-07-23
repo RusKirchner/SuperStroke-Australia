@@ -72,50 +72,53 @@
 {% assign product = all_products[section.settings.product] %}
 {% if product %}
   <div 
-    class="custom-product-card product-card" 
+    class="custom-product-card" 
     style="background-color: {{ section.settings.section_bg }}; padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
-    data-product-id="{{ product.id }}"
   >
-    <div class="card-wrapper">
-      <a href="{{ product.url }}" class="image-wrapper" style="position: relative; display: block;">
-        <img 
-          src="{{ section.settings.first_image | img_url: '500x' }}" 
-          alt="{{ product.title }}" 
-          class="product-main-image"
-          style="width: 100%; transition: opacity 0.3s ease;"
-        >
-        {% if section.settings.second_image %}
-          <img 
-            src="{{ section.settings.second_image | img_url: '500x' }}" 
-            alt="{{ product.title }} hover" 
-            class="product-hover-image"
-            style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.3s ease;"
-          >
-        {% endif %}
-      </a>
-
-      <h3 
-        class="product-title"
-        style="font-size: {{ section.settings.title_font_size }}px; color: {{ section.settings.title_color }};"
+    <a href="{{ product.url }}" class="image-wrapper" style="position: relative; display: block;">
+      <img 
+        src="{{ section.settings.first_image | img_url: '500x' }}" 
+        alt="{{ product.title }}" 
+        class="product-main-image"
+        style="width: 100%; transition: opacity 0.3s ease;"
       >
-        <a href="{{ product.url }}">{{ product.title }}</a>
-      </h3>
+      {% if section.settings.second_image %}
+        <img 
+          src="{{ section.settings.second_image | img_url: '500x' }}" 
+          alt="{{ product.title }} hover" 
+          class="product-hover-image"
+          style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.3s ease;"
+        >
+      {% endif %}
+    </a>
 
-      <p class="product-price">
-        {% if product.compare_at_price > product.price %}
-          <span class="sale-price">{{ product.price | money }}</span>
-          <span class="compare-price">{{ product.compare_at_price | money }}</span>
-        {% else %}
-          <span>{{ product.price | money }}</span>
-        {% endif %}
-      </p>
+    <h3 
+      class="product-title"
+      style="font-size: {{ section.settings.title_font_size }}px; color: {{ section.settings.title_color }};"
+    >
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    </h3>
 
-      {%- comment -%}
-        Globo swatches usually target a div with data attributes or specific structure.
-        This placeholder allows their JS to hook and render swatches.
-      {%- endcomment -%}
-      <div class="globo-product-variant-container" data-product-id="{{ product.id }}"></div>
-    </div>
+    <p class="product-price">
+      {% if product.compare_at_price > product.price %}
+        <span class="sale-price">{{ product.price | money }}</span>
+        <span class="compare-price">{{ product.compare_at_price | money }}</span>
+      {% else %}
+        <span>{{ product.price | money }}</span>
+      {% endif %}
+    </p>
+
+    {% if product.variants.size > 1 %}
+      <div class="variant-options">
+        {% for variant in product.variants %}
+          {% assign color = variant.option1 %}
+          <label style="display: inline-block; margin: 0 5px;">
+            <input type="radio" name="variant-{{ product.id }}" value="{{ variant.id }}" style="display: none;">
+            <span style="display: inline-block; width: 20px; height: 20px; background-color: {{ color | handleize }}; border: 1px solid #ccc; border-radius: 50%;"></span>
+          </label>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
   <style>
