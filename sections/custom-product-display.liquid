@@ -33,7 +33,7 @@
 
       <!-- Globo Color Swatch -->
       <div class="globo-color-swatch" data-product-handle="{{ product.handle }}">
-        <div class="gcs-product" data-product-handle="{{ product.handle }}"></div>
+        {% render 'globo.color.swatch', product: product %}
       </div>
     </div>
   </div>
