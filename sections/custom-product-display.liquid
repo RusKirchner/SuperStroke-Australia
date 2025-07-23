@@ -18,8 +18,8 @@
 
 {% if section.settings.selected_product %}
   {% assign product = all_products[section.settings.selected_product] %}
-  
-  <!-- Product JSON for swatches -->
+
+  <!-- Product JSON (needed for variant switching) -->
   <script type="application/json" id="ProductJson-{{ section.id }}">
     {{ product | json }}
   </script>
@@ -37,33 +37,28 @@
       <h2>{{ product.title }}</h2>
       <p>{{ product.price | money }}</p>
 
-      <!-- Globo Color Swatch (dynamic div version) -->
+      <!-- Globo Swatch Container -->
       <div class="gcs-product" data-product-handle="{{ product.handle }}"></div>
     </div>
   </div>
+
+  <!-- Force GCS Swatch Initialization -->
+  <script>
+    setTimeout(function() {
+      if (typeof GCS !== 'undefined') {
+        console.log("✅ GCS object found.");
+        if (typeof GCS.init === 'function') {
+          console.log("🔄 Calling GCS.init() to initialize swatches.");
+          GCS.init();
+        } else {
+          console.warn("⚠️ GCS.init is not a function.");
+        }
+      } else {
+        console.warn("❌ GCS is undefined. Swatches will not load.");
+      }
+    }, 1000);
+  </script>
+
 {% else %}
   <p>No product selected.</p>
 {% endif %}
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    if (typeof GCS !== 'undefined' && typeof GCS.init === 'function') {
-      GCS.init(); // Re-initialize Globo Color Swatch
-    }
-  });
-</script>
-
-<script>
-  setTimeout(function() {
-    if (typeof GCS !== 'undefined') {
-      console.log("Globo GCS object found.");
-      if (typeof GCS.init === 'function') {
-        console.log("Calling GCS.init()...");
-        GCS.init();
-      } else {
-        console.warn("GCS.init is not a function");
-      }
-    } else {
-      console.warn("GCS is undefined");
-    }
-  }, 1000);
-</script>
