@@ -18,42 +18,66 @@
 
 {% if section.settings.selected_product %}
   {% assign product = all_products[section.settings.selected_product] %}
-
-  <!-- Product JSON for Globo to handle swatch functionality -->
-  <script type="application/json" id="ProductJson-{{ section.id }}">
-    {{ product | json }}
-  </script>
-
-  <div class="custom-product-display" style="text-align: center; padding: 30px;">
+  <div class="custom-product-display" style="text-align:center; padding: 30px;">
+    
     <!-- Product Image -->
-    <div class="product-image" style="margin-bottom: 20px;">
+    <div class="product-image">
       <img 
+        id="MainImage-{{ section.id }}" 
         src="{{ product.featured_image | img_url: 'large' }}" 
         alt="{{ product.title }}" 
-        id="MainImage-{{ section.id }}"
-        style="max-width: 250px; margin: 0 auto;"
+        style="max-width: 250px; margin-bottom: 20px;"
       />
     </div>
 
     <!-- Product Name -->
-    <h3 style="margin-bottom: 5px;">{{ product.title }}</h3>
+    <h3>{{ product.title }}</h3>
 
     <!-- Product Price -->
-    <p style="font-size: 18px; font-weight: 500; margin-bottom: 15px;">{{ product.price | money }}</p>
+    <p style="font-size: 18px; font-weight: 500;">{{ product.price | money }}</p>
 
-    <!-- Globo Color Swatch -->
-    <div class="gcs-product" data-product-handle="{{ product.handle }}"></div>
+    <!-- Color Swatches -->
+    {% assign color_option_index = -1 %}
+    {% for option in product.options_with_values %}
+      {% if option.name == 'Color' or option.name == 'Colour' %}
+        {% assign color_option_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if color_option_index >= 0 %}
+      <div class="color-swatches" style="margin-top: 20px;">
+        {% assign shown_colors = '' %}
+        {% for variant in product.variants %}
+          {% assign color = variant.options[color_option_index] %}
+          {% unless shown_colors contains color %}
+            <span 
+              class="color-swatch" 
+              data-img="{{ variant.featured_image | img_url: 'large' }}"
+              style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color | downcase }}; cursor:pointer;"
+              title="{{ color }}"
+            ></span>
+            {% assign shown_colors = shown_colors | append: color | append: ',' %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
-  <!-- JS: Re-initialize Globo Color Swatches -->
+  <!-- JS for swatch click image switching -->
   <script>
-    setTimeout(function() {
-      if (typeof GCS !== 'undefined' && typeof GCS.init === 'function') {
-        GCS.init();
-      } else {
-        console.warn('Globo GCS is not available.');
-      }
-    }, 1000);
+    document.addEventListener("DOMContentLoaded", function() {
+      const swatches = document.querySelectorAll(".color-swatch");
+      const image = document.getElementById("MainImage-{{ section.id }}");
+
+      swatches.forEach(swatch => {
+        swatch.addEventListener("click", () => {
+          const newImg = swatch.getAttribute("data-img");
+          if (newImg) {
+            image.setAttribute("src", newImg);
+          }
+        });
+      });
+    });
   </script>
 
 {% else %}
