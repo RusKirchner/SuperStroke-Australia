@@ -57,31 +57,11 @@
       "settings": {
         "selected_product": "s-tech-club-grip"
       }
-    },
-    "multiple_product_display_V8VJXL": {
-      "type": "multiple-product-display",
-      "name": "Multiple Product Display",
-      "settings": {
-        "selected_products": [
-          "marvel-venom-putter-grip",
-          "masked-slasher-halloween-putter-grip",
-          "marvel-super-heroes-putter-grips",
-          "marvel-miles-morales-putter-grip",
-          "marvel-deadpool-wolverine-putter-grips",
-          "lucky-clover-putter-grip",
-          "headless-horseman-holloween-grip",
-          "football-putter-grip",
-          "darth-vader-putter-grip",
-          "cross-comfort-club-grip",
-          "aluminum-screw-head-replacement"
-        ]
-      }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ",
-    "multiple_product_display_V8VJXL"
+    "custom_product_display_NUzLjQ"
   ]
 }
