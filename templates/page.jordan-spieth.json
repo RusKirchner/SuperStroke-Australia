@@ -80,6 +80,7 @@
         "section_subheading": "Why choose us",
         "section_subheading_size": 20,
         "section_subheading_color": "#444444",
+        "text_alignment": "center",
         "background_color": "rgba(0,0,0,0)",
         "padding_top": 30,
         "padding_bottom": 40
