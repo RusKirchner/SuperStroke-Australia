@@ -57,11 +57,23 @@
       "settings": {
         "selected_product": "s-tech-club-grip"
       }
+    },
+    "multiple_product_display_V8VJXL": {
+      "type": "multiple-product-display",
+      "name": "Multiple Product Display",
+      "settings": {
+        "selected_products": [
+          "football-putter-grip",
+          "headless-horseman-holloween-grip",
+          "lucky-clover-putter-grip"
+        ]
+      }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ"
+    "custom_product_display_NUzLjQ",
+    "multiple_product_display_V8VJXL"
   ]
 }
