@@ -1,11 +1,12 @@
 {% schema %}
 {
-  "name": "Multiple Product Display", 
+  "name": "Multiple Product Display",
   "settings": [
     {
-      "type": "product_list",
-      "id": "selected_products",
-      "label": "Select Products"
+      "type": "text",
+      "id": "product_handles",
+      "label": "Enter Product Handles (comma separated)",
+      "default": "product-1,product-2"
     }
   ],
   "presets": [
@@ -15,65 +16,62 @@
   ]
 }
 {% endschema %}
+{% assign handles_string = section.settings.product_handles | strip %}
+{% assign selected_handles = handles_string | split: ',' | map: 'strip' %}
 
-{% assign selected_handles = section.settings.selected_products %}
 {% if selected_handles.size > 0 %}
   <div class="multiple-product-display" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; padding: 30px;">
 
     {% for handle in selected_handles %}
       {% assign product = all_products[handle] %}
-
-      <div class="single-product" style="text-align:center; width: 280px;">
-        <!-- Product JSON (for variant switching if needed) -->
-        <script type="application/json" id="ProductJson-{{ product.id }}">
-          {{ product | json }}
-        </script>
-
-        <!-- Product Image -->
-        <div class="product-image-wrapper" style="position: relative;">
-          <img 
-            id="MainImage-{{ product.id }}" 
-            src="{{ product.featured_image | img_url: 'large' }}" 
-            alt="{{ product.title }}" 
-            class="main-product-image"
-            style="max-width: 250px; transition: opacity 0.3s ease;"
-          />
-        </div>
-
-        <!-- Product Name -->
-        <h3 style="margin-top: 10px;">{{ product.title }}</h3>
-
-        <!-- Product Price -->
-        <p style="font-size: 18px; font-weight: 500;">{{ product.price | money }}</p>
-
-        <!-- Color Swatches -->
-        {% assign color_option_index = -1 %}
-        {% for option in product.options_with_values %}
-          {% if option.name == 'Color' or option.name == 'Colour' %}
-            {% assign color_option_index = forloop.index0 %}
-          {% endif %}
-        {% endfor %}
-
-        {% if color_option_index >= 0 %}
-          <div class="color-swatches" style="margin-top: 15px;">
-            {% assign shown_colors = '' %}
-            {% for variant in product.variants %}
-              {% assign color = variant.options[color_option_index] %}
-              {% unless shown_colors contains color %}
-                {% assign color_first_word = color | split: ' ' | first %}
-                <span 
-                  class="color-swatch" 
-                  data-product-id="{{ product.id }}"
-                  data-img="{{ variant.featured_image | img_url: 'large' }}"
-                  style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color_first_word | downcase }}; cursor:pointer;"
-                  title="{{ color }}"
-                ></span>
-                {% assign shown_colors = shown_colors | append: color | append: ',' %}
-              {% endunless %}
-            {% endfor %}
+      {% if product %}
+        <div class="single-product" style="text-align:center; width: 280px;">
+          <!-- Product Image -->
+          <div class="product-image-wrapper" style="position: relative;">
+            <img 
+              id="MainImage-{{ product.id }}" 
+              src="{{ product.featured_image | img_url: 'large' }}" 
+              alt="{{ product.title }}" 
+              class="main-product-image"
+              style="max-width: 250px; transition: opacity 0.3s ease;"
+            />
           </div>
-        {% endif %}
-      </div>
+
+          <!-- Product Name -->
+          <h3 style="margin-top: 10px;">{{ product.title }}</h3>
+
+          <!-- Product Price -->
+          <p style="font-size: 18px; font-weight: 500;">{{ product.price | money }}</p>
+
+          <!-- Color Swatches -->
+          {% assign color_option_index = -1 %}
+          {% for option in product.options_with_values %}
+            {% if option.name == 'Color' or option.name == 'Colour' %}
+              {% assign color_option_index = forloop.index0 %}
+            {% endif %}
+          {% endfor %}
+
+          {% if color_option_index >= 0 %}
+            <div class="color-swatches" style="margin-top: 15px;">
+              {% assign shown_colors = '' %}
+              {% for variant in product.variants %}
+                {% assign color = variant.options[color_option_index] %}
+                {% unless shown_colors contains color %}
+                  {% assign color_first_word = color | split: ' ' | first %}
+                  <span 
+                    class="color-swatch" 
+                    data-product-id="{{ product.id }}"
+                    data-img="{{ variant.featured_image | img_url: 'large' }}"
+                    style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color_first_word | downcase }}; cursor:pointer;"
+                    title="{{ color }}"
+                  ></span>
+                  {% assign shown_colors = shown_colors | append: color | append: ',' %}
+                {% endunless %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 
@@ -94,7 +92,6 @@
       });
     });
   </script>
-
 {% else %}
   <p style="text-align:center;">No products selected.</p>
 {% endif %}
