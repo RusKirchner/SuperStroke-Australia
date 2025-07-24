@@ -1,6 +1,8 @@
 {% schema %}
 {
   "name": "Multiple Product Display",
+  "tag": "section",
+  "class": "multi-product-display",
   "settings": [
     {
       "type": "text",
@@ -91,6 +93,15 @@
   ]
 }
 {% endschema %}
+<div class="banner-content container">
+  <div class="multi-cards-text">
+    <h5 style="color: {{ block.settings.subheading_color }}; font-size: {{ block.settings.sub_heading_font_size }}px;">
+      {{ block.settings.sub_heading }}
+    </h5>
+    <h2 style="color: {{ block.settings.heading_color }}; font-size: {{ block.settings.heading_font_size }}px;">
+    {{ block.settings.heading }}
+    </h2>
+  </div>
 {% if section.blocks.size > 0 %}
   <div class="multiple-product-display" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; padding: 30px;">
 
@@ -146,7 +157,7 @@
       {% endif %}
     {% endfor %}
   </div>
-
+</div>
   <!-- JS for swatch click image switching -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
