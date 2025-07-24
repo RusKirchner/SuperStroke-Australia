@@ -179,10 +179,11 @@
 }
 
 .custom-multiblock-item {
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(33% - 20px);
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.5s ease;
+  max-width: 33%;
 }
 
 .custom-multiblock-item a {
@@ -217,12 +218,14 @@
 @media screen and (max-width: 767px) {
   .custom-multiblock-item {
     flex: 1 1 100%;
+    max-widh: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .custom-multiblock-item {
     flex: 1 1 48%;
+    max-width: 48%;
   }
 }
 {% endstyle %}
