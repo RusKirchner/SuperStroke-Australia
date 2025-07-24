@@ -73,11 +73,31 @@
         "image": "shopify://shop_images/PDP-Brand_1_31fa8354-59b3-4c61-9bb2-fef1ea448a49.png",
         "alt_text": "Linked image"
       }
+    },
+    "image_with_link_m4iVrB": {
+      "type": "image-with-link",
+      "name": "Image with Link",
+      "settings": {
+        "link_url": "shopify://pages/jordan-spieth",
+        "image": "shopify://shop_images/Patrick_Cantlay_1200x1200_b7625bf6-a96b-4c86-b135-f17f8ac98f1f_1.png",
+        "alt_text": "Linked image"
+      }
+    },
+    "image_with_link_38w6J7": {
+      "type": "image-with-link",
+      "name": "Image with Link",
+      "settings": {
+        "link_url": "shopify://pages/sungjae-im",
+        "image": "shopify://shop_images/Sungjae_Im_Content_Block_1_1.png",
+        "alt_text": "Linked image"
+      }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_RX6nwD",
-    "image_with_link_ELJAiN"
+    "image_with_link_ELJAiN",
+    "image_with_link_m4iVrB",
+    "image_with_link_38w6J7"
   ]
 }
