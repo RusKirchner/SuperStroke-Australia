@@ -78,7 +78,7 @@
       "type": "image-with-link",
       "name": "Image with Link",
       "settings": {
-        "link_url": "shopify://pages/jordan-spieth",
+        "link_url": "shopify://pages/patrick-cantlay",
         "image": "shopify://shop_images/Patrick_Cantlay_1200x1200_b7625bf6-a96b-4c86-b135-f17f8ac98f1f_1.png",
         "alt_text": "Linked image"
       }
