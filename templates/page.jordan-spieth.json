@@ -25,7 +25,7 @@
           "settings": {
             "sub_heading": "3-Time Major Winner",
             "subheading_color": "#ffffff",
-            "sub_heading_font_size": 36
+            "sub_heading_font_size": 14
           }
         },
         "heading_jXPjqq": {
@@ -33,36 +33,13 @@
           "settings": {
             "heading": "Jordan Spieth",
             "heading_color": "#ffffff",
-            "heading_font_size": 36
-          }
-        },
-        "richtext_V9KfEH": {
-          "type": "richtext",
-          "settings": {
-            "text": "",
-            "text_color": "#ffffff",
-            "text_font_size": 18
-          }
-        },
-        "buttons_pdgRFp": {
-          "type": "buttons",
-          "settings": {
-            "btn1_label": "Shop Now",
-            "btn1_url": "",
-            "btn2_label": "Learn More",
-            "btn2_url": "",
-            "btn_bg": "#ffffff",
-            "btn_color": "#000000",
-            "btn_hover_bg": "#000000",
-            "btn_hover_color": "#ffffff"
+            "heading_font_size": 48
           }
         }
       },
       "block_order": [
         "subheading_4kRAd7",
-        "heading_jXPjqq",
-        "richtext_V9KfEH",
-        "buttons_pdgRFp"
+        "heading_jXPjqq"
       ],
       "name": "Banner With Overlay",
       "settings": {
