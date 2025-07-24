@@ -67,6 +67,7 @@
     },
     "image_with_link_ELJAiN": {
       "type": "image-with-link",
+      "disabled": true,
       "name": "Image with Link",
       "settings": {
         "link_url": "shopify://pages/jordan-spieth",
@@ -76,6 +77,7 @@
     },
     "image_with_link_m4iVrB": {
       "type": "image-with-link",
+      "disabled": true,
       "name": "Image with Link",
       "settings": {
         "link_url": "shopify://pages/patrick-cantlay",
@@ -85,6 +87,7 @@
     },
     "image_with_link_38w6J7": {
       "type": "image-with-link",
+      "disabled": true,
       "name": "Image with Link",
       "settings": {
         "link_url": "shopify://pages/sungjae-im",
@@ -94,9 +97,64 @@
     },
     "custom_product_display_4jKVrY": {
       "type": "custom-product-display",
+      "disabled": true,
       "name": "Custom Product Display",
       "settings": {
         "selected_product": "cross-comfort-club-grip"
+      }
+    },
+    "custom_multi_blocks_xXACmK": {
+      "type": "custom-multi-blocks",
+      "blocks": {
+        "content_block_7kMM8h": {
+          "type": "content_block",
+          "settings": {
+            "image": "shopify://shop_images/PDP-Brand_1_31fa8354-59b3-4c61-9bb2-fef1ea448a49.png",
+            "image_link": "shopify://pages/jordan-spieth",
+            "title": "Jordan Spieth",
+            "description": ""
+          }
+        },
+        "content_block_M6reEH": {
+          "type": "content_block",
+          "settings": {
+            "image": "shopify://shop_images/Patrick_Cantlay_1200x1200_b7625bf6-a96b-4c86-b135-f17f8ac98f1f_1.png",
+            "image_link": "shopify://pages/patrick-cantlay",
+            "title": "Patrick Cantlay",
+            "description": ""
+          }
+        },
+        "content_block_JPRUEQ": {
+          "type": "content_block",
+          "settings": {
+            "image": "shopify://shop_images/Sungjae_Im_Content_Block_1_1.png",
+            "image_link": "shopify://pages/sungjae-im",
+            "title": "Sungjae Im",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_block_7kMM8h",
+        "content_block_M6reEH",
+        "content_block_JPRUEQ"
+      ],
+      "name": "Custom Multi Block",
+      "settings": {
+        "section_heading": "PGA TOUR",
+        "section_heading_size": 48,
+        "section_heading_color": "#282828",
+        "section_subheading": "",
+        "section_subheading_size": 20,
+        "section_subheading_color": "#444444",
+        "section_richtext": "",
+        "section_richtext_size": 16,
+        "section_richtext_color": "#666666",
+        "background_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title_color": "#000000",
+        "description_color": "#666666"
       }
     }
   },
@@ -106,6 +164,7 @@
     "image_with_link_ELJAiN",
     "image_with_link_m4iVrB",
     "image_with_link_38w6J7",
-    "custom_product_display_4jKVrY"
+    "custom_product_display_4jKVrY",
+    "custom_multi_blocks_xXACmK"
   ]
 }
