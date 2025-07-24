@@ -257,6 +257,10 @@
   >
     {% for block in section.blocks %}
       {% case block.type %}
+        {% when 'subheading' %}
+          <h5 style="color: {{ block.settings.subheading_color }}; font-size: {{ block.settings.sub_heading_font_size }}px;">
+            {{ block.settings.sub_heading }}
+          </h5>
         {% when 'heading' %}
           <h2 style="color: {{ block.settings.heading_color }}; font-size: {{ block.settings.heading_font_size }}px;">
             {{ block.settings.heading }}
