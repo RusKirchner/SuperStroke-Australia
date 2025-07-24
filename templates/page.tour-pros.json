@@ -65,32 +65,19 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_card_MqMUKQ": {
-      "type": "custom-product-card",
-      "name": "Custom Product Card",
+    "image_with_link_ELJAiN": {
+      "type": "image-with-link",
+      "name": "Image with Link",
       "settings": {
-        "product": "zenergy-tour-putter-grips",
-        "first_image": "shopify://shop_images/WEB_1.0P17_BlackWhite_LS_3000x_8baac8aa-7d0f-4617-8c60-970058f371ff.jpg",
-        "second_image": "shopify://shop_images/UTF-8Josh_Kelly-3_a9fe7da3-b3b2-42b5-970d-c6913b8b1eb6.webp",
-        "section_bg": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "title_font_size": 18,
-        "title_color": "#000000"
-      }
-    },
-    "custom_product_display_6pAzQz": {
-      "type": "custom-product-display",
-      "name": "Custom Product Display",
-      "settings": {
-        "selected_product": "cross-comfort-club-grip"
+        "link_url": "shopify://pages/jordan-spieth",
+        "image": "shopify://shop_images/PDP-Brand_1_31fa8354-59b3-4c61-9bb2-fef1ea448a49.png",
+        "alt_text": "Linked image"
       }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_RX6nwD",
-    "custom_product_card_MqMUKQ",
-    "custom_product_display_6pAzQz"
+    "image_with_link_ELJAiN"
   ]
 }
