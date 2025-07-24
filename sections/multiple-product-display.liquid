@@ -107,12 +107,16 @@
 {% endschema %}
 <div class="banner-content container">
   <div class="multi-cards-text" style="text-align: {{ section.settings.text_alignment }};">
-    <h5 style="color: {{ section.settings.section_subheading_color }}; font-size: {{ section.settings.section_subheading_size }}px;">
-      {{ section.settings.section_subheading }}
-    </h5>
-    <h2 style="color: {{ section.settings.section_heading_color }}; font-size: {{ section.settings.section_heading_size }}px;">
-    {{ section.settings.section_heading }}
-    </h2>
+    {% if section.settings.section_subheading != blank %}
+      <h5 style="color: {{ section.settings.section_subheading_color }}; font-size: {{ section.settings.section_subheading_size }}px;">
+        {{ section.settings.section_subheading }}
+      </h5>
+    {% endif %}
+    {% if section.settings.section_heading != blank %}
+      <h2 style="color: {{ section.settings.section_heading_color }}; font-size: {{ section.settings.section_heading_size }}px;">
+      {{ section.settings.section_heading }}
+      </h2>
+    {% endif %}
   </div>
 {% if section.blocks.size > 0 %}
   <div class="multiple-product-display" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; padding: 0px;">
