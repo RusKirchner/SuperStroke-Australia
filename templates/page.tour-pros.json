@@ -35,25 +35,11 @@
             "text_color": "#ffffff",
             "text_font_size": 18
           }
-        },
-        "buttons_Xrdhjf": {
-          "type": "buttons",
-          "settings": {
-            "btn1_label": "Shop Now",
-            "btn1_url": "",
-            "btn2_label": "Learn More",
-            "btn2_url": "",
-            "btn_bg": "#ffffff",
-            "btn_color": "#000000",
-            "btn_hover_bg": "#000000",
-            "btn_hover_color": "#ffffff"
-          }
         }
       },
       "block_order": [
         "heading_FL7ALL",
-        "richtext_P9LMmw",
-        "buttons_Xrdhjf"
+        "richtext_P9LMmw"
       ],
       "name": "Banner With Overlay",
       "settings": {
@@ -63,44 +49,6 @@
         "content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "image_with_link_ELJAiN": {
-      "type": "image-with-link",
-      "disabled": true,
-      "name": "Image with Link",
-      "settings": {
-        "link_url": "shopify://pages/jordan-spieth",
-        "image": "shopify://shop_images/PDP-Brand_1_31fa8354-59b3-4c61-9bb2-fef1ea448a49.png",
-        "alt_text": "Linked image"
-      }
-    },
-    "image_with_link_m4iVrB": {
-      "type": "image-with-link",
-      "disabled": true,
-      "name": "Image with Link",
-      "settings": {
-        "link_url": "shopify://pages/patrick-cantlay",
-        "image": "shopify://shop_images/Patrick_Cantlay_1200x1200_b7625bf6-a96b-4c86-b135-f17f8ac98f1f_1.png",
-        "alt_text": "Linked image"
-      }
-    },
-    "image_with_link_38w6J7": {
-      "type": "image-with-link",
-      "disabled": true,
-      "name": "Image with Link",
-      "settings": {
-        "link_url": "shopify://pages/sungjae-im",
-        "image": "shopify://shop_images/Sungjae_Im_Content_Block_1_1.png",
-        "alt_text": "Linked image"
-      }
-    },
-    "custom_product_display_4jKVrY": {
-      "type": "custom-product-display",
-      "disabled": true,
-      "name": "Custom Product Display",
-      "settings": {
-        "selected_product": "cross-comfort-club-grip"
       }
     },
     "custom_multi_blocks_xXACmK": {
@@ -205,10 +153,6 @@
   "order": [
     "main",
     "banner_with_overlay_RX6nwD",
-    "image_with_link_ELJAiN",
-    "image_with_link_m4iVrB",
-    "image_with_link_38w6J7",
-    "custom_product_display_4jKVrY",
     "custom_multi_blocks_xXACmK",
     "custom_multi_blocks_7D8qxJ"
   ]
