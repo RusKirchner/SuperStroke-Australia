@@ -59,6 +59,24 @@
         "selected_product": "s-tech-club-grip"
       }
     },
+    "rich_text_blockquote_XrNXYx": {
+      "type": "rich-text-blockquote",
+      "name": "Rich text Blockquote",
+      "settings": {
+        "title": "the industry - Jordan SpiethThere's no doubt in my mind thatSuperStroke makes the best grips in",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": ""
+      }
+    },
     "multiple_product_display_PYQDXV": {
       "type": "multiple-product-display",
       "blocks": {
@@ -98,6 +116,7 @@
     "main",
     "banner_with_overlay_KYWFtB",
     "custom_product_display_NUzLjQ",
+    "rich_text_blockquote_XrNXYx",
     "multiple_product_display_PYQDXV"
   ]
 }
