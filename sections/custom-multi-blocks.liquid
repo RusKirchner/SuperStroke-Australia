@@ -1,6 +1,261 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Multi Block",
+  "tag": "section",
+  "class": "custom-multiblock-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Our Features"
+    },
+    {
+      "type": "range",
+      "id": "section_heading_size",
+      "label": "Heading Font Size (px)",
+      "min": 12,
+      "max": 50,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "section_subheading",
+      "label": "Section Subheading",
+      "default": "Why choose us"
+    },
+    {
+      "type": "range",
+      "id": "section_subheading_size",
+      "label": "Subheading Font Size (px)",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "section_subheading_color",
+      "label": "Subheading Color",
+      "default": "#444444"
+    },
+    {
+      "type": "richtext",
+      "id": "section_richtext",
+      "label": "Section Rich Text"
+    },
+    {
+      "type": "range",
+      "id": "section_richtext_size",
+      "label": "Richtext Font Size (px)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "section_richtext_color",
+      "label": "Richtext Color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Block Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Block Description Color",
+      "default": "#666666"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Link URL (for image)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Block Title",
+          "default": "Block Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Block Description",
+          "default": "Block description goes here."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Custom Multi Block"
+    }
+  ]
+}
 {% endschema %}
+
+{% style %}
+.custom-multiblock-section {
+  background-color: {{ section.settings.background_color }};
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+
+.custom-multiblock-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-multiblock-header h2 {
+  font-size: {{ section.settings.section_heading_size }}px;
+  color: {{ section.settings.section_heading_color }};
+  margin: 0 0 10px;
+}
+
+.custom-multiblock-header h3 {
+  font-size: {{ section.settings.section_subheading_size }}px;
+  color: {{ section.settings.section_subheading_color }};
+  margin: 0 0 10px;
+}
+
+.custom-multiblock-header .richtext {
+  font-size: {{ section.settings.section_richtext_size }}px;
+  color: {{ section.settings.section_richtext_color }};
+}
+
+.custom-multiblock-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.custom-multiblock-item {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.custom-multiblock-item a {
+  display: block;
+  overflow: hidden;
+}
+
+.custom-multiblock-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.custom-multiblock-item a:hover img {
+  transform: scale(1.05);
+}
+
+.custom-multiblock-item .title {
+  color: {{ section.settings.title_color }};
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.custom-multiblock-item .description {
+  color: {{ section.settings.description_color }};
+  font-size: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-multiblock-item {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .custom-multiblock-item {
+    flex: 1 1 48%;
+  }
+}
+{% endstyle %}
+
+<div class="custom-multiblock-header">
+  {% if section.settings.section_heading != blank %}
+    <h2>{{ section.settings.section_heading }}</h2>
+  {% endif %}
+  {% if section.settings.section_subheading != blank %}
+    <h3>{{ section.settings.section_subheading }}</h3>
+  {% endif %}
+  {% if section.settings.section_richtext != blank %}
+    <div class="richtext">{{ section.settings.section_richtext }}</div>
+  {% endif %}
+</div>
+
+<div class="custom-multiblock-wrapper">
+  {% for block in section.blocks %}
+    <div class="custom-multiblock-item">
+      {% if block.settings.image %}
+        {% if block.settings.image_link != blank %}
+          <a href="{{ block.settings.image_link }}">
+            <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title | escape }}">
+          </a>
+        {% else %}
+          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title | escape }}">
+        {% endif %}
+      {% endif %}
+      {% if block.settings.title != blank %}
+        <div class="title">{{ block.settings.title }}</div>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <div class="description">{{ block.settings.description }}</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
