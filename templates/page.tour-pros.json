@@ -151,6 +151,50 @@
         "section_richtext_size": 16,
         "section_richtext_color": "#666666",
         "background_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 40,
+        "title_color": "#000000",
+        "description_color": "#666666"
+      }
+    },
+    "custom_multi_blocks_7D8qxJ": {
+      "type": "custom-multi-blocks",
+      "blocks": {
+        "content_block_rD4aKX": {
+          "type": "content_block",
+          "settings": {
+            "image": "shopify://shop_images/Phil_Kenyon_1200x1200_c4cc483a-4e99-444f-b358-8dcc508706a4.webp",
+            "image_link": "shopify://pages/phil-kenyon",
+            "title": "Phil Kenyon",
+            "description": ""
+          }
+        },
+        "content_block_kMFE8m": {
+          "type": "content_block",
+          "settings": {
+            "image": "shopify://shop_images/superstroke_pic_1.webp",
+            "image_link": "#",
+            "title": "Cameron McCormick",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_block_rD4aKX",
+        "content_block_kMFE8m"
+      ],
+      "name": "Custom Multi Block",
+      "settings": {
+        "section_heading": "Instructors",
+        "section_heading_size": 48,
+        "section_heading_color": "#282828",
+        "section_subheading": "",
+        "section_subheading_size": 20,
+        "section_subheading_color": "#444444",
+        "section_richtext": "",
+        "section_richtext_size": 16,
+        "section_richtext_color": "#666666",
+        "background_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 40,
         "title_color": "#000000",
@@ -165,6 +209,7 @@
     "image_with_link_m4iVrB",
     "image_with_link_38w6J7",
     "custom_product_display_4jKVrY",
-    "custom_multi_blocks_xXACmK"
+    "custom_multi_blocks_xXACmK",
+    "custom_multi_blocks_7D8qxJ"
   ]
 }
