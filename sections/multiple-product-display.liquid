@@ -48,6 +48,17 @@
       "default": "#444444"
     },
     {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
       "type": "color",
       "id": "background_color",
       "label": "Section Background Color",
@@ -95,7 +106,7 @@
 }
 {% endschema %}
 <div class="banner-content container">
-  <div class="multi-cards-text">
+  <div class="multi-cards-text" style="text-align: {{ block.settings.text_alignment }};">
     <h5 style="color: {{ section.settings.section_subheading_color }}; font-size: {{ section.settings.section_subheading_size }}px;">
       {{ section.settings.section_subheading }}
     </h5>
