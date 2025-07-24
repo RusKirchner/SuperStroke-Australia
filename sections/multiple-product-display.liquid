@@ -96,11 +96,11 @@
 {% endschema %}
 <div class="banner-content container">
   <div class="multi-cards-text">
-    <h5 style="color: {{ block.settings.subheading_color }}; font-size: {{ block.settings.sub_heading_font_size }}px;">
-      {{ block.settings.sub_heading }}
+    <h5 style="color: {{ section.settings.subheading_color }}; font-size: {{ section.settings.sub_heading_font_size }}px;">
+      {{ section.settings.sub_heading }}
     </h5>
-    <h2 style="color: {{ block.settings.heading_color }}; font-size: {{ block.settings.heading_font_size }}px;">
-    {{ block.settings.heading }}
+    <h2 style="color: {{ section.settings.heading_color }}; font-size: {{ section.settings.heading_font_size }}px;">
+    {{ section.settings.heading }}
     </h2>
   </div>
 {% if section.blocks.size > 0 %}
