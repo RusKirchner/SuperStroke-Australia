@@ -1,7 +1,74 @@
 {% schema %}
 {
   "name": "Multiple Product Display",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Our Features"
+    },
+    {
+      "type": "range",
+      "id": "section_heading_size",
+      "label": "Heading Font Size (px)",
+      "min": 12,
+      "max": 50,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "section_subheading",
+      "label": "Section Subheading",
+      "default": "Why choose us"
+    },
+    {
+      "type": "range",
+      "id": "section_subheading_size",
+      "label": "Subheading Font Size (px)",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "section_subheading_color",
+      "label": "Subheading Color",
+      "default": "#444444"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    }
+  ],
   "blocks": [
     {
       "type": "product_block",
