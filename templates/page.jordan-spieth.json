@@ -11,10 +11,72 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left"
+      }
+    },
+    "banner_with_overlay_KYWFtB": {
+      "type": "banner-with-overlay",
+      "blocks": {
+        "subheading_4kRAd7": {
+          "type": "subheading",
+          "settings": {
+            "sub_heading": "3-Time Major Winner",
+            "subheading_color": "#ffffff",
+            "sub_heading_font_size": 36
+          }
+        },
+        "heading_jXPjqq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Jordan Spieth",
+            "heading_color": "#ffffff",
+            "heading_font_size": 36
+          }
+        },
+        "richtext_V9KfEH": {
+          "type": "richtext",
+          "settings": {
+            "text": "",
+            "text_color": "#ffffff",
+            "text_font_size": 18
+          }
+        },
+        "buttons_pdgRFp": {
+          "type": "buttons",
+          "settings": {
+            "btn1_label": "Shop Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": "",
+            "btn_bg": "#ffffff",
+            "btn_color": "#000000",
+            "btn_hover_bg": "#000000",
+            "btn_hover_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4kRAd7",
+        "heading_jXPjqq",
+        "richtext_V9KfEH",
+        "buttons_pdgRFp"
+      ],
+      "name": "Banner With Overlay",
+      "settings": {
+        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.3,
+        "content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_with_overlay_KYWFtB"
   ]
 }
