@@ -53,6 +53,7 @@
     },
     "custom_product_display_NUzLjQ": {
       "type": "custom-product-display",
+      "disabled": true,
       "name": "Custom Product Display",
       "settings": {
         "selected_product": "s-tech-club-grip"
@@ -66,17 +67,10 @@
           "settings": {
             "selected_product": "s-tech-club-grip"
           }
-        },
-        "product_block_qKhzhr": {
-          "type": "product_block",
-          "settings": {
-            "selected_product": "wristlock-putter-grip"
-          }
         }
       },
       "block_order": [
-        "product_block_h8Meae",
-        "product_block_qKhzhr"
+        "product_block_h8Meae"
       ],
       "name": "Multiple Product Display",
       "settings": {}
