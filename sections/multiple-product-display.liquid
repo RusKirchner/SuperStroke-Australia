@@ -1,35 +1,40 @@
 {% schema %}
 {
   "name": "Multiple Product Display",
-  "settings": [
+  "settings": [],
+  "blocks": [
     {
-      "type": "text",
-      "id": "product_handles",
-      "label": "Enter Product Handles (comma separated)",
-      "default": "product-1,product-2"
+      "type": "product_block",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "selected_product",
+          "label": "Select Product"
+        }
+      ]
     }
   ],
+  "max_blocks": 10,
   "presets": [
     {
-      "name": "Multiple Product Display"
+      "name": "Multiple Product Display",
+      "blocks": []
     }
   ]
 }
 {% endschema %}
-{% assign handles_string = section.settings.product_handles | strip %}
-{% assign selected_handles = handles_string | split: ',' | map: 'strip' %}
-
-{% if selected_handles.size > 0 %}
+{% if section.blocks.size > 0 %}
   <div class="multiple-product-display" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; padding: 30px;">
 
-    {% for handle in selected_handles %}
-      {% assign product = all_products[handle] %}
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.selected_product] %}
       {% if product %}
-        <div class="single-product" style="text-align:center; width: 280px;">
+        <div class="single-product" style="text-align:center; width: 280px;" data-block-id="{{ block.id }}">
           <!-- Product Image -->
           <div class="product-image-wrapper" style="position: relative;">
             <img 
-              id="MainImage-{{ product.id }}" 
+              id="MainImage-{{ block.id }}" 
               src="{{ product.featured_image | img_url: 'large' }}" 
               alt="{{ product.title }}" 
               class="main-product-image"
@@ -60,7 +65,7 @@
                   {% assign color_first_word = color | split: ' ' | first %}
                   <span 
                     class="color-swatch" 
-                    data-product-id="{{ product.id }}"
+                    data-block-id="{{ block.id }}"
                     data-img="{{ variant.featured_image | img_url: 'large' }}"
                     style="display:inline-block; width:20px; height:20px; border:1px solid #ccc; border-radius:50%; margin:0 5px; background-color: {{ color_first_word | downcase }}; cursor:pointer;"
                     title="{{ color }}"
@@ -83,15 +88,15 @@
       swatches.forEach(swatch => {
         swatch.addEventListener("click", () => {
           const imgUrl = swatch.getAttribute("data-img");
-          const productId = swatch.getAttribute("data-product-id");
-          const mainImg = document.getElementById("MainImage-" + productId);
-          if (mainImg && imgUrl) {
-            mainImg.setAttribute("src", imgUrl);
+          const blockId = swatch.getAttribute("data-block-id");
+          const img = document.getElementById("MainImage-" + blockId);
+          if (img && imgUrl) {
+            img.setAttribute("src", imgUrl);
           }
         });
       });
     });
   </script>
 {% else %}
-  <p style="text-align:center;">No products selected.</p>
+  <p style="text-align:center;">No products added.</p>
 {% endif %}
