@@ -51,40 +51,6 @@
         "padding_bottom": 60
       }
     },
-    "custom_block_product_WEih79": {
-      "type": "custom-block-product",
-      "blocks": {
-        "product_block_Njdc8r": {
-          "type": "product_block",
-          "settings": {
-            "title": "",
-            "block_text": "",
-            "product": "s-tech-club-grip",
-            "variant_id": "44504168661310",
-            "title_color": "#000000",
-            "price_color": "#000000",
-            "button_text_color": "#ffffff",
-            "button_background_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "product_block_Njdc8r"
-      ],
-      "name": "Product or Variant Blocks",
-      "settings": {
-        "subheading": "Shop like a Pro",
-        "subheading_color": "#000000",
-        "heading": "Jordan's Grips of Choice",
-        "heading_color": "#000000",
-        "rich_text": "",
-        "richtext_color": "#333333",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "background_color": "#ffffff",
-        "font_color": "#000000"
-      }
-    },
     "custom_product_display_NUzLjQ": {
       "type": "custom-product-display",
       "name": "Custom Product Display",
@@ -96,7 +62,6 @@
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_block_product_WEih79",
     "custom_product_display_NUzLjQ"
   ]
 }
