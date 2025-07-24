@@ -91,6 +91,13 @@
         "image": "shopify://shop_images/Sungjae_Im_Content_Block_1_1.png",
         "alt_text": "Linked image"
       }
+    },
+    "custom_product_display_4jKVrY": {
+      "type": "custom-product-display",
+      "name": "Custom Product Display",
+      "settings": {
+        "selected_product": "cross-comfort-club-grip"
+      }
     }
   },
   "order": [
@@ -98,6 +105,7 @@
     "banner_with_overlay_RX6nwD",
     "image_with_link_ELJAiN",
     "image_with_link_m4iVrB",
-    "image_with_link_38w6J7"
+    "image_with_link_38w6J7",
+    "custom_product_display_4jKVrY"
   ]
 }
