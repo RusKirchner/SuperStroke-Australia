@@ -59,7 +59,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/SuperStroke_Tour_Pros_Header_8797428a-13f0-42bd-a8aa-396c805a5265.webp",
         "overlay_color": "#000000",
-        "overlay_opacity": 0.3,
+        "overlay_opacity": 0.4,
         "content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60
