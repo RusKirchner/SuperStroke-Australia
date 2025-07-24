@@ -57,11 +57,35 @@
       "settings": {
         "selected_product": "s-tech-club-grip"
       }
+    },
+    "multiple_product_display_PYQDXV": {
+      "type": "multiple-product-display",
+      "blocks": {
+        "product_block_h8Meae": {
+          "type": "product_block",
+          "settings": {
+            "selected_product": "marvel-deadpool-wolverine-putter-grips"
+          }
+        },
+        "product_block_qKhzhr": {
+          "type": "product_block",
+          "settings": {
+            "selected_product": "lucky-clover-putter-grip"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_h8Meae",
+        "product_block_qKhzhr"
+      ],
+      "name": "Multiple Product Display",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ"
+    "custom_product_display_NUzLjQ",
+    "multiple_product_display_PYQDXV"
   ]
 }
