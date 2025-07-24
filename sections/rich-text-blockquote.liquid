@@ -12,7 +12,7 @@
   <div class="page-width rich-text-section large-section global-border-radius" data-cc-animate>
     <div class="{% if section.settings.full_width == false %}reading-width{% endif %} text-center">
       {% if section.settings.title != blank %}
-        <h2 class="{% if section.settings.enlarge_title %}giant-title {% else %}large-title {% endif %} rich-text-section__title">{{ section.settings.title | escape | replace: '\n', '<br>'  }}</h2>
+        <h2 class="{% if section.settings.enlarge_title %}giant-title {% else %}large-title {% endif %} rich-text-section__title">{{ section.settings.title | escape | replace: '&lt;br&gt;', '<br>' }}</h2>
       {% endif %}
 
       {% if section.settings.text != blank %}
