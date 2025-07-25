@@ -75,6 +75,7 @@
       "blocks": {
         "subheading_n9XWEr": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Get to Know Michael",
             "color": "#282828",
@@ -84,7 +85,7 @@
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Master of the game",
+            "text": "Get to Know Matt",
             "color": "#282828",
             "font_size": 40
           }
@@ -92,20 +93,8 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Michael Breed is one of the most dynamic and engaging teachers in golf, bringing energy and innovation to the game. He is the host of \"Course Record with Michael Breed\" on CBS and a regular contributor to CBS Sports HQ. His influence extends across multiple platforms, including \"A New Breed of Golf\" on SiriusXM, YouTube, and social media, where he pioneers digital golf instruction.<br/><br/>Recognized as Golf Digest’s #1 instructor in New York and #16 in America, Michael has helped shape the future of coaching. A PGA of America National Teacher of the Year (2012) and former host of \"The Golf Fix\", he has worked with over 30 touring professionals. His passion for teaching and commitment to growing the game continue to inspire golfers at every level.</p>",
+            "text": "<p>Matt Adams is a renowned golf broadcaster, author, and historian, bringing passion and insight to the game like no other. With decades of experience covering golf’s biggest moments, he’s built a reputation for his deep knowledge, engaging storytelling, and behind-the-scenes access to the sport’s greatest players. As the host of \"Fairways of Life\", the world’s largest independent golf talk show, Matt delivers expert analysis, exclusive interviews, and a fresh perspective on all things golf.<br/><br/>Beyond broadcasting, Matt is a best-selling author, having written multiple books that explore the rich history and legends of the game. His work captures the essence of golf, from its timeless traditions to the personalities that have shaped it. Whether he’s on-air, on the course, or uncovering golf’s hidden stories, his passion for the sport is evident in everything he does.<br/><br/>Through \"Fairways of Life\", Matt continues to inspire and inform golfers worldwide, offering a unique blend of entertainment, history, and expert commentary. His mission is simple: to celebrate the game and bring fans closer to the stories that make golf truly special.</p>",
             "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "https://michaelbreed.com/pages/about",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
             "font_size": 16
           }
         }
@@ -113,16 +102,15 @@
       "block_order": [
         "subheading_n9XWEr",
         "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
+        "richtext_cxqx6A"
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/IMG_5225.webp",
+        "image": "shopify://shop_images/2015_Matt_Adams_St_Andrews.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 40
       }
     },
@@ -148,7 +136,7 @@
         "padding_top": 0,
         "padding_bottom": 40,
         "video_type": "youtube",
-        "video_url": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
+        "video_url": "https://www.youtube.com/embed/7tactK5b65c?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=7tactK5b65c&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
     }
   },
