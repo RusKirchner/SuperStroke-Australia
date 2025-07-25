@@ -23,7 +23,7 @@
         "subheading_4kRAd7": {
           "type": "subheading",
           "settings": {
-            "sub_heading": "Host of \"A new breed of golf\"",
+            "sub_heading": "2015 PGA of America Teacher of the Year",
             "subheading_color": "#ffffff",
             "sub_heading_font_size": 13
           }
@@ -31,7 +31,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Michael Breed",
+            "heading": "Elite Instructor",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +43,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Michael_Breed_Approach_Shots_FI.webp",
+        "bg_image": "shopify://shop_images/Cameron_McCormick_Header.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -63,7 +63,7 @@
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "Superstroke's extensive variety of\ngrip styles and sizes have actual\ngame improvement benefits that will\nhelp golfers putt and swing more\nnaturally.",
+        "title": "SuperStroke has been at the\nforefront of grip innovation and is\nbrilliantly responsive to the needs of\ntoday’s players. - Cameron McCormick",
         "text": "",
         "button_label": "",
         "button_link": "",
@@ -73,7 +73,7 @@
         "full_width": false,
         "color_title": "#333333",
         "color_text": "#333333",
-        "color_bg": "rgba(0,0,0,0)",
+        "color_bg": "#ffffff",
         "gradient_bg": ""
       }
     },
@@ -83,7 +83,7 @@
         "subheading_n9XWEr": {
           "type": "subheading",
           "settings": {
-            "text": "Get to Know Michael",
+            "text": "Get to Know Cameron",
             "color": "#282828",
             "font_size": 13
           }
@@ -99,20 +99,8 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Michael Breed is one of the most dynamic and engaging teachers in golf, bringing energy and innovation to the game. He is the host of \"Course Record with Michael Breed\" on CBS and a regular contributor to CBS Sports HQ. His influence extends across multiple platforms, including \"A New Breed of Golf\" on SiriusXM, YouTube, and social media, where he pioneers digital golf instruction.<br/><br/>Recognized as Golf Digest’s #1 instructor in New York and #16 in America, Michael has helped shape the future of coaching. A PGA of America National Teacher of the Year (2012) and former host of \"The Golf Fix\", he has worked with over 30 touring professionals. His passion for teaching and commitment to growing the game continue to inspire golfers at every level.</p>",
+            "text": "<p>Cameron McCormick began coaching golf in his home country of Australia in 1998. Moving to the United States in 2000, he brought with him the coaching principles honed under the tutelage of the Victorian Institute of Sport coaches.<br/><br/>With a background in competitive golf, both collegiate, amateur and professional; in addition to knowledge in the biomechanics, motor learning and psychology domains, Cameron has developed an international reputation as a sought after coach to players at, or aspiring to, high levels of competitive mastery.<br/><br/>McCormick’s client list covers the gamut from beginner to elite players. He is most well known for coaching former #1 ranked player in the world; PGA Tour winner and three-time major winner, Jordan Spieth since the age of 12.</p>",
             "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "https://michaelbreed.com/pages/about",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
             "font_size": 16
           }
         }
@@ -120,16 +108,15 @@
       "block_order": [
         "subheading_n9XWEr",
         "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
+        "richtext_cxqx6A"
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/IMG_5225.webp",
+        "image": "shopify://shop_images/superstroke_pic_1_cb562989-2f49-40a6-939c-99b6c665a3d2.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 40
       }
     },
@@ -155,7 +142,7 @@
         "padding_top": 0,
         "padding_bottom": 40,
         "video_type": "youtube",
-        "video_url": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
+        "video_url": "https://www.youtube.com/embed/ZnpeMNDETtE?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ZnpeMNDETtE&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
     }
   },
