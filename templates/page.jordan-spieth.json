@@ -200,6 +200,47 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "blog_multi_columns_h6KmgV": {
+      "type": "blog-multi-columns",
+      "blocks": {
+        "blog_block_wq4mBq": {
+          "type": "blog_block",
+          "settings": {
+            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "desc_font_size": 16,
+            "desc_color": "#333333",
+            "readmore_font_size": 14,
+            "readmore_color": "#007ace"
+          }
+        },
+        "blog_block_pkc6tj": {
+          "type": "blog_block",
+          "settings": {
+            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "desc_font_size": 16,
+            "desc_color": "#333333",
+            "readmore_font_size": 14,
+            "readmore_color": "#007ace"
+          }
+        }
+      },
+      "block_order": [
+        "blog_block_wq4mBq",
+        "blog_block_pkc6tj"
+      ],
+      "name": "Blog Multi Columns",
+      "settings": {
+        "section_heading": "The Latest",
+        "section_bg_color": "#ffffff",
+        "section_heading_font_size": 48,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -209,6 +250,7 @@
     "rich_text_blockquote_XrNXYx",
     "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb"
+    "banner_with_overlay_thrfXb",
+    "blog_multi_columns_h6KmgV"
   ]
 }
