@@ -129,15 +129,37 @@
             "color": "#000000",
             "font_size": 28
           }
+        },
+        "richtext_cxqx6A": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "color": "#444444",
+            "font_size": 16
+          }
+        },
+        "button_ABdfJa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Full Bio",
+            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
+            "text_color": "#ffffff",
+            "bg_color": "#000000",
+            "hover_text_color": "#ffffff",
+            "hover_bg_color": "#333333",
+            "font_size": 14
+          }
         }
       },
       "block_order": [
         "subheading_n9XWEr",
-        "heading_Bfi98e"
+        "heading_Bfi98e",
+        "richtext_cxqx6A",
+        "button_ABdfJa"
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/superstroke_pic_1.webp",
+        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
         "image_position": "left",
         "section_bg_color": "#ffffff",
         "padding_top": 40,
