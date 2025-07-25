@@ -1,0 +1,171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left"
+      }
+    },
+    "banner_with_overlay_KYWFtB": {
+      "type": "banner-with-overlay",
+      "blocks": {
+        "subheading_4kRAd7": {
+          "type": "subheading",
+          "settings": {
+            "sub_heading": "Host of \"A new breed of golf\"",
+            "subheading_color": "#ffffff",
+            "sub_heading_font_size": 13
+          }
+        },
+        "heading_jXPjqq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Michael Breed",
+            "heading_color": "#ffffff",
+            "heading_font_size": 48
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4kRAd7",
+        "heading_jXPjqq"
+      ],
+      "name": "Banner With Overlay",
+      "settings": {
+        "bg_image": "shopify://shop_images/Michael_Breed_Approach_Shots_FI.webp",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.3,
+        "content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "custom_product_display_NUzLjQ": {
+      "type": "custom-product-display",
+      "disabled": true,
+      "name": "Custom Product Display",
+      "settings": {
+        "selected_product": "s-tech-club-grip"
+      }
+    },
+    "rich_text_blockquote_XrNXYx": {
+      "type": "rich-text-blockquote",
+      "name": "Rich text Blockquote",
+      "settings": {
+        "title": "Superstroke's extensive variety of\ngrip styles and sizes have actual\ngame improvement benefits that will\nhelp golfers putt and swing more\nnaturally.",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": ""
+      }
+    },
+    "image_with_sub_heading_V8xgMj": {
+      "type": "image-with-sub-heading",
+      "blocks": {
+        "subheading_n9XWEr": {
+          "type": "subheading",
+          "settings": {
+            "text": "Get to Know Michael",
+            "color": "#282828",
+            "font_size": 13
+          }
+        },
+        "heading_Bfi98e": {
+          "type": "heading",
+          "settings": {
+            "text": "Master of the game",
+            "color": "#282828",
+            "font_size": 40
+          }
+        },
+        "richtext_cxqx6A": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Michael Breed is one of the most dynamic and engaging teachers in golf, bringing energy and innovation to the game. He is the host of \"Course Record with Michael Breed\" on CBS and a regular contributor to CBS Sports HQ. His influence extends across multiple platforms, including \"A New Breed of Golf\" on SiriusXM, YouTube, and social media, where he pioneers digital golf instruction.<br/><br/>Recognized as Golf Digest’s #1 instructor in New York and #16 in America, Michael has helped shape the future of coaching. A PGA of America National Teacher of the Year (2012) and former host of \"The Golf Fix\", he has worked with over 30 touring professionals. His passion for teaching and commitment to growing the game continue to inspire golfers at every level.</p>",
+            "color": "#282828",
+            "font_size": 16
+          }
+        },
+        "button_ABdfJa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Full Bio",
+            "button_link": "https://michaelbreed.com/pages/about",
+            "text_color": "#ffffff",
+            "bg_color": "#000000",
+            "hover_text_color": "#ffffff",
+            "hover_bg_color": "#000000",
+            "font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_n9XWEr",
+        "heading_Bfi98e",
+        "richtext_cxqx6A",
+        "button_ABdfJa"
+      ],
+      "name": "Image with Sub Heading",
+      "settings": {
+        "image": "shopify://shop_images/IMG_5225.webp",
+        "image_position": "left",
+        "text_alignment": "center",
+        "section_bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "blog_multi_columns_h6KmgV": {
+      "type": "blog-multi-columns",
+      "name": "Blog Multi Columns",
+      "settings": {
+        "section_heading": "The Latest",
+        "section_bg_color": "#ffffff",
+        "section_heading_font_size": 48,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "custom_video_section_TwMG8f": {
+      "type": "custom-video-section",
+      "name": "Custom Video Section",
+      "settings": {
+        "section_heading": "",
+        "heading_font_size": 28,
+        "heading_color": "#000000",
+        "section_bg_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "video_type": "youtube",
+        "video_url": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner_with_overlay_KYWFtB",
+    "custom_product_display_NUzLjQ",
+    "rich_text_blockquote_XrNXYx",
+    "image_with_sub_heading_V8xgMj",
+    "blog_multi_columns_h6KmgV",
+    "custom_video_section_TwMG8f"
+  ]
+}
