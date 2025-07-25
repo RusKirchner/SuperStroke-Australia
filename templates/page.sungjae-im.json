@@ -22,6 +22,7 @@
       "blocks": {
         "subheading_4kRAd7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "sub_heading": "3-Time Major Winner",
             "subheading_color": "#ffffff",
@@ -31,7 +32,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Sungjae Im",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +44,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/Sungjae_Im_Header_d0368f38-a3aa-4c9b-98fc-6fec11dc4e37.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -63,7 +64,7 @@
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
+        "title": "No one puts more research and\ndesign into their grips than\nSuperStroke. - Sungjae Im",
         "text": "",
         "button_label": "",
         "button_link": "",
@@ -83,11 +84,12 @@
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "zenergy-1-0pt-putter-grip"
           }
         },
         "product_block_kr4EhL": {
           "type": "product_block",
+          "disabled": true,
           "settings": {
             "selected_product": "zenergy-flatso-putter-grips"
           }
@@ -99,7 +101,7 @@
       ],
       "name": "Multiple Product Display",
       "settings": {
-        "section_heading": "Jordan's Grips of Choice",
+        "section_heading": "Sungjae's Grip of Choice",
         "section_heading_size": 40,
         "section_heading_color": "#282828",
         "section_subheading": "Shop like a Pro",
@@ -117,7 +119,7 @@
         "subheading_n9XWEr": {
           "type": "subheading",
           "settings": {
-            "text": "Get to Know Jordan",
+            "text": "Get to Know Sungjae",
             "color": "#282828",
             "font_size": 13
           }
@@ -125,7 +127,7 @@
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To the Top",
+            "text": "Shattering Records",
             "color": "#282828",
             "font_size": 40
           }
@@ -133,20 +135,8 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "text": "<p>Sungjae Im has been breaking records since his amateur days, where he won the 2015 Asian Amateur Championship and represented South Korea at the 2016 Summer Olympics in Rio de Janeiro, Brazil. Since turning professional, he has continued to make history.</p><p>In 2018, Im became the youngest-ever player to win the Web.com Tour Championship, earning his PGA Tour card for the 2018-2019 season. He then became the first player born in the 1990s to win the PGA Tour Rookie of the Year award in 2019.</p><p>Im continued to impress in 2020, breaking the record for the most birdies made in a season on the PGA Tour, with a total of 494. He also became the first player in PGA Tour history to average less than 69 strokes per round in a season while playing in at least 50 rounds.</p>",
             "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
             "font_size": 16
           }
         }
@@ -154,12 +144,11 @@
       "block_order": [
         "subheading_n9XWEr",
         "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
+        "richtext_cxqx6A"
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
+        "image": "shopify://shop_images/Sungjae_Im_Content_Block_1_a6d5428e-93db-46d3-b48d-e89bc2b74641.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
@@ -191,6 +180,7 @@
         "heading_W4aikQ",
         "richtext_E7mkKM"
       ],
+      "disabled": true,
       "name": "Banner With Overlay",
       "settings": {
         "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
@@ -235,6 +225,7 @@
         "blog_block_wq4mBq",
         "blog_block_pkc6tj"
       ],
+      "disabled": true,
       "name": "Blog Multi Columns",
       "settings": {
         "section_heading": "The Latest",
