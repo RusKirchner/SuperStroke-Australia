@@ -556,31 +556,32 @@
                     </div>
                   </div> {% endcomment %}
 
-       <div class="nav-dropdown-container">
-  <ul class="nav-list">
-    {% for first in link.links %}
-      <li class="nav-item {% if first.links.size > 0 %}has-child{% endif %}">
-        <a href="{{ first.url }}" class="nav-link">{{ first.title }}</a>
-        {% if first.links.size > 0 %}
-          <ul class="nav-sublist">
-            {% for second in first.links %}
-              <li class="nav-item {% if second.links.size > 0 %}has-child{% endif %}">
-                <a href="{{ second.url }}" class="nav-link">{{ second.title }}</a>
-                {% if second.links.size > 0 %}
-                  <ul class="nav-sub-sublist">
-                    {% for third in second.links %}
-                      <li><a href="{{ third.url }}" class="nav-link">{{ third.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="nav-main">
+  {% for top_item in linklists.main-menu.links %}
+    <li class="nav-item {% if top_item.links.size > 0 %}has-submenu{% endif %}">
+      <a href="{{ top_item.url }}" class="nav-link">{{ top_item.title }}</a>
+
+      {% if top_item.links.size > 0 %}
+        <ul class="nav-submenu">
+          {% for sub_item in top_item.links %}
+            <li class="nav-item {% if sub_item.links.size > 0 %}has-submenu{% endif %}">
+              <a href="{{ sub_item.url }}" class="nav-link">{{ sub_item.title }}</a>
+
+              {% if sub_item.links.size > 0 %}
+                <ul class="nav-submenu">
+                  {% for sub_sub_item in sub_item.links %}
+                    <li><a href="{{ sub_sub_item.url }}" class="nav-link">{{ sub_sub_item.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
 
 
 
