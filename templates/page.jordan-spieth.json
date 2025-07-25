@@ -209,8 +209,8 @@
           "settings": {
             "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
             "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 24,
-            "title_color": "#000000",
+            "title_font_size": 22,
+            "title_color": "#282828",
             "desc_font_size": 16,
             "desc_color": "#333333",
             "readmore_font_size": 14,
@@ -222,8 +222,8 @@
           "settings": {
             "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
             "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 24,
-            "title_color": "#000000",
+            "title_font_size": 22,
+            "title_color": "#282828",
             "desc_font_size": 16,
             "desc_color": "#333333",
             "readmore_font_size": 14,
