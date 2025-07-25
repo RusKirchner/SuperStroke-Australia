@@ -556,26 +556,23 @@
                     </div>
                   </div> {% endcomment %}
 
-                  <div class="site-nav__dropdown js-mobile-menu-dropdown dropdown-menu">
-  <ul class="dropdown-menu__list">
-    {% for childlink in link.links %}
-      <li class="dropdown-menu__item {% if childlink.links.size > 0 %}has-children{% endif %}">
-        <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title }}</a>
-
-        {% if childlink.links.size > 0 %}
-          <ul class="dropdown-menu__sublist">
-            {% for sublink in childlink.links %}
-              <li class="dropdown-menu__item {% if sublink.links.size > 0 %}has-children{% endif %}">
-                <a href="{{ sublink.url }}" class="site-nav__link">{{ sublink.title }}</a>
-
-                {% if sublink.links.size > 0 %}
-                  <ul class="dropdown-menu__sub-sublist">
-                    {% for thirdlink in sublink.links %}
-                      <li><a href="{{ thirdlink.url }}" class="site-nav__link">{{ thirdlink.title }}</a></li>
+       <div class="nav-dropdown-container">
+  <ul class="nav-list">
+    {% for first in link.links %}
+      <li class="nav-item {% if first.links.size > 0 %}has-child{% endif %}">
+        <a href="{{ first.url }}" class="nav-link">{{ first.title }}</a>
+        {% if first.links.size > 0 %}
+          <ul class="nav-sublist">
+            {% for second in first.links %}
+              <li class="nav-item {% if second.links.size > 0 %}has-child{% endif %}">
+                <a href="{{ second.url }}" class="nav-link">{{ second.title }}</a>
+                {% if second.links.size > 0 %}
+                  <ul class="nav-sub-sublist">
+                    {% for third in second.links %}
+                      <li><a href="{{ third.url }}" class="nav-link">{{ third.title }}</a></li>
                     {% endfor %}
                   </ul>
                 {% endif %}
-
               </li>
             {% endfor %}
           </ul>
@@ -584,6 +581,7 @@
     {% endfor %}
   </ul>
 </div>
+
 
 
                 {% endif %}
@@ -885,3 +883,78 @@
     ]
   }
 {% endschema %}
+<style>
+  .nav-list,
+.nav-sublist,
+.nav-sub-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-list {
+  display: block;
+  position: relative;
+}
+
+.nav-item:hover > .nav-sublist,
+.nav-item:hover > .nav-sub-sublist {
+  display: block;
+}
+
+.nav-sublist {
+  top: 0;
+  left: 100%;
+}
+.nav-sub-sublist {
+  top: 0;
+  left: 100%;
+}
+.nav-list,
+.nav-sublist,
+.nav-sub-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-list {
+  display: block;
+  position: relative;
+}
+
+.nav-item:hover > .nav-sublist,
+.nav-item:hover > .nav-sub-sublist {
+  display: block;
+}
+
+.nav-sublist {
+  top: 0;
+  left: 100%;
+}
+.nav-sub-sublist {
+  top: 0;
+  left: 100%;
+}
+
+</style>
