@@ -119,7 +119,7 @@
         "subheading_n9XWEr": {
           "type": "subheading",
           "settings": {
-            "text": "Get to Know Jordan",
+            "text": "Get to know Patrick",
             "color": "#282828",
             "font_size": 13
           }
@@ -127,7 +127,7 @@
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To the Top",
+            "text": "Against All Odds",
             "color": "#282828",
             "font_size": 40
           }
@@ -135,13 +135,14 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "text": "<p>Patrick Cantlay is a 32-year-old from Long Beach, California who is currently one of the top-ranked golfers in the world. Patrick has one of the most decorated amateur resumes to date, including being the number one-ranked amateur for 54 consecutive weeks.</p><p>After just one year on tour, Patrick suffered a back injury that kept him from playing pain-free for four years, and was even told he would never play golf again. His absence on TOUR dropped him all the way down to number 1,880 by the start of 2017.</p><p>However, in just two seasons, Patrick skyrocketed all the way into the top 10 of the Official World Golf Rankings through incredible determination and unparalleled hard work. As of 2024, he has eight official PGA TOUR victories. Patrick also earned a spot to represent the winning United States team in the 2019 and 2022 Presidents Cup Team, as well as representing the United States in the 2021 and 2023 Ryder Cup Team.</p>",
             "color": "#282828",
             "font_size": 16
           }
         },
         "button_ABdfJa": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Read Full Bio",
             "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
@@ -161,7 +162,7 @@
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
+        "image": "shopify://shop_images/Patrick_Cantlay_Content_Block_1_a9ed1aec-e6c1-41ef-901b-82590e9ec23d.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
@@ -183,7 +184,7 @@
         "richtext_E7mkKM": {
           "type": "richtext",
           "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
+            "text": "<p>2017 Shriners Hospital for Children Open<br/>2019 Memorial Tournament<br/>2020 Zozo Championship<br/>2021 Memorial Tournament<br/>2021 BMW Championship<br/>2021 Tour Championship<br/>2022 Zurich Classic of New Orleans<br/>2022 BMW Championship</p>",
             "text_color": "#ffffff",
             "text_font_size": 18
           }
@@ -195,7 +196,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
+        "bg_image": "shopify://shop_images/Patrick_Cantlay_Content_Block_2_5dc81b85-13e2-4510-9cea-898caa0fec98.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -237,6 +238,7 @@
         "blog_block_wq4mBq",
         "blog_block_pkc6tj"
       ],
+      "disabled": true,
       "name": "Blog Multi Columns",
       "settings": {
         "section_heading": "The Latest",
