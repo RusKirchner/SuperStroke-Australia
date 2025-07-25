@@ -20,30 +20,21 @@
     "banner_with_overlay_KYWFtB": {
       "type": "banner-with-overlay",
       "blocks": {
-        "subheading_4kRAd7": {
-          "type": "subheading",
-          "settings": {
-            "sub_heading": "3-Time Major Winner",
-            "subheading_color": "#ffffff",
-            "sub_heading_font_size": 13
-          }
-        },
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Josh Kelley",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
         }
       },
       "block_order": [
-        "subheading_4kRAd7",
         "heading_jXPjqq"
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/DSC00340_e92826db-3a0e-4578-9fdc-47b8a5dab1dd.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -59,12 +50,30 @@
         "selected_product": "s-tech-club-grip"
       }
     },
+    "rich_text_RAG3qt": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "title": "",
+        "text": "<p>Meet Josh Kelley – the master of the impossible and the king of trick shots! With a jaw-dropping ability to turn any shot into a showstopper, Josh brings creativity, flair, and a whole lot of fun to the course. From crazy stunts to inspiring golfers everywhere, he’s got the skills and the style that make him one of a kind.</p><p>Follow along with Josh on <a href=\"https://www.instagram.com/holein1trickshots?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==\" target=\"_blank\" title=\"Josh Kelley Instagram\">Instagram</a>, <a href=\"https://www.tiktok.com/@meioo00gram\" target=\"_blank\" title=\"Mei Brennan TikTok\">TikTok</a> and <a href=\"http://www.youtube.com/@joshkelleygolf\" target=\"_blank\" title=\"Josh Kelley YouTube\">YouTube</a>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ffffff",
+        "gradient_bg": ""
+      }
+    },
     "rich_text_blockquote_XrNXYx": {
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
-        "text": "",
+        "title": "As soon as I tried the bigger\nSuperStroke grip, I just really loved\nthe way it felt in my hands. And, even\nbetter, I started making putts with\nit...I really love the combination of a\nlonger-length mallet putter and the\n2.0 SuperStroke Flatso grip.",
+        "text": "<p>Josh Kelley</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
@@ -83,7 +92,7 @@
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "revl-element-club-grip"
           }
         },
         "product_block_kr4EhL": {
@@ -99,10 +108,10 @@
       ],
       "name": "Multiple Product Display",
       "settings": {
-        "section_heading": "Jordan's Grips of Choice",
+        "section_heading": "Josh's Grips of Choice",
         "section_heading_size": 40,
         "section_heading_color": "#282828",
-        "section_subheading": "Shop like a Pro",
+        "section_subheading": "What's in the bag",
         "section_subheading_size": 13,
         "section_subheading_color": "#282828",
         "text_alignment": "center",
@@ -114,18 +123,10 @@
     "image_with_sub_heading_V8xgMj": {
       "type": "image-with-sub-heading",
       "blocks": {
-        "subheading_n9XWEr": {
-          "type": "subheading",
-          "settings": {
-            "text": "Get to Know Jordan",
-            "color": "#282828",
-            "font_size": 13
-          }
-        },
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To the Top",
+            "text": "Get to Know Josh",
             "color": "#282828",
             "font_size": 40
           }
@@ -133,33 +134,19 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "text": "<p>Josh Kelley, the mastermind behind Holein1TrickShots, is a golf influencer known for his jaw-dropping trick shots and infectious energy. Based in the U.S., Josh has captivated audiences worldwide with his creative golf stunts that push the boundaries of what’s possible on the course. His viral videos have earned him a massive following, and he’s quickly become one of the most recognizable faces in the golf influencer world.<br/><br/>With a passion for showing that golf is fun, accessible, and full of surprises, Josh has built a career out of entertaining and inspiring fans. Whether he’s hitting impossible shots or adding his signature flair to every video, his goal is to make people laugh and show them the lighter side of golf.<br/><br/>Josh’s content blends impressive skill with pure fun, proving that golf is not only about precision but also creativity. As he continues to share his innovative tricks and infectious personality, Josh is reshaping how the world views the game, making it exciting for everyone.</p>",
             "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
             "font_size": 16
           }
         }
       },
       "block_order": [
-        "subheading_n9XWEr",
         "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
+        "richtext_cxqx6A"
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
+        "image": "shopify://shop_images/IMG_8965.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
@@ -167,81 +154,18 @@
         "padding_bottom": 40
       }
     },
-    "banner_with_overlay_thrfXb": {
-      "type": "banner-with-overlay",
-      "blocks": {
-        "heading_W4aikQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Professional <br> Victories",
-            "heading_color": "#ffffff",
-            "heading_font_size": 48
-          }
-        },
-        "richtext_E7mkKM": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
-            "text_color": "#ffffff",
-            "text_font_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "heading_W4aikQ",
-        "richtext_E7mkKM"
-      ],
-      "name": "Banner With Overlay",
+    "custom_video_section_w3h9nd": {
+      "type": "custom-video-section",
+      "name": "Custom Video Section",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0.3,
-        "content_alignment": "center",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "blog_multi_columns_h6KmgV": {
-      "type": "blog-multi-columns",
-      "blocks": {
-        "blog_block_wq4mBq": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        },
-        "blog_block_pkc6tj": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "blog_block_wq4mBq",
-        "blog_block_pkc6tj"
-      ],
-      "name": "Blog Multi Columns",
-      "settings": {
-        "section_heading": "The Latest",
+        "section_heading": "",
+        "heading_font_size": 28,
+        "heading_color": "#000000",
         "section_bg_color": "#ffffff",
-        "section_heading_font_size": 48,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "video_type": "youtube",
+        "video_url": "https://www.youtube.com/embed/6mqi67_tJ1Q?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=6mqi67_tJ1Q&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
     }
   },
@@ -249,10 +173,10 @@
     "main",
     "banner_with_overlay_KYWFtB",
     "custom_product_display_NUzLjQ",
+    "rich_text_RAG3qt",
     "rich_text_blockquote_XrNXYx",
     "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb",
-    "blog_multi_columns_h6KmgV"
+    "custom_video_section_w3h9nd"
   ]
 }
