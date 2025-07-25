@@ -53,16 +53,9 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_display_NUzLjQ": {
-      "type": "custom-product-display",
-      "disabled": true,
-      "name": "Custom Product Display",
-      "settings": {
-        "selected_product": "s-tech-club-grip"
-      }
-    },
     "rich_text_blockquote_XrNXYx": {
       "type": "rich-text-blockquote",
+      "disabled": true,
       "name": "Rich text Blockquote",
       "settings": {
         "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
@@ -79,25 +72,89 @@
         "gradient_bg": ""
       }
     },
+    "image_with_sub_heading_V8xgMj": {
+      "type": "image-with-sub-heading",
+      "blocks": {
+        "subheading_n9XWEr": {
+          "type": "subheading",
+          "settings": {
+            "text": "Get to Know Phil",
+            "color": "#282828",
+            "font_size": 13
+          }
+        },
+        "heading_Bfi98e": {
+          "type": "heading",
+          "settings": {
+            "text": "Greenside Genius",
+            "color": "#282828",
+            "font_size": 40
+          }
+        },
+        "richtext_cxqx6A": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>SuperStroke has partnered with Phil Kenyon, a renowned putting coach whose clients include several of the top-ranked golfers in the world. Kenyon will serve as a technical advisor to SuperStroke, supporting its continued innovations in grip design and fitting technologies.</p><p>Phil Kenyon is a world renowned putting coach who has worked with many of golfs’ leading professionals, amateurs, teams and organisations. Past and present students include Rory McIlroy, Henrik Stenson, Justin Rose, Louis Oosthuizen, Tommy Fleetwood, Mathew Fitzpatrick, Lee Westwood, Chris Wood, Andy Sullivan, Thomas Bjorn (2018 European Team Ryder Cup Captain) , Darren Clarke (2016 European Team Ryder Cup Captain), Martin Kaymer, David Horsey, Marc Warren, Micheal Hoey, and Marcel Siem amongst many others.Phil Kenyon is the principal owner of the <a href=\"https://kenyonputting.com/\" target=\"_blank\"><strong>Phil Kenyon Putting School.</strong></a> Located in Southport North West England, Phil Kenyon Putting School offers a comprehensive coaching experience using the latest state of art technology and coaching methodology.</p>",
+            "color": "#282828",
+            "font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_n9XWEr",
+        "heading_Bfi98e",
+        "richtext_cxqx6A"
+      ],
+      "name": "Image with Sub Heading",
+      "settings": {
+        "image": "shopify://shop_images/Phil_Kenyon_1200x1200_22596c25-7322-49f2-8e49-d4894a6abe9b.webp",
+        "image_position": "left",
+        "text_alignment": "center",
+        "section_bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_video_section_LipadK": {
+      "type": "custom-video-section",
+      "name": "Custom Video Section",
+      "settings": {
+        "section_heading": "",
+        "heading_font_size": 28,
+        "heading_color": "#000000",
+        "section_bg_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "video_type": "youtube",
+        "video_url": "https://www.youtube.com/embed/r1w483LPQw4?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=r1w483LPQw4&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
+      }
+    },
     "multiple_product_display_PYQDXV": {
       "type": "multiple-product-display",
       "blocks": {
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "superstroke-ball-pick-up"
           }
         },
         "product_block_kr4EhL": {
           "type": "product_block",
           "settings": {
-            "selected_product": "zenergy-flatso-putter-grips"
+            "selected_product": "superstroke-golf-alignment-sticks"
+          }
+        },
+        "product_block_cULUV9": {
+          "type": "product_block",
+          "settings": {
+            "selected_product": "mirrored-putting-gate"
           }
         }
       },
       "block_order": [
         "product_block_h8Meae",
-        "product_block_kr4EhL"
+        "product_block_kr4EhL",
+        "product_block_cULUV9"
       ],
       "name": "Multiple Product Display",
       "settings": {
@@ -112,149 +169,14 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "image_with_sub_heading_V8xgMj": {
-      "type": "image-with-sub-heading",
-      "blocks": {
-        "subheading_n9XWEr": {
-          "type": "subheading",
-          "settings": {
-            "text": "Get to Know Jordan",
-            "color": "#282828",
-            "font_size": 13
-          }
-        },
-        "heading_Bfi98e": {
-          "type": "heading",
-          "settings": {
-            "text": "Journey To the Top",
-            "color": "#282828",
-            "font_size": 40
-          }
-        },
-        "richtext_cxqx6A": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
-            "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
-            "font_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading_n9XWEr",
-        "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
-      ],
-      "name": "Image with Sub Heading",
-      "settings": {
-        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
-        "image_position": "left",
-        "text_alignment": "center",
-        "section_bg_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "banner_with_overlay_thrfXb": {
-      "type": "banner-with-overlay",
-      "blocks": {
-        "heading_W4aikQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Professional <br> Victories",
-            "heading_color": "#ffffff",
-            "heading_font_size": 48
-          }
-        },
-        "richtext_E7mkKM": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
-            "text_color": "#ffffff",
-            "text_font_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "heading_W4aikQ",
-        "richtext_E7mkKM"
-      ],
-      "name": "Banner With Overlay",
-      "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0.3,
-        "content_alignment": "center",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "blog_multi_columns_h6KmgV": {
-      "type": "blog-multi-columns",
-      "blocks": {
-        "blog_block_wq4mBq": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        },
-        "blog_block_pkc6tj": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "blog_block_wq4mBq",
-        "blog_block_pkc6tj"
-      ],
-      "name": "Blog Multi Columns",
-      "settings": {
-        "section_heading": "The Latest",
-        "section_bg_color": "#ffffff",
-        "section_heading_font_size": 48,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ",
     "rich_text_blockquote_XrNXYx",
-    "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb",
-    "blog_multi_columns_h6KmgV"
+    "custom_video_section_LipadK",
+    "multiple_product_display_PYQDXV"
   ]
 }
