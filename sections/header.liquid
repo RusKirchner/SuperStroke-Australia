@@ -565,7 +565,7 @@
         {% if childlink.links.size > 0 %}
           <ul class="dropdown-menu__sublist">
             {% for sublink in childlink.links %}
-              <li class="{% if sublink.links.size > 0 %}has-children{% endif %}">
+              <li class="dropdown-menu__item {% if sublink.links.size > 0 %}has-children{% endif %}">
                 <a href="{{ sublink.url }}" class="site-nav__link">{{ sublink.title }}</a>
 
                 {% if sublink.links.size > 0 %}
@@ -584,6 +584,7 @@
     {% endfor %}
   </ul>
 </div>
+
 
                 {% endif %}
               </li>
