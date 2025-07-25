@@ -148,7 +148,7 @@
       "type": "video",
       "name": "Video",
       "settings": {
-        "video_external": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com",
+        "video_external": "https://youtu.be/ikQ3HP0_Qeo",
         "color_overlay_bg": "#ffffff",
         "overlay_opacity": 80,
         "color_overlay_text": "#333333",
