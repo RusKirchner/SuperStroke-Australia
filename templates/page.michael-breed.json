@@ -23,7 +23,7 @@
         "subheading_4kRAd7": {
           "type": "subheading",
           "settings": {
-            "sub_heading": "3-Time Major Winner",
+            "sub_heading": "Host of \"A new breed of golf\"",
             "subheading_color": "#ffffff",
             "sub_heading_font_size": 13
           }
@@ -31,7 +31,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Michael Breed",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +43,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/Michael_Breed_Approach_Shots_FI.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -63,7 +63,7 @@
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
+        "title": "Superstroke's extensive variety of\ngrip styles and sizes have actual\ngame improvement benefits that will\nhelp golfers putt and swing more\nnaturally.",
         "text": "",
         "button_label": "",
         "button_link": "",
@@ -77,47 +77,13 @@
         "gradient_bg": ""
       }
     },
-    "multiple_product_display_PYQDXV": {
-      "type": "multiple-product-display",
-      "blocks": {
-        "product_block_h8Meae": {
-          "type": "product_block",
-          "settings": {
-            "selected_product": "s-tech-club-grip"
-          }
-        },
-        "product_block_kr4EhL": {
-          "type": "product_block",
-          "settings": {
-            "selected_product": "zenergy-flatso-putter-grips"
-          }
-        }
-      },
-      "block_order": [
-        "product_block_h8Meae",
-        "product_block_kr4EhL"
-      ],
-      "name": "Multiple Product Display",
-      "settings": {
-        "section_heading": "Jordan's Grips of Choice",
-        "section_heading_size": 40,
-        "section_heading_color": "#282828",
-        "section_subheading": "Shop like a Pro",
-        "section_subheading_size": 13,
-        "section_subheading_color": "#282828",
-        "text_alignment": "center",
-        "background_color": "#f5f5f5",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "image_with_sub_heading_V8xgMj": {
       "type": "image-with-sub-heading",
       "blocks": {
         "subheading_n9XWEr": {
           "type": "subheading",
           "settings": {
-            "text": "Get to Know Jordan",
+            "text": "Get to Know Michael",
             "color": "#282828",
             "font_size": 13
           }
@@ -125,7 +91,7 @@
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To the Top",
+            "text": "Master of the game",
             "color": "#282828",
             "font_size": 40
           }
@@ -133,7 +99,7 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "text": "<p>Michael Breed is one of the most dynamic and engaging teachers in golf, bringing energy and innovation to the game. He is the host of \"Course Record with Michael Breed\" on CBS and a regular contributor to CBS Sports HQ. His influence extends across multiple platforms, including \"A New Breed of Golf\" on SiriusXM, YouTube, and social media, where he pioneers digital golf instruction.<br/><br/>Recognized as Golf Digest’s #1 instructor in New York and #16 in America, Michael has helped shape the future of coaching. A PGA of America National Teacher of the Year (2012) and former host of \"The Golf Fix\", he has worked with over 30 touring professionals. His passion for teaching and commitment to growing the game continue to inspire golfers at every level.</p>",
             "color": "#282828",
             "font_size": 16
           }
@@ -142,7 +108,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read Full Bio",
-            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
+            "button_link": "https://michaelbreed.com/pages/about",
             "text_color": "#ffffff",
             "bg_color": "#000000",
             "hover_text_color": "#ffffff",
@@ -159,7 +125,7 @@
       ],
       "name": "Image with Sub Heading",
       "settings": {
-        "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
+        "image": "shopify://shop_images/IMG_5225.webp",
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
@@ -167,74 +133,8 @@
         "padding_bottom": 40
       }
     },
-    "banner_with_overlay_thrfXb": {
-      "type": "banner-with-overlay",
-      "blocks": {
-        "heading_W4aikQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Professional <br> Victories",
-            "heading_color": "#ffffff",
-            "heading_font_size": 48
-          }
-        },
-        "richtext_E7mkKM": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
-            "text_color": "#ffffff",
-            "text_font_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "heading_W4aikQ",
-        "richtext_E7mkKM"
-      ],
-      "name": "Banner With Overlay",
-      "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0.3,
-        "content_alignment": "center",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "blog_multi_columns_h6KmgV": {
       "type": "blog-multi-columns",
-      "blocks": {
-        "blog_block_wq4mBq": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        },
-        "blog_block_pkc6tj": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "blog_block_wq4mBq",
-        "blog_block_pkc6tj"
-      ],
       "name": "Blog Multi Columns",
       "settings": {
         "section_heading": "The Latest",
@@ -243,6 +143,23 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "video_66i8kC": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "video_external": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "",
+        "overlay_text": "",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
+      }
     }
   },
   "order": [
@@ -250,9 +167,8 @@
     "banner_with_overlay_KYWFtB",
     "custom_product_display_NUzLjQ",
     "rich_text_blockquote_XrNXYx",
-    "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb",
-    "blog_multi_columns_h6KmgV"
+    "blog_multi_columns_h6KmgV",
+    "video_66i8kC"
   ]
 }
