@@ -52,6 +52,11 @@
           "label": "Select Blog Article"
         },
         {
+          "type": "richtext",
+          "id": "custom_description",
+          "label": "Custom Description"
+        },
+        {
           "type": "range",
           "id": "title_font_size",
           "label": "Title Font Size (px)",
@@ -129,9 +134,9 @@
               {{ article.title }}
             </h3>
           </a>
-          <p style="font-size: {{ block.settings.desc_font_size }}px; color: {{ block.settings.desc_color }}; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin: 10px 0;">
-            {{ article.excerpt | strip_html }}
-          </p>
+          <div style="font-size: {{ block.settings.desc_font_size }}px; color: {{ block.settings.desc_color }}; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin: 10px 0;">
+            {{ block.settings.custom_description }}
+          </div>
           <a href="{{ article.url }}" style="font-size: {{ block.settings.readmore_font_size }}px; color: {{ block.settings.readmore_color }};">
             Read More
           </a>
