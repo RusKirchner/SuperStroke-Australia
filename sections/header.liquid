@@ -502,7 +502,7 @@
                       {% endif %}
                   </div>
                 {% else %}
-                  {% comment %} <div class="site-nav__dropdown js-mobile-menu-dropdown mega-dropdown container">
+                  <div class="site-nav__dropdown js-mobile-menu-dropdown mega-dropdown container">
                     <div class="page-width">
                       {% if has_promo %}
                       <div class="grid site-nav__promo-container">
@@ -554,37 +554,7 @@
                       {% endif %}
 
                     </div>
-                  </div> {% endcomment %}
-
-<ul class="nav-main">
-  {% for top_item in linklists.main-menu.links %}
-    <li class="nav-item {% if top_item.links.size > 0 %}has-submenu{% endif %}">
-      <a href="{{ top_item.url }}" class="nav-link">{{ top_item.title }}</a>
-
-      {% if top_item.links.size > 0 %}
-        <ul class="nav-submenu">
-          {% for sub_item in top_item.links %}
-            <li class="nav-item {% if sub_item.links.size > 0 %}has-submenu{% endif %}">
-              <a href="{{ sub_item.url }}" class="nav-link">{{ sub_item.title }}</a>
-
-              {% if sub_item.links.size > 0 %}
-                <ul class="nav-submenu">
-                  {% for sub_sub_item in sub_item.links %}
-                    <li><a href="{{ sub_sub_item.url }}" class="nav-link">{{ sub_sub_item.title }}</a></li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
-
-
-
+                  </div>
                 {% endif %}
               </li>
             {% else %}
@@ -884,37 +854,3 @@
     ]
   }
 {% endschema %}
-<style>
- .nav-main,
-.nav-submenu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  position: relative;
-}
-
-.nav-submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  min-width: 180px;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-item:hover > .nav-submenu {
-  display: block;
-}
-
-.nav-submenu .nav-submenu {
-  left: 100%;
-  top: 0;
-}
-
-
-</style>
