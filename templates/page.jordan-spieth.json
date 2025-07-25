@@ -139,7 +139,7 @@
       "settings": {
         "image": "shopify://shop_images/superstroke_pic_1.webp",
         "image_position": "left",
-        "section_bg_color": "#f5f5f5",
+        "section_bg_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 40
       }
