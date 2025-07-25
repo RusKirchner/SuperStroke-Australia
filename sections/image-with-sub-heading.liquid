@@ -6,7 +6,7 @@
         <img src="{{ section.settings.image | img_url: '800x' }}" alt="Section Image">
       {% endif %}
     </div>
-    <div class="custom-text-blocks">
+    <div class="custom-text-blocks text-{{ section.settings.text_alignment }}">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'heading' %}
@@ -90,6 +90,17 @@
         { "value": "left", "label": "Left" },
         { "value": "right", "label": "Right" }
       ]
+    },
+    {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "options": [
+          { "value": "left", "label": "Left" },
+          { "value": "center", "label": "Center" },
+          { "value": "right", "label": "Right" }
+        ],
+        "default": "left"
     },
     {
       "type": "color",
