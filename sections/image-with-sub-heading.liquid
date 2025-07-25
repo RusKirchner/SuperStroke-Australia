@@ -23,7 +23,7 @@
               {{ block.settings.text }}
             </div>
           {% when 'button' %}
-            <a href="{{ block.settings.button_link }}" class="custom-btn" style="
+            <a href="{{ block.settings.button_link }}" class="btn btn--small btn--primary" style="
               color: {{ block.settings.text_color }};
               background-color: {{ block.settings.bg_color }};
               font-size: {{ block.settings.font_size }}px;
@@ -63,14 +63,6 @@
     max-width: 100%;
     height: auto;
     display: block;
-  }
-  .custom-btn {
-    padding: 12px 24px;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    transition: all 0.3s ease;
   }
   .custom-image-text-container>div {
     max-width: calc(50% - 15px);
