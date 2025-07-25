@@ -144,21 +144,18 @@
         "padding_bottom": 40
       }
     },
-    "video_66i8kC": {
-      "type": "video",
-      "name": "Video",
+    "custom_video_section_TwMG8f": {
+      "type": "custom-video-section",
+      "name": "Custom Video Section",
       "settings": {
-        "video_external": "https://youtu.be/ikQ3HP0_Qeo",
-        "color_overlay_bg": "#ffffff",
-        "overlay_opacity": 80,
-        "color_overlay_text": "#333333",
-        "overlay_title": "",
-        "overlay_text": "",
-        "enlarge_title": false,
-        "enlarge_text": false,
-        "overlay_position_x": 50,
-        "overlay_position_y": 70,
-        "mobile_text_below": false
+        "section_heading": "",
+        "heading_font_size": 28,
+        "heading_color": "#000000",
+        "section_bg_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "video_type": "youtube",
+        "video_url": "https://www.youtube.com/embed/ikQ3HP0_Qeo?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=ikQ3HP0_Qeo&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
     }
   },
@@ -169,6 +166,6 @@
     "rich_text_blockquote_XrNXYx",
     "image_with_sub_heading_V8xgMj",
     "blog_multi_columns_h6KmgV",
-    "video_66i8kC"
+    "custom_video_section_TwMG8f"
   ]
 }
