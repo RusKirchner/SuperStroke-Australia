@@ -22,6 +22,7 @@
       "blocks": {
         "subheading_4kRAd7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "sub_heading": "3-Time Major Winner",
             "subheading_color": "#ffffff",
@@ -31,7 +32,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Georgia ball",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +44,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/DSC00340_382eda97-c3c6-4fe5-bbd9-8315313db62e.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -51,20 +52,30 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_display_NUzLjQ": {
-      "type": "custom-product-display",
-      "disabled": true,
-      "name": "Custom Product Display",
+    "rich_text_RBfkEd": {
+      "type": "rich-text",
+      "name": "Rich text",
       "settings": {
-        "selected_product": "s-tech-club-grip"
+        "title": "",
+        "text": "<p>Meet Georgia Ball – PGA Professional Golf Coach and content creator extraordinaire! With a passion for teaching and a knack for breaking down the swing, Georgia’s content is designed to inspire and elevate golfers of all levels. Whether it’s through her expert lessons or insightful tips, she’s committed to making golf both fun and accessible. We’re excited to have her on board to share her knowledge and help you take your game to the next level!</p><p>Follow along with Georgia on <a href=\"https://www.instagram.com/georgiagolfcoach\" target=\"_blank\" title=\"Georgia Ball Golf Instagram\">Instagram</a>, <a href=\"https://www.tiktok.com/@georgiagolfcoach\" target=\"_blank\" title=\"Georgia Ball Golf TikTok\">TikTok</a> and <a href=\"https://www.youtube.com/@georgiaballgolfer\" target=\"_blank\" title=\"Georgia Ball Golf YouTube\">YouTube</a>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#282828",
+        "color_text": "#282828",
+        "color_bg": "#ffffff",
+        "gradient_bg": ""
       }
     },
     "rich_text_blockquote_XrNXYx": {
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
-        "text": "",
+        "title": "The Zenergy Pistol putter grip is a\nproduct that has helped my game\nmassively. It fits really comfortably\nin my hands and allows my body to\nwork in a way that no other putter\ngrip does.",
+        "text": "<p>Georgia Ball</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
@@ -83,13 +94,13 @@
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "revl-comfort-club-grip"
           }
         },
         "product_block_kr4EhL": {
           "type": "product_block",
           "settings": {
-            "selected_product": "zenergy-flatso-putter-grips"
+            "selected_product": "zenergy-pistol-putter-grips"
           }
         }
       },
@@ -99,10 +110,10 @@
       ],
       "name": "Multiple Product Display",
       "settings": {
-        "section_heading": "Jordan's Grips of Choice",
+        "section_heading": "Georgia's Grips of Choice",
         "section_heading_size": 40,
         "section_heading_color": "#282828",
-        "section_subheading": "Shop like a Pro",
+        "section_subheading": "What's in the bag",
         "section_subheading_size": 13,
         "section_subheading_color": "#282828",
         "text_alignment": "center",
@@ -114,18 +125,10 @@
     "image_with_sub_heading_V8xgMj": {
       "type": "image-with-sub-heading",
       "blocks": {
-        "subheading_n9XWEr": {
-          "type": "subheading",
-          "settings": {
-            "text": "Get to Know Jordan",
-            "color": "#282828",
-            "font_size": 13
-          }
-        },
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To the Top",
+            "text": "Get to Know Georgia",
             "color": "#282828",
             "font_size": 40
           }
@@ -133,29 +136,15 @@
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
+            "text": "<p>Georgia Ball is a golf content creator known for her smooth swing, sharp skills, and effortless charm on the course. Originally from the UK, she played competitively before turning her passion for golf into a thriving career in digital media. Now, as a SuperStroke ambassador, Georgia shares her love for the game through engaging content that blends technique, humor, and a fresh perspective.<br/><br/>With years of experience both playing and coaching, Georgia brings expert insight while keeping golf approachable and fun. Her relatable style and engaging tutorials make the sport more accessible to golfers of all levels. Whether she’s breaking down swing mechanics or testing out the latest SuperStroke grips, she’s always finding new ways to inspire and educate.<br/><br/>From stunning drives to creative course challenges, Georgia is redefining what it means to be a modern golfer. As she continues to grow her influence, she remains dedicated to making golf exciting, stylish, and welcoming for all.</p>",
             "color": "#282828",
-            "font_size": 16
-          }
-        },
-        "button_ABdfJa": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Full Bio",
-            "button_link": "http://www.jordanspiethgolf.com/about-jordan-spieth",
-            "text_color": "#ffffff",
-            "bg_color": "#000000",
-            "hover_text_color": "#ffffff",
-            "hover_bg_color": "#000000",
             "font_size": 16
           }
         }
       },
       "block_order": [
-        "subheading_n9XWEr",
         "heading_Bfi98e",
-        "richtext_cxqx6A",
-        "button_ABdfJa"
+        "richtext_cxqx6A"
       ],
       "name": "Image with Sub Heading",
       "settings": {
@@ -167,92 +156,28 @@
         "padding_bottom": 40
       }
     },
-    "banner_with_overlay_thrfXb": {
-      "type": "banner-with-overlay",
-      "blocks": {
-        "heading_W4aikQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Professional <br> Victories",
-            "heading_color": "#ffffff",
-            "heading_font_size": 48
-          }
-        },
-        "richtext_E7mkKM": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
-            "text_color": "#ffffff",
-            "text_font_size": 18
-          }
-        }
-      },
-      "block_order": [
-        "heading_W4aikQ",
-        "richtext_E7mkKM"
-      ],
-      "name": "Banner With Overlay",
+    "custom_video_section_KTxdtd": {
+      "type": "custom-video-section",
+      "name": "Custom Video Section",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0.3,
-        "content_alignment": "center",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "blog_multi_columns_h6KmgV": {
-      "type": "blog-multi-columns",
-      "blocks": {
-        "blog_block_wq4mBq": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        },
-        "blog_block_pkc6tj": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "blog_block_wq4mBq",
-        "blog_block_pkc6tj"
-      ],
-      "name": "Blog Multi Columns",
-      "settings": {
-        "section_heading": "The Latest",
+        "section_heading": "",
+        "heading_font_size": 28,
+        "heading_color": "#000000",
         "section_bg_color": "#ffffff",
-        "section_heading_font_size": 48,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "video_type": "youtube",
+        "video_url": "https://www.youtube.com/embed/hdU7tEwt4cM?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=hdU7tEwt4cM&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
     }
   },
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ",
+    "rich_text_RBfkEd",
     "rich_text_blockquote_XrNXYx",
     "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb",
-    "blog_multi_columns_h6KmgV"
+    "custom_video_section_KTxdtd"
   ]
 }
