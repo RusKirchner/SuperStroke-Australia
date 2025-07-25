@@ -146,8 +146,8 @@
             "text_color": "#ffffff",
             "bg_color": "#000000",
             "hover_text_color": "#ffffff",
-            "hover_bg_color": "#333333",
-            "font_size": 14
+            "hover_bg_color": "#000000",
+            "font_size": 16
           }
         }
       },
