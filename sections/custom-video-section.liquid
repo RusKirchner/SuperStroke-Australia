@@ -108,6 +108,7 @@
 {% endstyle %}
 
 <div id="section-{{ section.id }}">
+  <div class="page-width container">
   {% if section.settings.section_heading != blank %}
     <h2 class="video-heading">{{ section.settings.section_heading }}</h2>
   {% endif %}
@@ -124,5 +125,6 @@
           Your browser does not support the video tag.
         </video>
     {% endcase %}
+  </div>
   </div>
 </div>
