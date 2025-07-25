@@ -111,8 +111,8 @@
         "image_position": "left",
         "text_alignment": "center",
         "section_bg_color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "custom_video_section_LipadK": {
@@ -124,7 +124,7 @@
         "heading_color": "#000000",
         "section_bg_color": "#ffffff",
         "padding_top": 0,
-        "padding_bottom": 40,
+        "padding_bottom": 60,
         "video_type": "youtube",
         "video_url": "https://www.youtube.com/embed/r1w483LPQw4?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist=r1w483LPQw4&enablejsapi=1&rel=0&modestbranding=1&origin=https%3A%2F%2Fsuperstrokeusa.com"
       }
