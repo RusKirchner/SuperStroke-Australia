@@ -149,7 +149,7 @@
         "richtext_E7mkKM": {
           "type": "richtext",
           "settings": {
-            "text": "<p>2013 John Deere Classic<br/>2014 Emirates Australian Open<br/>2014 Hero World Challenge<br/>2015 Valspar Championship<br/>2015 Masters Tournament<br/>2015 U.S. Open Championship<br/>2015 John Deere Classic<br/>2015 TOUR Championship by Coca-Cola<br/>2016 Hyundai Tournament of Champions<br/>2016 Dean & DeLuca Invitational<br/>2016 Emirates Australian Open<br/>2017 AT&T Pebble Beach Pro-Am<br/>2017 Travelers Championship Open<br/>2017 Open Championship<br/>2021 Valero Open<br/>2022 RBC Heritage</p>",
+            "text": "<p>2006 Mastercard Masters<br/>2007 Volvo Masters<br/>2010 AT&T National<br/>2010 the Memorial Tournament presented by Nationwide Insurance<br/>2011 BMW Championship<br/>2012 World Golf Championships-Cadillac Championship<br/>2013 U.S. Open<br/>2014 Quicken Loans National<br/>2014 Aberdeen Asset Management Scottish Open<br/>2015 Zurich Classic of New Orleans<br/>2015 UBS Hong Kong Open<br/>2016 Olympic Games<br/>2017 World Golf Championships-HSBC Champions<br/>2017 Indonesian Masters<br/>2017 Turkish Airlines Open<br/>2018 Turkish Airlines Open<br/>2018 Fort Worth Invitational<br/>2019 Farmers Insurance Open<br/>2023 AT&T Pebble Beach Pro-Am</p>",
             "text_color": "#ffffff",
             "text_font_size": 18
           }
@@ -161,55 +161,12 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Content_Block_2_c652991b-f7e4-4d16-b493-c9053b24ec50.webp",
+        "bg_image": "shopify://shop_images/GettyImages-2204010128.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
         "padding_top": 80,
         "padding_bottom": 80
-      }
-    },
-    "blog_multi_columns_h6KmgV": {
-      "type": "blog-multi-columns",
-      "blocks": {
-        "blog_block_wq4mBq": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "custom_description": "<p>On Sunday, Jordan Spieth clinched the win at RBC Heritage using SuperStroke’s Traxion Flatso 1.0 putter grip.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        },
-        "blog_block_pkc6tj": {
-          "type": "blog_block",
-          "settings": {
-            "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "custom_description": "<p>Using his S-Tech club grips and Flatso 1.0 putter grip, Spieth’s persistency and improvement finally paid off as he finished the weekend on top shooting -18, 270 total.</p>",
-            "title_font_size": 22,
-            "title_color": "#282828",
-            "desc_font_size": 16,
-            "desc_color": "#333333",
-            "readmore_font_size": 14,
-            "readmore_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "blog_block_wq4mBq",
-        "blog_block_pkc6tj"
-      ],
-      "name": "Blog Multi Columns",
-      "settings": {
-        "section_heading": "The Latest",
-        "section_bg_color": "#ffffff",
-        "section_heading_font_size": 48,
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     }
   },
@@ -218,7 +175,6 @@
     "banner_with_overlay_KYWFtB",
     "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
-    "banner_with_overlay_thrfXb",
-    "blog_multi_columns_h6KmgV"
+    "banner_with_overlay_thrfXb"
   ]
 }
