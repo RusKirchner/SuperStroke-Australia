@@ -22,6 +22,7 @@
       "blocks": {
         "subheading_4kRAd7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "sub_heading": "3-Time Major Winner",
             "subheading_color": "#ffffff",
@@ -30,6 +31,7 @@
         },
         "heading_jXPjqq": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Jordan Spieth",
             "heading_color": "#ffffff",
@@ -43,7 +45,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/KenyonBanner_5d3f6193-7b46-4e98-ad9c-2841befe2344.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
