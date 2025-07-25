@@ -22,6 +22,7 @@
       "blocks": {
         "subheading_4kRAd7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "sub_heading": "Host of \"A new breed of golf\"",
             "subheading_color": "#ffffff",
@@ -31,7 +32,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Michael Breed",
+            "heading": "Matt Adams",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +44,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Michael_Breed_Approach_Shots_FI.webp",
+        "bg_image": "shopify://shop_images/DSC00340.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -51,29 +52,21 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_display_NUzLjQ": {
-      "type": "custom-product-display",
-      "disabled": true,
-      "name": "Custom Product Display",
+    "rich_text_BcNnqa": {
+      "type": "rich-text",
+      "name": "Rich text",
       "settings": {
-        "selected_product": "s-tech-club-grip"
-      }
-    },
-    "rich_text_blockquote_XrNXYx": {
-      "type": "rich-text-blockquote",
-      "name": "Rich text Blockquote",
-      "settings": {
-        "title": "Superstroke's extensive variety of\ngrip styles and sizes have actual\ngame improvement benefits that will\nhelp golfers putt and swing more\nnaturally.",
-        "text": "",
+        "title": "",
+        "text": "<p>Meet Matt Adams – the voice of golf and a true storyteller of the game! From the fairways to the airwaves, Matt brings unmatched passion, insight, and a love for the sport that’s downright contagious. Whether he’s behind the mic or on the course, he’s always bringing the best of golf to fans everywhere.</p><p>Follow along with Matt on <a href=\"https://www.instagram.com/mattadamsfol/?hl=en\" target=\"_blank\" title=\"Matt Adams Instagram\">Instagram</a>, <a href=\"https://www.tiktok.com/@fairways.of.life\" target=\"_blank\" title=\"Fairways of Life TikTok\">TikTok</a> and <a href=\"https://youtube.com/@fairwaysoflife?si=e0zIsCpMoUpRTD6X\" target=\"_blank\" title=\"Fairways of Life YouTube\">YouTube</a>.</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
         "enlarge_title": false,
         "enlarge_text": false,
         "full_width": false,
-        "color_title": "#333333",
-        "color_text": "#333333",
-        "color_bg": "rgba(0,0,0,0)",
+        "color_title": "#282828",
+        "color_text": "#282828",
+        "color_bg": "#ffffff",
         "gradient_bg": ""
       }
     },
@@ -162,8 +155,7 @@
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ",
-    "rich_text_blockquote_XrNXYx",
+    "rich_text_BcNnqa",
     "image_with_sub_heading_V8xgMj",
     "blog_multi_columns_h6KmgV",
     "custom_video_section_TwMG8f"
