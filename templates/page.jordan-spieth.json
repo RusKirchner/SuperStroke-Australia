@@ -208,7 +208,7 @@
           "type": "blog_block",
           "settings": {
             "blog_article": "news/jordan-spieth-wins-rbc-heritage-with-superstroke-flatso-1-0-putter-grip",
-            "title_font_size": 20,
+            "title_font_size": 24,
             "title_color": "#000000",
             "desc_font_size": 16,
             "desc_color": "#333333",
@@ -220,7 +220,7 @@
           "type": "blog_block",
           "settings": {
             "blog_article": "news/jordan-spieth-wins-at-the-valero-texas-open-using-superstroke-traxion-flatso-1-0-putter-grip-and-s-tech-club-grips",
-            "title_font_size": 20,
+            "title_font_size": 24,
             "title_color": "#000000",
             "desc_font_size": 16,
             "desc_color": "#333333",
