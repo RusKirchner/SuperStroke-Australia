@@ -20,30 +20,21 @@
     "banner_with_overlay_KYWFtB": {
       "type": "banner-with-overlay",
       "blocks": {
-        "subheading_4kRAd7": {
-          "type": "subheading",
-          "settings": {
-            "sub_heading": "3-Time Major Winner",
-            "subheading_color": "#ffffff",
-            "sub_heading_font_size": 13
-          }
-        },
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Mei Brennan",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
         }
       },
       "block_order": [
-        "subheading_4kRAd7",
         "heading_jXPjqq"
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/DSC09138_6a56facf-11fa-42b7-900a-669395e1b67c.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
@@ -51,29 +42,21 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_display_NUzLjQ": {
-      "type": "custom-product-display",
-      "disabled": true,
-      "name": "Custom Product Display",
+    "rich_text_QqV3rd": {
+      "type": "rich-text",
+      "name": "Rich text",
       "settings": {
-        "selected_product": "s-tech-club-grip"
-      }
-    },
-    "rich_text_blockquote_XrNXYx": {
-      "type": "rich-text-blockquote",
-      "name": "Rich text Blockquote",
-      "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
-        "text": "",
+        "title": "",
+        "text": "<p>Meet Mei Brennan – a powerhouse on the course and a sweetheart off it! With a swing as smooth as her style, Mei brings passion, precision, and a whole lot of personality to the game. Whether she’s sinking putts or inspiring the next generation of golfers, she does it all with grace and grit.</p><p>Follow along with Mei on <a href=\"https://www.instagram.com/meioo00/\" target=\"_blank\" title=\"Mei Brennan Instagram\">Instagram</a>, <a href=\"https://www.tiktok.com/@meioo00gram\" target=\"_blank\" title=\"Mei Brennan TikTok\">TikTok</a> and <a href=\"https://www.youtube.com/@mei.brennan\" target=\"_blank\" title=\"Mei Brennan YouTube\">YouTube</a>.</p>",
         "button_label": "",
         "button_link": "",
         "url_style": "button_1",
         "enlarge_title": false,
         "enlarge_text": false,
         "full_width": false,
-        "color_title": "#333333",
-        "color_text": "#333333",
-        "color_bg": "rgba(0,0,0,0)",
+        "color_title": "#282828",
+        "color_text": "#282828",
+        "color_bg": "#ffffff",
         "gradient_bg": ""
       }
     },
@@ -83,13 +66,13 @@
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "revl-player-club-grip"
           }
         },
         "product_block_kr4EhL": {
           "type": "product_block",
           "settings": {
-            "selected_product": "zenergy-flatso-putter-grips"
+            "selected_product": "zenergy-pistol-putter-grips"
           }
         }
       },
@@ -99,10 +82,10 @@
       ],
       "name": "Multiple Product Display",
       "settings": {
-        "section_heading": "Jordan's Grips of Choice",
+        "section_heading": "Mei's Grips of Choice",
         "section_heading_size": 40,
         "section_heading_color": "#282828",
-        "section_subheading": "Shop like a Pro",
+        "section_subheading": "What's in the bag",
         "section_subheading_size": 13,
         "section_subheading_color": "#282828",
         "text_alignment": "center",
@@ -248,8 +231,7 @@
   "order": [
     "main",
     "banner_with_overlay_KYWFtB",
-    "custom_product_display_NUzLjQ",
-    "rich_text_blockquote_XrNXYx",
+    "rich_text_QqV3rd",
     "multiple_product_display_PYQDXV",
     "image_with_sub_heading_V8xgMj",
     "banner_with_overlay_thrfXb",
