@@ -64,7 +64,7 @@
       "type": "rich-text-blockquote",
       "name": "Rich text Blockquote",
       "settings": {
-        "title": "the industry - Jordan Spieth<br>There's no doubt in my mind that<br>SuperStroke makes the best grips in",
+        "title": "SuperStrokes grips give me the\nconfidence to perform at my best\nwhen it matters most. - Patrick Cantlay",
         "text": "",
         "button_label": "",
         "button_link": "",
@@ -84,11 +84,12 @@
         "product_block_h8Meae": {
           "type": "product_block",
           "settings": {
-            "selected_product": "s-tech-club-grip"
+            "selected_product": "zenergy-flatso-putter-grips"
           }
         },
         "product_block_kr4EhL": {
           "type": "product_block",
+          "disabled": true,
           "settings": {
             "selected_product": "zenergy-flatso-putter-grips"
           }
@@ -100,7 +101,7 @@
       ],
       "name": "Multiple Product Display",
       "settings": {
-        "section_heading": "Jordan's Grips of Choice",
+        "section_heading": "Patrick's Grip of Choice",
         "section_heading_size": 40,
         "section_heading_color": "#282828",
         "section_subheading": "Shop like a Pro",
