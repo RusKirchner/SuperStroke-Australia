@@ -118,23 +118,23 @@
           "type": "subheading",
           "settings": {
             "text": "Get to Know Jordan",
-            "color": "#333333",
-            "font_size": 20
+            "color": "#282828",
+            "font_size": 13
           }
         },
         "heading_Bfi98e": {
           "type": "heading",
           "settings": {
-            "text": "Journey To theTop",
-            "color": "#000000",
-            "font_size": 28
+            "text": "Journey To the Top",
+            "color": "#282828",
+            "font_size": 40
           }
         },
         "richtext_cxqx6A": {
           "type": "richtext",
           "settings": {
             "text": "<p>Jordan Spieth’s ascent in golf has been a linear one, a straight line from junior golf dominance to joining the elite in professional golf, while constructing a record of achievement most won’t achieve in a lifetime.<br/><br/>He was 16 when he tied for 16th in his PGA TOUR debut, 20 when he won for the first time on the PGA Tour, 21 when he won The Masters and the U.S. Open, and 23 when he won the Open Championship.</p>",
-            "color": "#444444",
+            "color": "#282828",
             "font_size": 16
           }
         },
