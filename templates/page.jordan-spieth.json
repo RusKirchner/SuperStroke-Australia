@@ -161,6 +161,7 @@
       "settings": {
         "image": "shopify://shop_images/Jordan_Spieth_Content_Block_1_6dc7f526-a1e9-4bb8-be8b-b264a7e03283.webp",
         "image_position": "left",
+        "text_alignment": "center",
         "section_bg_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 40
