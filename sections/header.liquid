@@ -501,8 +501,8 @@
                         </div>
                       {% endif %}
                   </div>
-                {% comment %} {% else %}
-                  <div class="site-nav__dropdown js-mobile-menu-dropdown mega-dropdown container">
+                {% else %}
+                  {% comment %} <div class="site-nav__dropdown js-mobile-menu-dropdown mega-dropdown container">
                     <div class="page-width">
                       {% if has_promo %}
                       <div class="grid site-nav__promo-container">
@@ -555,6 +555,36 @@
 
                     </div>
                   </div> {% endcomment %}
+
+                  <div class="site-nav__dropdown js-mobile-menu-dropdown dropdown-menu">
+  <ul class="dropdown-menu__list">
+    {% for childlink in link.links %}
+      <li class="dropdown-menu__item {% if childlink.links.size > 0 %}has-children{% endif %}">
+        <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title }}</a>
+
+        {% if childlink.links.size > 0 %}
+          <ul class="dropdown-menu__sublist">
+            {% for sublink in childlink.links %}
+              <li class="{% if sublink.links.size > 0 %}has-children{% endif %}">
+                <a href="{{ sublink.url }}" class="site-nav__link">{{ sublink.title }}</a>
+
+                {% if sublink.links.size > 0 %}
+                  <ul class="dropdown-menu__sub-sublist">
+                    {% for thirdlink in sublink.links %}
+                      <li><a href="{{ thirdlink.url }}" class="site-nav__link">{{ thirdlink.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
                 {% endif %}
               </li>
             {% else %}
