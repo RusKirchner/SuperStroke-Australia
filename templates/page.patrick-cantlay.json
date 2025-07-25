@@ -22,6 +22,7 @@
       "blocks": {
         "subheading_4kRAd7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "sub_heading": "3-Time Major Winner",
             "subheading_color": "#ffffff",
@@ -31,7 +32,7 @@
         "heading_jXPjqq": {
           "type": "heading",
           "settings": {
-            "heading": "Jordan Spieth",
+            "heading": "Patrick Cantlay",
             "heading_color": "#ffffff",
             "heading_font_size": 48
           }
@@ -43,7 +44,7 @@
       ],
       "name": "Banner With Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Jordan_Spieth_Header_65509c74-4282-4601-a603-348be118642a.webp",
+        "bg_image": "shopify://shop_images/Patrick_Cantlay_Header_55470065-b6c3-47a2-955d-9a54cda4a84f.webp",
         "overlay_color": "#000000",
         "overlay_opacity": 0.3,
         "content_alignment": "center",
