@@ -121,7 +121,7 @@
           "type": "content_block",
           "settings": {
             "image": "shopify://shop_images/superstroke_pic_1.webp",
-            "image_link": "#",
+            "image_link": "shopify://pages/cameron-mccormick",
             "title": "Cameron McCormick",
             "description": ""
           }
