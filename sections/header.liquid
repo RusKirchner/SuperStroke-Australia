@@ -861,3 +861,34 @@
     ]
   }
 {% endschema %}
+<style>
+  /* Main dropdown styles */
+.site-nav__dropdown,
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  z-index: 999;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Show dropdown on hover */
+.site-nav__item--has-dropdown:hover > .site-nav__dropdown,
+.small-dropdown__item:hover > .sub-dropdown {
+  display: block;
+}
+
+/* Position sub-dropdown to the right */
+.sub-dropdown {
+  top: 0;
+  left: 100%;
+}
+
+/* Ensure submenu items are relatively positioned for dropdown placement */
+.small-dropdown__item {
+  position: relative;
+}
+
+</style>
