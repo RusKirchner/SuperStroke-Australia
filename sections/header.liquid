@@ -526,7 +526,7 @@
                             <ul class="site-nav__dropdown sub-dropdown">
   {% for sublink in childlink.links %}
     <li class="sub-dropdown__item">
-      <a href="{{ sublink.url }}" class="site-nav__link site-nav__dropdown-link">{{ sublink.title }}</a>
+      <a href="{{ sublink.url }}" class="site-nav__link site-nav__dropdown-link">{{ sublink.title }}<span class="dropdown-arrow">▶</span></a>
     </li>
   {% endfor %}
 </ul>
