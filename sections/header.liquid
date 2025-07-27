@@ -418,10 +418,10 @@
             {%- assign link_count = link.links | size -%}
 
             {% if link.links != blank %}
-              {%- if link.levels <= 1 -%}
+              {%- if link.levels <= 2 -%}
                 {% assign dropdown_type = 'small' %}
               {%- else -%}
-                {%- if link_count <= 1 -%}
+                {%- if link_count <= 2 -%}
                   {% assign dropdown_type = 'small' %}
                 {%- else -%}
                   {% assign dropdown_type = 'mega' %}
