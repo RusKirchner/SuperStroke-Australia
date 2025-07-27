@@ -424,7 +424,7 @@
                 {%- if link_count <= 1 -%}
                   {% assign dropdown_type = 'small' %}
                 {%- else -%}
-                  {% assign dropdown_type = 'mega' %}
+                  {% assign dropdown_type = 'small' %}
                 {%- endif -%}
               {%- endif -%}
 
@@ -513,7 +513,7 @@
                         {% for childlink in link.links %}
                           <li class="mega-dropdown__item grid__item {% if has_promo %}one-third{% else %}one-quarter{% endif %} {% if childlink.active %}site-nav--active{% endif %}">
                             <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}</a>
-                            <!-- <div class="site-nav__submenu">
+                            <div class="site-nav__submenu">
                               <ul class="site-nav__submenu-container">
                                 {% for sublink in childlink.links %}
                                   {% assign count_links = count_links | plus: 1 %}
@@ -522,14 +522,7 @@
                                   </li>
                                 {% endfor %}
                               </ul>
-                            </div> -->
-                            <ul class="site-nav__dropdown sub-dropdown">
-  {% for sublink in childlink.links %}
-    <li class="sub-dropdown__item">
-      <a href="{{ sublink.url }}" class="site-nav__link site-nav__dropdown-link">{{ sublink.title }}<span class="dropdown-arrow">▶</span></a>
-    </li>
-  {% endfor %}
-</ul>
+                            </div>
                           </li>
                         {% endfor %}
                       </ul>
@@ -861,34 +854,3 @@
     ]
   }
 {% endschema %}
-<style>
-  /* Main dropdown styles */
-.site-nav__dropdown,
-.sub-dropdown {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 200px;
-  z-index: 999;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Show dropdown on hover */
-.site-nav__item--has-dropdown:hover > .site-nav__dropdown,
-.small-dropdown__item:hover > .sub-dropdown {
-  display: block;
-}
-
-/* Position sub-dropdown to the right */
-.sub-dropdown {
-  top: 0;
-  left: 100%;
-}
-
-/* Ensure submenu items are relatively positioned for dropdown placement */
-.small-dropdown__item {
-  position: relative;
-}
-
-</style>
