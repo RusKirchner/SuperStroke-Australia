@@ -418,7 +418,7 @@
             {%- assign link_count = link.links | size -%}
 
             {% if link.links != blank %}
-              {%- if link.levels <= 1 -%}
+              {%- if link.levels <= 2 -%}
                 {% assign dropdown_type = 'small' %}
               {%- else -%}
                 {%- if link_count <= 1 -%}
@@ -509,7 +509,7 @@
                         <div class="grid__item three-quarters">
                       {% endif %}
 
-                      <!-- <ul class="mega-dropdown__container grid grid--uniform">
+                      <ul class="mega-dropdown__container grid grid--uniform">
                         {% for childlink in link.links %}
                           <li class="mega-dropdown__item grid__item {% if has_promo %}one-third{% else %}one-quarter{% endif %} {% if childlink.active %}site-nav--active{% endif %}">
                             <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}</a>
@@ -525,36 +525,7 @@
                             </div>
                           </li>
                         {% endfor %}
-                      </ul> -->
-                          <ul class="site-nav__menu">
-  {% for link in linklists.main-menu.links %}
-    <li class="site-nav__item {% if link.links.size > 0 %}has-dropdown{% endif %}">
-      <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
-
-      {% if link.links.size > 0 %}
-        <ul class="site-nav__dropdown">
-          {% for sublink in link.links %}
-            <li class="{% if sublink.links.size > 0 %}has-submenu{% endif %}">
-              <a href="{{ sublink.url }}" class="site-nav__link">{{ sublink.title }}</a>
-
-              {% if sublink.links.size > 0 %}
-                <ul class="site-nav__dropdown sub-dropdown">
-                  {% for sub_sublink in sublink.links %}
-                    <li>
-                      <a href="{{ sub_sublink.url }}" class="site-nav__link">{{ sub_sublink.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
+                      </ul>
 
                       {% if has_promo %}
                           </div>
