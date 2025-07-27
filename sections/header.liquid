@@ -458,7 +458,7 @@
                         <li class="small-dropdown__item {% if childlink.active %}site-nav--active{% endif %}">
                           {% if childlink.links != blank %}
                             <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}</a>
-                            <div class="site-nav__submenu">
+                            <!-- <div class="site-nav__submenu">
                               <ul class="site-nav__submenu-container">
                                 {% for sublink in childlink.links %}
                                   {% assign count_links = count_links | plus: 1 %}
@@ -467,7 +467,16 @@
                                   </li>
                                 {% endfor %}
                               </ul>
-                            </div>
+                            </div> -->
+
+<ul class="site-nav__dropdown sub-dropdown">
+  {% for sublink in childlink.links %}
+    <li class="sub-dropdown__item">
+      <a href="{{ sublink.url }}" class="site-nav__link site-nav__dropdown-link">{{ sublink.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+                          
                           {% else %}
                             <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-link">{{ childlink.title }}</a>
                           {% endif %}
