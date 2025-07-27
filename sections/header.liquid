@@ -457,7 +457,10 @@
                       {% for childlink in link.links %}
                         <li class="small-dropdown__item {% if childlink.active %}site-nav--active{% endif %}">
                           {% if childlink.links != blank %}
-                            <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}</a>
+                            <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}
+                            <span class="feather-icon site-nav__icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon feather-icon feather-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
+      </span>
+                            </a>
                             <!-- <div class="site-nav__submenu">
                               <ul class="site-nav__submenu-container">
                                 {% for sublink in childlink.links %}
@@ -473,8 +476,7 @@
   {% for sublink in childlink.links %}
     <li class="sub-dropdown__item">
       <a href="{{ sublink.url }}" class="site-nav__link site-nav__dropdown-link">{{ sublink.title }}
-      <span class="feather-icon site-nav__icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon feather-icon feather-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
-      </span>
+      
       </a>
     </li>
   {% endfor %}
