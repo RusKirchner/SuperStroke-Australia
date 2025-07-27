@@ -458,7 +458,7 @@
                         <li class="small-dropdown__item {% if childlink.active %}site-nav--active{% endif %}">
                           {% if childlink.links != blank %}
                             <a href="{{ childlink.url }}" class="site-nav__link site-nav__dropdown-heading">{{ childlink.title }}
-                            <span class="feather-icon site-nav__icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon feather-icon feather-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
+                            <span class="feather-icon site-nav__icon cstm"><svg aria-hidden="true" focusable="false" role="presentation" class="icon feather-icon feather-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg>
       </span>
                             </a>
                             <!-- <div class="site-nav__submenu">
@@ -906,5 +906,10 @@
 }
 .site-nav__dropdown.js-mobile-menu-dropdown.small-dropdown {
   overflow: initial;
+}
+.site-nav .site-nav__dropdown-heading, .site-nav .site-nav__dropdown-link[href="#"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
