@@ -421,8 +421,8 @@
               {%- if link.levels <= 1 -%}
                 {% assign dropdown_type = 'small' %}
               {%- else -%}
-                {%- if link_count <= 1 -%}
-                  {% assign dropdown_type = 'mega' %}
+                {%- if link_count <= 2 -%}
+                  {% assign dropdown_type = 'medium' %}
                 {%- else -%}
                   {% assign dropdown_type = 'mega' %}
                 {%- endif -%}
