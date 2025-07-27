@@ -127,6 +127,7 @@
         <div class="single-product" style="text-align:center; width: 280px;" data-block-id="{{ block.id }}">
           <!-- Product Image -->
           <div class="product-image-wrapper" style="position: relative;">
+            <a href="{{ product.url }}" class="product-block__title-link">
             <img 
               id="MainImage-{{ block.id }}" 
               src="{{ product.featured_image | img_url: 'large' }}" 
@@ -134,6 +135,7 @@
               class="main-product-image"
               style="max-width: 250px; transition: opacity 0.3s ease;"
             />
+            </a>
           </div>
 
           <!-- Product Name -->
