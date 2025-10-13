@@ -239,6 +239,45 @@
           "image_P4AQ9T": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/DIGITAL_Halloween_LaunchWebsite_Header_2_1.jpg",
+              "image_link": "shopify://products/undead-under-par-halloween-putter-grip",
+              "color_overlay_bg": "#ffffff",
+              "overlay_opacity": 0,
+              "color_overlay_text": "#333333",
+              "text_alignment": "center",
+              "overlay_position_x": 50,
+              "overlay_position_y": 100,
+              "overlay_title": "",
+              "enlarge_title": false,
+              "overlay_title_width": 100,
+              "styled_words": "",
+              "words_style": "stencil",
+              "highlight_words_top": 10,
+              "highlight_color": "#ffffff",
+              "styled_word_color": "#5d68bf",
+              "overlay_text": "",
+              "enlarge_text": false,
+              "overlay_url_text_1": "Learn More",
+              "overlay_url_1": "shopify://collections/revl-club-grips",
+              "overlay_url_text_2": "",
+              "overlay_url_2": "",
+              "overlay_url_style": "button_1",
+              "color_label_background": "#ffffff",
+              "color_label_text": "#333333",
+              "show_chevron": true,
+              "product_id_1": "",
+              "chevron_position_1": "right",
+              "label_position_x_1": 20,
+              "label_position_y_1": 30,
+              "product_id_2": "",
+              "chevron_position_2": "right",
+              "label_position_x_2": 80,
+              "label_position_y_2": 50
+            }
+          },
+          "image_pKUq9F": {
+            "type": "image",
+            "settings": {
               "image": "shopify://shop_images/WEB_Revl_Header_WIP-04.jpg",
               "image_link": "shopify://collections/revl-club-grips",
               "color_overlay_bg": "#ffffff",
@@ -279,7 +318,8 @@
         "block_order": [
           "banner-0",
           "banner-1",
-          "image_P4AQ9T"
+          "image_P4AQ9T",
+          "image_pKUq9F"
         ],
         "settings": {
           "show_banner": true,

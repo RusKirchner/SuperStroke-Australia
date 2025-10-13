@@ -49,10 +49,49 @@
             "label_position_x_2": 80,
             "label_position_y_2": 50
           }
+        },
+        "image_jwaePA": {
+          "type": "image",
+          "settings": {
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 70,
+            "overlay_title": "Slideshow",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Use this section to welcome customers to your store, show off your images or display a promotion",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
         }
       },
       "block_order": [
-        "image_PMf9Vf"
+        "image_PMf9Vf",
+        "image_jwaePA"
       ],
       "disabled": true,
       "settings": {
