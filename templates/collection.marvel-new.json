@@ -231,6 +231,9 @@
     },
     "main": {
       "type": "main-collection",
+      "custom_css": [
+        ".large-title.row {display: none;}"
+      ],
       "settings": {
         "enable_feature_header": false,
         "grid": 4,
