@@ -9,29 +9,13 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-collection",
-      "disabled": true,
-      "settings": {
-        "enable_feature_header": true,
-        "grid": 4,
-        "grid_mobile": "2",
-        "pagination_limit": 24,
-        "show_total": true,
-        "show_vendor": false,
-        "show_filters": true,
-        "show_filter_prod_counts": true,
-        "show_sort_by": true,
-        "show_featured": true
-      }
-    },
     "fullwidth_slideshow_b3cFXR": {
       "type": "fullwidth-slideshow",
       "blocks": {
         "image_jAJ9fr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/MilesHero-banner2-2.webp",
+            "image": "shopify://shop_images/DIGITAL_MARVEL_Captain_America_LaunchLE_Page_Header_copy.webp",
             "image_link": "shopify://products/marvel-miles-morales-putter-grip",
             "color_overlay_bg": "#ffffff",
             "overlay_opacity": 80,
@@ -69,6 +53,7 @@
         },
         "image_rbgXLw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ThorHero-banner2.webp",
             "image_link": "shopify://products/marvel-super-heroes-putter-grips",
@@ -108,6 +93,7 @@
         },
         "image_gFWRVn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BlackPantherHero-banner-2.webp",
             "image_link": "shopify://products/marvel-super-heroes-putter-grips",
@@ -147,6 +133,7 @@
         },
         "image_qA43rT": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Venom-hero_2160x1080_2121ece2-fd11-4a44-b4ce-7fd441a4680f.webp",
             "image_link": "shopify://products/marvel-venom-putter-grip",
@@ -186,6 +173,7 @@
         },
         "image_RANgbV": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SS_DeadpoolWolverine_hero_1432ca54-87c4-4183-b7f1-33e96255cad6.webp",
             "image_link": "shopify://products/marvel-deadpool-wolverine-putter-grips",
@@ -241,6 +229,21 @@
         "slideshow_autoplay_speed": 6
       }
     },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "enable_feature_header": false,
+        "grid": 4,
+        "grid_mobile": "2",
+        "pagination_limit": 24,
+        "show_total": true,
+        "show_vendor": false,
+        "show_filters": false,
+        "show_filter_prod_counts": true,
+        "show_sort_by": false,
+        "show_featured": false
+      }
+    },
     "custom_product_list_M6b77Q": {
       "type": "custom-product-list",
       "disabled": true,
@@ -282,6 +285,7 @@
       "block_order": [
         "product_block_CxkgE4"
       ],
+      "disabled": true,
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
@@ -377,6 +381,7 @@
         "product_block_dwtY4R",
         "product_block_LBQxaG"
       ],
+      "disabled": true,
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
@@ -427,6 +432,7 @@
         "product_block_XbPaJF",
         "product_block_pMYb8m"
       ],
+      "disabled": true,
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
@@ -462,6 +468,7 @@
       "block_order": [
         "product_block_kkwmqQ"
       ],
+      "disabled": true,
       "name": "Product or Variant Blocks",
       "settings": {
         "subheading": "",
@@ -478,6 +485,7 @@
     },
     "rich_text_full_width_FfLiwc": {
       "type": "rich-text-full-width",
+      "disabled": true,
       "name": "Rich text Full Width",
       "settings": {
         "title": "More Coming Soon",
@@ -499,8 +507,8 @@
     }
   },
   "order": [
-    "main",
     "fullwidth_slideshow_b3cFXR",
+    "main",
     "custom_product_list_M6b77Q",
     "custom_block_product_4XzRbB",
     "custom_block_product_3FHHWG",
