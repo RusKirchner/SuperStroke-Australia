@@ -232,7 +232,7 @@
     "main": {
       "type": "main-collection",
       "custom_css": [
-        ".large-title.row {display: none;}",
+        ".large-title {display: none;}",
         ".cc-filters-results__summary {text-align: right;}"
       ],
       "settings": {
