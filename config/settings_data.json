@@ -238,6 +238,7 @@
           },
           "image_P4AQ9T": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/DIGITAL_Halloween_LaunchWebsite_Header_2_1.jpg",
               "image_link": "shopify://products/undead-under-par-halloween-putter-grip",
