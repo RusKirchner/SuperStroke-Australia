@@ -29,8 +29,8 @@
       "type": "image-with-link",
       "name": "Image with Link",
       "settings": {
-        "link_url": "shopify://products/marvel-super-heroes-putter-grips",
-        "image": "shopify://shop_images/DarthVaderHero-3up.webp",
+        "link_url": "shopify://collections/star-wars",
+        "image": "shopify://shop_images/WEB_Star_Wars_Landing_051525_2_1.jpg",
         "alt_text": "Linked image"
       }
     },
