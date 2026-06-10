@@ -36,6 +36,7 @@
     },
     "rich_text_full_width_W6Jyt4": {
       "type": "rich-text-full-width",
+      "disabled": true,
       "name": "Rich text Full Width",
       "settings": {
         "title": "Darth Vader Putter Grip",
@@ -58,6 +59,18 @@
     "custom_prodcut_cards_xGGQhn": {
       "type": "custom-prodcut-cards",
       "blocks": {
+        "product_jjWdw9": {
+          "type": "product",
+          "settings": {
+            "product": "star-wars-chewbacca-putter-grip"
+          }
+        },
+        "product_Nk79K6": {
+          "type": "product",
+          "settings": {
+            "product": "star-wars-yoda-putter-grip"
+          }
+        },
         "product_7qADrU": {
           "type": "product",
           "settings": {
@@ -66,6 +79,8 @@
         }
       },
       "block_order": [
+        "product_jjWdw9",
+        "product_Nk79K6",
         "product_7qADrU"
       ],
       "name": "Custom Product Cards",
