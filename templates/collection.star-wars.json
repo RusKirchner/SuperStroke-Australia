@@ -11,6 +11,24 @@
   "sections": {
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "collection_LfpVBx": {
+          "type": "collection",
+          "settings": {
+            "collection": "star-wars",
+            "product": "star-wars-the-mandalorian-and-grogu-putter-grip",
+            "collection_text_color": "#ffffff",
+            "collection_bg_color": "#43467f",
+            "collection_bg_gradient": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "collection_LfpVBx"
+      ],
       "disabled": true,
       "settings": {
         "enable_feature_header": true,
