@@ -9,9 +9,31 @@
  */
 {
   "sections": {
+    "image_with_link_MwJywL": {
+      "type": "image-with-link",
+      "name": "Image with Link",
+      "settings": {
+        "link_url": "shopify://collections/star-wars",
+        "image": "shopify://shop_images/WEB_Star_Wars_Landing_051525_2_1.jpg",
+        "alt_text": ""
+      }
+    },
     "main": {
       "type": "main-collection",
       "blocks": {
+        "collection_AFkMcC": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "product": "",
+            "collection_text_color": "#ffffff",
+            "collection_bg_color": "#43467f",
+            "collection_bg_gradient": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333"
+          }
+        },
         "collection_LfpVBx": {
           "type": "collection",
           "settings": {
@@ -27,13 +49,13 @@
         }
       },
       "block_order": [
+        "collection_AFkMcC",
         "collection_LfpVBx"
       ],
-      "disabled": true,
       "settings": {
-        "enable_feature_header": true,
+        "enable_feature_header": false,
         "grid": 4,
-        "grid_mobile": "2",
+        "grid_mobile": "1",
         "pagination_limit": 24,
         "show_total": true,
         "show_vendor": false,
@@ -41,15 +63,6 @@
         "show_filter_prod_counts": true,
         "show_sort_by": true,
         "show_featured": true
-      }
-    },
-    "image_with_link_MwJywL": {
-      "type": "image-with-link",
-      "name": "Image with Link",
-      "settings": {
-        "link_url": "shopify://collections/star-wars",
-        "image": "shopify://shop_images/WEB_Star_Wars_Landing_051525_2_1.jpg",
-        "alt_text": "Linked image"
       }
     },
     "rich_text_full_width_W6Jyt4": {
@@ -74,44 +87,9 @@
         "section_gradient_bg": ""
       }
     },
-    "custom_prodcut_cards_xGGQhn": {
-      "type": "custom-prodcut-cards",
-      "blocks": {
-        "product_jjWdw9": {
-          "type": "product",
-          "settings": {
-            "product": "star-wars-chewbacca-putter-grip"
-          }
-        },
-        "product_Nk79K6": {
-          "type": "product",
-          "settings": {
-            "product": "star-wars-yoda-putter-grip"
-          }
-        },
-        "product_7qADrU": {
-          "type": "product",
-          "settings": {
-            "product": "darth-vader-putter-grip"
-          }
-        }
-      },
-      "block_order": [
-        "product_jjWdw9",
-        "product_Nk79K6",
-        "product_7qADrU"
-      ],
-      "name": "Custom Product Cards",
-      "settings": {
-        "background_color": "#000000",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "title_color": "#ffffff",
-        "price_color": "#ffffff"
-      }
-    },
     "rich_text_full_width_68WqM3": {
       "type": "rich-text-full-width",
+      "disabled": true,
       "name": "Rich text Full Width",
       "settings": {
         "title": "More Coming Soon",
@@ -133,10 +111,9 @@
     }
   },
   "order": [
-    "main",
     "image_with_link_MwJywL",
+    "main",
     "rich_text_full_width_W6Jyt4",
-    "custom_prodcut_cards_xGGQhn",
     "rich_text_full_width_68WqM3"
   ]
 }
