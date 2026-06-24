@@ -15,8 +15,8 @@
       "type": "popup",
       "settings": {
         "mode": "enabled",
-        "popup_delay_seconds": 5,
-        "popup_dismiss_for_days": 5,
+        "popup_delay_seconds": 10,
+        "popup_dismiss_for_days": 11,
         "position": "center",
         "title": "Limited Edition Collab",
         "text": "<p><a href=\"/products/star-wars-the-mandalorian-and-grogu-putter-grip\" title=\"Star Wars The Mandalorian And Grogu Putter Grip\">Available Now</a></p>",
