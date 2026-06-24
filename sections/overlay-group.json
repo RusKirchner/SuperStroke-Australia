@@ -1,27 +1,26 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "aside",
   "name": "Overlay group",
   "sections": {
     "popup": {
       "type": "popup",
-      "disabled": true,
       "settings": {
-        "mode": "testing",
+        "mode": "enabled",
         "popup_delay_seconds": 5,
         "popup_dismiss_for_days": 5,
         "position": "center",
-        "title": "Exclusive Wolverine and Deadpool 2 Grips",
-        "text": "<p><a href=\"\/products\/marvel-deadpool-wolverine-putter-grips\" title=\"Marvel Deadpool Wolverine Putter Grips\">PRE-ORDER NOW<\/a><\/p>",
-        "image": "shopify:\/\/shop_images\/C4CE7757-236B-412B-8F92-B96157BFBBD1.jpg",
+        "title": "Limited Edition Collab",
+        "text": "<p><a href=\"/products/star-wars-the-mandalorian-and-grogu-putter-grip\" title=\"Star Wars The Mandalorian And Grogu Putter Grip\">Available Now</a></p>",
+        "image": "shopify://shop_images/StarWars_2500x1400_2a2b6a53-303e-49a9-9ab9-4b222fd61e26.png",
         "show_newsletter": false,
         "show_social_icons": false
       }
