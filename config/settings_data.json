@@ -158,9 +158,8 @@
         "blocks": {
           "banner-0": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/wyndhambanner.png",
+              "image": "shopify://shop_images/WIN_BMW-Championship_Web-Header_1.png",
               "image_link": "shopify://collections/putter-grips",
               "color_overlay_bg": "#000000",
               "overlay_opacity": 0,
