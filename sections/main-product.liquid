@@ -108,7 +108,7 @@
 
                 {%- when 'title_and_price' -%}
                   <div class="product-detail__title-area row" {{ block.shopify_attributes }}>
-                   <h1  class="product-detail__title small-title"  style="font-size: {{ settings.heading_base_size | times: 1.15 }}px;">  {{ product.title | upcase }}</h1>
+                    <h1 class="product-detail__title small-title">{{ product.title }}</h1>
                       {% if product.tags contains 'Retail Only' %}
                     {%- else -%}
                     <div class="product-detail__price product-price" data-price-wrapper>
