@@ -51,7 +51,7 @@
     "type_logo_font": "archivo_narrow_i7",
     "font_size_logo_int": 26,
     "letter_spacing_logo": -25,
-    "uppercase_product_titles": false,
+    "uppercase_product_titles": true,
     "uppercase_buttons": true,
     "animations_enabled": "disabled",
     "animation_speed": "fast",
